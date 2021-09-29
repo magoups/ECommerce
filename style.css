@@ -303,11 +303,38 @@ header img{
 /* -------------- ECRIRE SOUS CETTE LIGNE --------------- */
 
 
+div{
+    display: flex;
+}
+.panier{
+    display: flex;
+    justify-content: center;
+    padding-top: 97px;
+    padding-bottom: 84px ;
+    font-family: 'Spectral', serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+#article{
+    border: seagreen solid 2px;
+    width: 696px;
+    height: 412px;
+    background: #ECECEC ;
+    opacity: 93%;
+    margin: 54px;
+    background: url(Images/Christina/Pull\ Christina.png) no-repeat;
+}
+.detail{
+    justify-content: center;
+    align-items: flex-end;
+    border: turquoise 4px solid;
+}
 
-
-
-
-
+.pull{
+    padding-top:62px;
+    padding-left: 406px ;
+    justify-content: center;
+}
 
 
 
