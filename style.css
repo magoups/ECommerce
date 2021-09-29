@@ -316,27 +316,67 @@ div{
     font-weight: 700;
 }
 #article{
-    border: seagreen solid 2px;
     width: 696px;
     height: 412px;
     background: #ECECEC ;
     opacity: 93%;
     margin: 54px;
-    background: url(Images/Christina/Pull\ Christina.png) no-repeat;
 }
 .detail{
+    border: thistle 4px solid;
+     background: url(Images/Christina/Pull\ Christina.png) no-repeat;
+     height: 100%;
     justify-content: center;
     align-items: flex-end;
-    border: turquoise 4px solid;
 }
 
-.pull{
-    padding-top:62px;
-    padding-left: 406px ;
+.pull, .size, .counter, .couleur{
+    font-size: 25px;
+    padding-left: 404px ;
     justify-content: center;
 }
-
-
+.pull{
+    padding-top:62px; 
+}
+.supp{
+    justify-content: flex-end;
+    padding-right:45px ;
+}
+.couleur{
+    padding-top:64px ;
+    padding-left: 404px ;
+    justify-content: center;
+}
+.couleur{
+    padding-bottom: 9px;
+    justify-content: center;
+}
+.couleur img{
+    padding-left: 39px;
+    border: transparent 10px solid;
+}
+.taille{
+    
+    padding-left: 65px;
+}
+.counter{
+    padding-top: 42px;
+}
+button{
+    
+    background: white;
+    width: 30.55px;
+    height: 32px;
+    border: black solid 1px;
+    gap: 15.28px;
+}
+.button1{
+    width: 60.34px;
+    height: 32px;
+}
+.prix{
+    padding: 38px;
+}
 
 
 
