@@ -140,7 +140,7 @@ header img{
 .headerLogoSize{
     width: 187px;
     height: 120px;
-    /* background: lightgoldenrodyellow; */
+        /* background: rgba(224, 147, 55, 0.8); */
 }
 
 /* -------------------------------------------------------------------------- */
@@ -196,7 +196,8 @@ header img{
 }
 
 .promotion{
-    background:rgba(196, 156, 168, .5);
+    /* background: rgba(224, 147, 55, 0.8); */
+    background:rgb(132, 41, 37, .9);
 }
 
 .headerCategorie{
@@ -209,6 +210,7 @@ header img{
 
 .headerCategorie div{
     width: 100%;
+    
 }
 
 .headerCategorieListe{
@@ -224,7 +226,7 @@ header img{
 /* -------------------------------------------------------------------------- */
 
 .headerChemin{
-    font-weight: normal;
+    font-weight: 100;
     grid-area: chemin;
     background: #ECECEC;
     opacity: 93%;
