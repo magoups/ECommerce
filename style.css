@@ -301,12 +301,6 @@ header img{
 /*  -------------------- CHRISTINA ---------------------- */
 /* ----------------- CLASS : .panierxxxxx --------------- */
 /* -------------- ECRIRE SOUS CETTE LIGNE --------------- */
-
-
-<<<<<<< HEAD
-
-.panier{
-=======
 #panier{
     border: violet solid 2px;
     display: flex;
@@ -318,7 +312,6 @@ header img{
 
             /* TITRE */
 .paniertitre{
->>>>>>> 8577ae10abbfb754b196d260fbeb8e14dbebebbf
     display: flex;
     justify-content: center;
     padding-top: 97px;
