@@ -306,6 +306,10 @@ header img{
 div{
     display: flex;
 }
+
+            /* -------ARTICLE------ */
+
+            /* TITRE */
 .panier{
     display: flex;
     justify-content: center;
@@ -315,6 +319,8 @@ div{
     font-size: 28px;
     font-weight: 700;
 }
+
+        /* BLOCK ARTICLE */
 #article{
     width: 696px;
     height: 412px;
@@ -322,19 +328,20 @@ div{
     opacity: 93%;
     margin: 54px;
 }
+.pull, .size, .counter, .couleur{
+    font-size: 25px;
+    padding-left: 404px ;
+    justify-content: center;
+}
+
+/* SECTION PHOTO + NOM + SUPP */
 .detail{
-    border: thistle 4px solid;
      background: url(Images/Christina/Pull\ Christina.png) no-repeat;
      height: 100%;
     justify-content: center;
     align-items: flex-end;
 }
 
-.pull, .size, .counter, .couleur{
-    font-size: 25px;
-    padding-left: 404px ;
-    justify-content: center;
-}
 .pull{
     padding-top:62px; 
 }
@@ -342,6 +349,8 @@ div{
     justify-content: flex-end;
     padding-right:45px ;
 }
+
+/* SECTION COULEUR */
 .couleur{
     padding-top:64px ;
     padding-left: 404px ;
@@ -355,6 +364,8 @@ div{
     padding-left: 39px;
     border: transparent 10px solid;
 }
+
+/* SECTION TAILLE */
 .taille{
     
     padding-left: 65px;
@@ -378,6 +389,14 @@ button{
     padding: 38px;
 }
 
+#livraison, #paiement{
+    border: chartreuse solid 2px;
+}
+#paiement{
+    border: chartreuse solid 2px;
+}
+
+            /* PAIMENT */
 
 
 
