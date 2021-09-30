@@ -303,8 +303,22 @@ header img{
 /* -------------- ECRIRE SOUS CETTE LIGNE --------------- */
 
 
+<<<<<<< HEAD
 
 .panier{
+=======
+#panier{
+    border: violet solid 2px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+            /* -------ARTICLE------ */
+
+            /* TITRE */
+.paniertitre{
+>>>>>>> 8577ae10abbfb754b196d260fbeb8e14dbebebbf
     display: flex;
     justify-content: center;
     padding-top: 97px;
@@ -313,54 +327,61 @@ header img{
     font-size: 28px;
     font-weight: 700;
 }
-#article{
+
+        /* BLOCK ARTICLE */
+#panierarticle{
     width: 696px;
     height: 412px;
     background: #ECECEC ;
     opacity: 93%;
     margin: 54px;
 }
-.detail{
-    border: thistle 4px solid;
+.panierpull, .paniersize, .paniercounter, .paniercouleur{
+    font-size: 25px;
+    padding-left: 404px ;
+    justify-content: center;
+}
+
+/* SECTION PHOTO + NOM + SUPP */
+.panierdetail{
      background: url(Images/Christina/Pull\ Christina.png) no-repeat;
      height: 100%;
     justify-content: center;
     align-items: flex-end;
 }
 
-.pull, .size, .counter, .couleur{
-    font-size: 25px;
-    padding-left: 404px ;
-    justify-content: center;
-}
-.pull{
+.panierpull{
     padding-top:62px; 
 }
-.supp{
+.paniersupp{
     justify-content: flex-end;
     padding-right:45px ;
 }
-.couleur{
+
+/* SECTION COULEUR */
+.paniercouleur{
     padding-top:64px ;
     padding-left: 404px ;
     justify-content: center;
 }
-.couleur{
+.paniercouleur{
     padding-bottom: 9px;
     justify-content: center;
 }
-.couleur img{
+.paniercouleur img{
     padding-left: 39px;
     border: transparent 10px solid;
 }
-.taille{
+
+/* SECTION TAILLE */
+.paniertaille{
     
     padding-left: 65px;
 }
-.counter{
+.paniercounter{
     padding-top: 42px;
 }
-button{
+.panierbutton{
     
     background: white;
     width: 30.55px;
@@ -368,14 +389,23 @@ button{
     border: black solid 1px;
     gap: 15.28px;
 }
-.button1{
+.panierbutton1{
     width: 60.34px;
     height: 32px;
 }
-.prix{
+.panierprix{
     padding: 38px;
 }
 
+#panierpaiement{
+    border: chartreuse solid 2px;
+}
+
+#panierlivraison{
+    border: yellow  solid 2px;
+}
+
+            /* PAIMENT */
 
 
 

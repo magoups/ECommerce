@@ -78,43 +78,84 @@
                 <img src="Images/Christina/symbole-de-diamant 10x10.png" alt="icone_en_forme_de_losange">
             </div>
         </nav>
-
+    </section>
+    
                     <!----------  PANIER  -------->
-        <div class="panier">
+        
+        <div class="paniertitre">
             <h1>MON PANIER</h1>
         </div>
-
+    <section id="panier">
             <!----------  Picture  -------->
-        <section id="article">
-            <section class="detail">
+        <div class="panierarticle">
+
+            <div class="panierdetail">
                 <!-- Nom article + supp -->
-            <div class="pull">
-            <p>Pull Gallo</p></div>
-            <a href="individuel.html"><div class="supp"><img src="Images/Christina/supprimer.png" alt="croix"></div></a>
+            <div class="panierpull"><p>Pull Gallo</p></div>
+
+            <a href="individuel.html">
+                <div class="supp">
+                    <img src="Images/Christina/supprimer.png" alt="croix">
+            </a>    
+        </div>
+
+       
             
             <!-- Couleur + selection de couleur -->
-            <div class="couleur">
+            <div class="paniercouleur">
                 <p><span class="black">Couleur</span></p>
                 <img src="Images/Christina/couleur.png" alt="">
             </div>
-
             
             <!-- Size  -->
-                 <div class="size">
+                 <div class="paniersize">
                      <p>Taille:
                          <span class="taille">S</span>
                     </p>
                  </div>
-                <div class="counter">
+                <div class="paniercounter">
                     <class="button">
                     <button type="submit">-</button>
                     <class="button">
                     <button
-                    class="button1"type="submit">1</button>
+                    class="panierbutton1"type="submit">1</button>
                     <class="button">
-                    <button type="submit">+</button><span class="prix">45€</span> 
+                    <button type="submit">+</button><span class="panierprix">45€</span> 
                 </div>
+            </div>
+        </div>
 
+            <!----------  Picture  -------->
+        <section id="panierpaiement">
+            <div class="paniertotal">Total<span class="panierprix2">45€</span></div>
+            <!-- BOUTON COMMANDE -->
+            <div class="paniercommandeBouton">
+                <a href="paiement.html">
+                    <button type="submit">PAIMENT</button>
+                </a>
+            </div>
+            <section id="panierlivraison">
+            <!-- FRAIS DE LIVRAISON -->
+            <div><h1>Frais de Livraison</h1></div>
+
+            <!-- TYPE DE LIVRAISON -->
+            <div class="paniermaison" >
+                <button class="panierboutton" type="submit"></button>
+                <img src="Images/Christina/maison.png" alt="logo maison">
+                <p>Domicile</p>
+                <p>GRATUIT</p> 
+            </div>
+            <div class="paniermagasin">
+                <button type="submit"></button>
+                <img src="Images/Christina/magasin.png" alt="logo magasin">
+                <p>Magasin</p>
+                <p>GRATUIT</p> 
+            </div>
+            <div class="pr">
+                <button type="paniersubmit"></button>
+                <img src="Images/Christina/point relais.png" alt="logo PR">
+                <p>Point Relais</p>
+                <p>GRATUIT</p> 
             </div>
         </section>
         </section>
