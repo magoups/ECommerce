@@ -14,59 +14,55 @@
 <body>
     <header class="headerGrid">
 
-        <!------------------------------ LOGO ---------------------------->
-        
-                <div class="headerlogo">
-                    <div class="headerLogoSize">
-                        <img src="" alt="logo_de_la_marque">
-                    </div>
-                </div>
-        
-        <!------------------------------ RECHERCHE ---------------------------->
-        
-                <div class="headerRecherche headerFlexbox">
-                    <div class="headerRechercheBoite headerFlexbox">
-                        <p>Recherche</p>
-                        <img class="headerRechercheImage" src="Icones/loupe.png" alt="icone_en_forme_de_loupe">
-                    </div>
-                </div>
-        
-        <!------------------------------ ICONES ---------------------------->
-        
-                <div class="headerIcone headerFlexbox">
-                    <img src="Icones/woman.png" alt="icone_en_forme_de_femme">
-                    <img src="Icones/heart.png" alt="icone_en_forme_de_coeur">
-                    <img src="Icones/shopping-basket.png" alt="icone_en_forme_de_panier">
-                </div>
-        
-        <!------------------------------ CATEGORIES ---------------------------->
-        
-                <ul class="headerCategorie headerFlexbox">
-                    <div class="headerCategorieListe headerFlexbox promotion heartbeat">
-                        <li>PROMOTIONS !</li>
-                    </div>
-                    <div class="headerCategorieListe headerFlexbox vetement">
-                        <li>Vêtements</li>
-                        <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-                    </div>
-                    <div class="headerCategorieListe headerFlexbox chaussure">
-                        <li>Chaussures</li>
-                        <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-                    </div>
-                    <div class="headerCategorieListe headerFlexbox accessoire">
-                        <li>Accessoires</li>
-                        <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-                    </div>
-                </ul>
+<!------------------------------ LOGO ---------------------------->
+
+        <div class="headerlogo">
+            <div class="headerLogoSize">
+                <img src="" alt="logo_de_la_marque">
+            </div>
+        </div>
+
+<!------------------------------ RECHERCHE ---------------------------->
+
+        <div class="headerRecherche headerFlexbox">
+            <div class="headerRechercheBoite headerFlexbox">
+                <p>Recherche</p>
+                <img class="headerRechercheImage" src="Icones/loupe.png" alt="icone_en_forme_de_loupe">
+            </div>
+        </div>
+
+<!------------------------------ ICONES ---------------------------->
+
+        <div class="headerIcone headerFlexbox">
+            <img src="Icones/woman.png" alt="icone_en_forme_de_femme">
+            <img src="Icones/heart.png" alt="icone_en_forme_de_coeur">
+            <img src="Icones/shopping-basket.png" alt="icone_en_forme_de_panier">
+        </div>
+
+<!------------------------------ CATEGORIES ---------------------------->
+
+        <ul class="headerCategorie headerFlexbox">
+            <div class="headerCategorieListe headerFlexbox promotion heartbeat">
+                <li>PROMOTIONS !</li>
+            </div>
+            <div class="headerCategorieListe headerFlexbox vetement">
+                <li>Vêtements</li>
+                <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+            </div>
+            <div class="headerCategorieListe headerFlexbox chaussure">
+                <li>Chaussures</li>
+                <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+            </div>
+            <div class="headerCategorieListe headerFlexbox accessoire">
+                <li>Accessoires</li>
+                <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+            </div>
+        </ul>
                
     </header>
-<<<<<<< HEAD
-    <section class="chemin">
-=======
                     <!----------  CHEMIN  -------->
 
     <section id="chemin">
->>>>>>> 57124ff293cdf22ea3123d7b9ba84453ffa321e4
         <nav>
             <div class="headerChemin headerFlexbox">
                 <a href="index.html"><p>Accueil</p></a>
@@ -83,76 +79,233 @@
             </div>
         </nav>
     </section>
+    
                     <!----------  PANIER  -------->
-        <div class="panier">
+        
+        <div class="paniertitre panierflex">
             <h1>MON PANIER</h1>
         </div>
-
+    <section id="panierC" class="panierflex">
             <!----------  Picture  -------->
-        <section id="article">
-            <section class="detail">
+        <div class="panierarticle panierflex"> 
+
+            <div class="panierdetail">
                 <!-- Nom article + supp -->
-            <div class="pull">
-            <p>Pull Gallo</p></div>
-            <a href="individuel.html"><div class="supp"><img src="Images/Christina/supprimer.png" alt="croix"></div></a>
+            <div class="panierpull"><p>Pull Gallo</p></div>
+
+            <a href="individuel.html">
+                <div class="paniersupp panierflex" >
+                    <img src="Images/Christina/supprimer.png" alt="croix">
+            </a> 
+          
+        </div>
             
             <!-- Couleur + selection de couleur -->
-            <div class="couleur">
+            <div class="paniercouleur panierflex">
                 <p><span class="black">Couleur</span></p>
                 <img src="Images/Christina/couleur.png" alt="">
             </div>
             
             <!-- Size  -->
-                 <div class="size">
+                 <div class="paniersize">
                      <p>Taille:
                          <span class="taille">S</span>
                     </p>
                  </div>
-                <div class="counter">
+                <div class="paniercounter">
                     <class="button">
-                    <button type="submit">-</button>
+                    <button class="panierbutton1" type="submit">-</button>
                     <class="button">
                     <button
-                    class="button1"type="submit">1</button>
+                    class="panierbutton"type="submit">1</button>
+
                     <class="button">
-                    <button type="submit">+</button><span class="prix">45€</span> 
+                    <button class="panierbutton1" type="submit">+</button><span class="panierprix">45€</span> 
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
 
-            <!----------  Picture  -------->
-        <section id="paiement">
-            <div class="total">Total<span class="prix2">45€</span></div>
+            <!----------  PAIEMENT  -------->
+        <section id="panierpaiement">
+            <div class="paniertotal panierflex">Total<span class="panierprix2">45€</span></div>
             <!-- BOUTON COMMANDE -->
-            <div class="commandeBouton">
+            <div class="paniercommandeBouton">
                 <a href="paiement.html">
-                    <button type="submit">PAIMENT</button>
+                    <button
+                    class="paimentbutton"
+                    type="button">COMMANDE</button>
                 </a>
             </div>
-            <section id="livraison">
+            <section id="panierlivraison" class="panierflex">
             <!-- FRAIS DE LIVRAISON -->
             <div><h1>Frais de Livraison</h1></div>
 
             <!-- TYPE DE LIVRAISON -->
-            <div class="maison" >
-                <button type="submit"></button>
+            <div class="paniermaison" >
+                <button class="panierboutton" type="submit"></button>
                 <img src="Images/Christina/maison.png" alt="logo maison">
                 <p>Domicile</p>
                 <p>GRATUIT</p> 
             </div>
-            <div class="magasin">
+            <div class="paniermagasin">
                 <button type="submit"></button>
                 <img src="Images/Christina/magasin.png" alt="logo magasin">
                 <p>Magasin</p>
                 <p>GRATUIT</p> 
             </div>
             <div class="pr">
-                <button type="submit"></button>
+                <button type="paniersubmit"></button>
                 <img src="Images/Christina/point relais.png" alt="logo PR">
                 <p>Point Relais</p>
                 <p>GRATUIT</p> 
             </div>
         </section>
         </section>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+<!------------------------------ FOOTER ---------------------------->
+
+<footer class="footerGrid">
+
+<!------------------------------ 3 BLOCS ---------------------------->
+
+        <div class="footerValeur">
+            <h3>NOS VALEURS</h3>
+            <p>Notre entreprise</p>
+            <p>Nos engagements</p>
+            <p>Recrutement</p>
+            <p>Espace Presse</p>
+            <p>Contactez-nous</p>
+        </div>
+
+        <div class="footerShopping">
+            <h3>E-SHOPPING SELON NOUS</h3>
+            <p>Suivre vos commandes</p>
+            <p>Guide des tailles</p>
+            <p>Retours</p>
+            <p>Livraisons</p>
+            <p>Paiement sécurisé</p>
+        </div>
+
+        <div class="footerPaiement footerFlexbox">
+            <h3>NOS MOYENS DE PAIEMENT</h3>
+            <div class="footerContainerPaiement1 footerFlexbox">
+                <img src="Icones/paypal.png" alt="icone_paypal">
+                <img src="Icones/visa.png" alt="icone_visa">
+            </div>
+            <div class="footerContainerPaiement2 footerFlexbox">
+                <img src="Icones/icons8-logo-mastercard-480.png" alt="icone_mastercard">
+            </div>
+        </div>
+
+    <!------------------------------ NEWSLETTER ---------------------------->
+
+        <div class="footerNewsletter footerFlexbox">
+            <div class="footerNewsletterContainer footerFlexbox">
+                <p>MA <br> NEWSLETTER</p>
+                <input type="email" name="" placeholder="Entrez votre email">
+                <button type="submit">ENVOYER</button>
+            </div>  
+        </div>
+
+    <!------------------------------ RESEAUX SOCIAUX ---------------------------->
+
+        <div class="footerBoiteRs footerFlexbox">
+            <div class="footerRs footerFlexbox">
+                <p>SUIVEZ-NOUS</p>
+                <div class="footerContainerRs footerFlexbox">
+                    <img src="Icones/facebook.png" alt="icone_facebook">
+                    <img src="Icones/instagram.png" alt="icone_instagram">
+                    <img src="Icones/twitter.png" alt="icone_twitter">
+                    <img src="Icones/youtube.png" alt="icone_youTube">
+                </div>
+            </div>
+        </div>
+
+    <!------------------------------ COPYRIGHT ---------------------------->
+
+
+        <div class="footerCopy footerFlexbox">
+            <p>© Copyright © 2021</p>
+            <p>CGV</p>
+            <p>Mentions légales</p>
+            <p>Plan du site</p>
+            <p>Protection des données personnelles</p>
+        </div>
+
+    </footer>
 </body>
 </html>
