@@ -341,74 +341,75 @@ header img{
 .panierflex{
     display: flex;
 }
+.paniertitre, #panierC{
+    font-family: 'Spectral', serif;
+}
+.paniertitre{
+    justify-content: center;
+    padding-top: 97px;
+    padding-bottom: 84px ;
+    font-size: 28px;
+    font-weight: 700;
+}
 #panierC{
-    border: violet solid 2px;
-    display: flex;
+    justify-content: space-between;
     margin-left: 54px;
     margin-right: 51px;
+    margin-bottom: 177px;
+    
 }
 
             /* -------ARTICLE------ */
 
             /* TITRE */
-.paniertitre{
-    display: flex;
-    justify-content: center;
-    padding-top: 97px;
-    padding-bottom: 84px ;
-    font-family: 'Spectral', serif;
-    font-size: 28px;
-    font-weight: 700;
-}
+
 
         /* BLOCK ARTICLE */
-#panierarticle{
 
-    background: #ECECEC ;
-    opacity: 93%;
-}
-.panierpull, .paniersize, .paniercounter, .paniercouleur{
-    font-size: 25px;
+.panierpull, .paniersize, .paniercounter{
     padding-left: 404px ;
     justify-content: center;
 }
-
+.panierpull, .paniersize, .paniercounter, .paniercouleur, #panierpaiement{
+    font-size: 25px;
+}
 /* SECTION PHOTO + NOM + SUPP */
 .panierdetail{
      background: url(Images/Christina/Pull\ Christina.png) no-repeat;
-     height: 100%;
-    justify-content: center;
-    align-items: flex-end;
+     width: 100%;
+}
+.panierarticle, #panierpaiement{
+    background: #ECECEC ;
+    opacity: 93%;
+}
+.panierarticle{
+    height: 414px;
 }
 
 .panierpull{
     padding-top:62px; 
+    
 }
 .paniersupp{
     justify-content: flex-end;
-    padding-right:45px ;
+    padding-right:15% ;
+    padding-bottom:60px ;
 }
 
 /* SECTION COULEUR */
+
+
 .paniercouleur{
-    padding-top:64px ;
-    padding-left: 404px ;
-    justify-content: center;
-}
-.paniercouleur{
-    padding-bottom: 9px;
-    justify-content: center;
+    padding-left: 62%;
 }
 .paniercouleur img{
-    padding-left: 39px;
     border: transparent 10px solid;
 }
-
-/* SECTION TAILLE */
-.paniertaille{
-    
-    padding-left: 65px;
+.rblack{
+    justify-content: flex-end;
 }
+/* SECTION TAILLE */
+
 .paniercounter{
     padding-top: 42px;
 }
@@ -428,16 +429,93 @@ header img{
 .panierprix{
     padding: 38px;
 }
-
+    /* SECTION PANIER */
 #panierpaiement{
-    
-    justify-content: flex-end;
-    border: chartreuse solid 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:54px ;
+}
+.paniertotal {
+    justify-content: space-around;
+    width: 100%;
+    padding-top:55px ;
+    padding-bottom: 25px;
+}
+.panierprix2{
+    font-weight: 700;
+}
+.paimentbutton{
+        border: 0;
+        line-height: 100px;
+        width:421.5px ;
+        margin: 27px ;
+        padding: 0 20px;
+        font-size: 35px;
+        text-align: center;
+        color: #fff;
+        background: rgba(196, 156, 168, 0.5);
+    }
+    .paimentbutton:hover {
+        background-color: rgba(132, 41, 37, .9);
+    }
+
+.frais{
+    font-size: 35px;
+}
+#panierlivraison{
+    flex-direction: column;
+    justify-content: center;
 }
 
-#panierlivraison{
-    border: yellow  solid 2px;
+.paniermaison, .paniermagasin, .pr{
+    border: solid black 1px;
+    background: white;
+    font-size: 14px;
+    width:280.72px ;
+    padding: 02%;
+    margin: 02%;
+    align-items: space-around;
+    justify-content:space-around ;
 }
+.panierchan{
+    padding: 02%;
+}
+.pri{
+    padding-left: 06%;
+}
+.gratuitpr{
+    padding-right: 02%;
+}
+
+.panierboutton {
+    width: 2em;
+    height: 2em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid black;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+.panierboutton:checked {
+    border: white solid 2px;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
             /* PAIMENT */
 

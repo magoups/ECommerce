@@ -82,29 +82,28 @@
     
                     <!----------  PANIER  -------->
         
-        <div class="paniertitre">
+        <div class="paniertitre panierflex">
             <h1>MON PANIER</h1>
         </div>
-    <section id="panierC">
+    <section id="panierC" class="panierflex">
             <!----------  Picture  -------->
-        <div class="panierarticle">
+        <div class="panierarticle panierflex"> 
 
             <div class="panierdetail">
                 <!-- Nom article + supp -->
             <div class="panierpull"><p>Pull Gallo</p></div>
 
             <a href="individuel.html">
-                <div class="supp">
+                <div class="paniersupp panierflex" >
                     <img src="Images/Christina/supprimer.png" alt="croix">
-            </a>    
+            </a> 
+          
         </div>
-
-       
             
             <!-- Couleur + selection de couleur -->
-            <div class="paniercouleur">
-                <p><span class="black">Couleur</span></p>
-                <img src="Images/Christina/couleur.png" alt="">
+            <div class="paniercouleur panierflex">
+                <p><span class="black panierflex">Couleur:</span></p>
+                <img class="rblack panierflex" src="Images/Christina/couleur.png" alt="">
             </div>
             
             <!-- Size  -->
@@ -125,38 +124,41 @@
                 </div>
             </div>
         </div>
+    </div>
 
             <!----------  PAIEMENT  -------->
         <section id="panierpaiement">
-            <div class="paniertotal">Total<span class="panierprix2">45€</span></div>
+            <div class="paniertotal panierflex">Total:<span class="panierprix2">45€</span></div>
             <!-- BOUTON COMMANDE -->
             <div class="paniercommandeBouton">
                 <a href="paiement.html">
-                    <button type="submit">PAIMENT</button>
+                    <button
+                    class="paimentbutton"
+                    type="button">COMMANDE</button>
                 </a>
             </div>
-            <section id="panierlivraison">
+            <section id="panierlivraison" class="panierflex">
             <!-- FRAIS DE LIVRAISON -->
-            <div><h1>Frais de Livraison</h1></div>
+            <div class="frais panierflex"><h1>Frais de Livraison</h1></div>
 
             <!-- TYPE DE LIVRAISON -->
-            <div class="paniermaison" >
-                <button class="panierboutton" type="submit"></button>
+            <div class="paniermaison panierflex" >
+                <input type="checkbox" class="panierboutton"/>
                 <img src="Images/Christina/maison.png" alt="logo maison">
-                <p>Domicile</p>
-                <p>GRATUIT</p> 
+                <p class="panierchan">Domicile</p>
+                <p class="panierchan">GRATUIT</p> 
             </div>
-            <div class="paniermagasin">
-                <button type="submit"></button>
+            <div class="paniermagasin panierflex">
+                <input type="checkbox" class="panierboutton"/>
                 <img src="Images/Christina/magasin.png" alt="logo magasin">
-                <p>Magasin</p>
-                <p>GRATUIT</p> 
+                <p class="panierchan">Magasin</p>
+                <p class="panierchan">GRATUIT</p> 
             </div>
-            <div class="pr">
-                <button type="paniersubmit"></button>
-                <img src="Images/Christina/point relais.png" alt="logo PR">
-                <p>Point Relais</p>
-                <p>GRATUIT</p> 
+            <div class="pr panierflex">
+                <input type="checkbox" class="panierboutton "/>
+                <img class="pri" src="Images/Christina/point relais.png" alt="logopr">
+                <p class=" panierchan">Point Relais</p>
+                <p class=" panierchan">GRATUIT</p> 
             </div>
         </section>
         </section>
