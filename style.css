@@ -302,11 +302,11 @@ header img{
 /* -------------- ECRIRE SOUS CETTE LIGNE --------------- */
 
 
-#panier{
+#panierC{
     border: violet solid 2px;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    margin-left: 54px;
+    margin-right: 51px;
 }
 
             /* -------ARTICLE------ */
@@ -324,11 +324,9 @@ header img{
 
         /* BLOCK ARTICLE */
 #panierarticle{
-    width: 696px;
-    height: 412px;
+
     background: #ECECEC ;
     opacity: 93%;
-    margin: 54px;
 }
 .panierpull, .paniersize, .paniercounter, .paniercouleur{
     font-size: 25px;
@@ -375,15 +373,16 @@ header img{
 .paniercounter{
     padding-top: 42px;
 }
-.panierbutton{
-    
+.panierbutton1{
+    border: black 1px solid;
     background: white;
     width: 30.55px;
     height: 32px;
-    border: black solid 1px;
     gap: 15.28px;
 }
-.panierbutton1{
+.panierbutton{
+    border: black 1px solid;
+    background: white;
     width: 60.34px;
     height: 32px;
 }
@@ -392,6 +391,7 @@ header img{
 }
 
 #panierpaiement{
+    justify-content: flex-end;
     border: chartreuse solid 2px;
 }
 
