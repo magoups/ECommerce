@@ -301,7 +301,9 @@ header img{
 /* ----------------- CLASS : .panierxxxxx --------------- */
 /* -------------- ECRIRE SOUS CETTE LIGNE --------------- */
 
-
+.panierflex{
+    display: flex;
+}
 #panierC{
     border: violet solid 2px;
     display: flex;
@@ -391,6 +393,7 @@ header img{
 }
 
 #panierpaiement{
+    
     justify-content: flex-end;
     border: chartreuse solid 2px;
 }
