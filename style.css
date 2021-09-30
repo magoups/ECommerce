@@ -26,7 +26,7 @@
  * animation heartbeat
  * ----------------------------------------
  */
- @-webkit-keyframes heartbeat {
+  @keyframes headerheartbeat {
     from {
       -webkit-transform: scale(1);
               transform: scale(1);
@@ -60,40 +60,24 @@
               animation-timing-function: ease-out;
     }
   }
-  @keyframes heartbeat {
-    from {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: center center;
-              transform-origin: center center;
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
+
+/**
+* ----------------------------------------
+* animation slide-in-left
+* ----------------------------------------*/
+
+    @keyframes headerCheminslide-in-left {
+    0% {
+    -webkit-transform: translateX(-1000px);
+         transform: translateX(-1000px);
+    opacity: 0;
     }
-    10% {
-      -webkit-transform: scale(0.91);
-              transform: scale(0.91);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
+    100% {
+    -webkit-transform: translateX(0);
+          transform: translateX(0);
+    opacity: 1;
     }
-    17% {
-      -webkit-transform: scale(0.98);
-              transform: scale(0.98);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
     }
-    33% {
-      -webkit-transform: scale(0.87);
-              transform: scale(0.87);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    45% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-  }
   
 body{
     background: #FAFAFA;
@@ -107,10 +91,10 @@ header{
     font-size: clamp(15px, 2em, 20px);
     font-weight: bold;
     height: 140px;
-    width: 100%;  
     grid-template-columns: 207px repeat(4,1fr);
     grid-template-rows: repeat(3,70px);
     grid-template-areas: "logo rech rech rech icone" "logo cat cat cat cat" "chemin chemin chemin chemin chemin";
+    margin-bottom: 70px;
 }
 
 header img{
@@ -190,14 +174,15 @@ header img{
     height: 10px;
 }
 
-.heartbeat {
-	-webkit-animation: heartbeat 1.5s ease-in-out 10 both;
-	        animation: heartbeat 1.5s ease-in-out 10 both;
+.headerheartbeat {
+	-webkit-animation: headerheartbeat 1.5s ease-in-out 10 both;
+	        animation: headerheartbeat 1.5s ease-in-out 10 both;
 }
 
-.promotion{
+.headerpromotion{
     /* background: rgba(224, 147, 55, 0.8); */
     background:rgba(132, 41, 37, .9);
+    color: #FAFAFA;
 }
 
 .headerCategorie{
@@ -225,17 +210,24 @@ header img{
 /* -------------------------------------------------------------------------- */
 
 .headerChemin{
-    font-weight: 100;
+    font-weight: normal;
     grid-area: chemin;
     background: #ECECEC;
     opacity: 93%;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
+.headerChemin span{
+    font-weight: bold;
+}
+
 .headerChemin p{
-    padding: 17px;
-    
+    padding: 17px;  
+}
+
+.headerCheminslide-in-left {
+	 animation: headerCheminslide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /* ------------------ PAGE D'ACCUEIL ------------------- */
@@ -250,8 +242,53 @@ header img{
 
 .accueilGrid{
     display: grid;
-
 }
+
+.accueilBg, .accueilBgText{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ .accueilBg{
+    height: 870px;
+    background: url(Images/Accueil/bgPhoto.png) no-repeat center / cover;
+    filter: grayscale(30%);
+    font-size: clamp(9px,4em,20px);
+    color: #FAFAFA;
+    padding: 18px;
+    margin-bottom: 78px;
+} 
+
+.accueilBg h1{
+    font-size: clamp(15px, 4em, 48px);
+}
+
+.accueilBgText button{
+    border: 1px solid #FAFAFA;
+    color: #FAFAFA;
+    width: 160px;
+    height: 40px;
+    background: transparent;
+    border-radius: 5px;
+    font-size: clamp(9px,4em,20px);
+    font-family: 'Spectral', serif;
+    margin: 16px 0 32px 80px;
+}
+
+/*  ------------------ COUPS DE COEUR ------------------- */
+    
+    .accueilTitre{
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        font-weight: 600;
+    }
+    
+    .accueilTitre img{
+        height: 20px;
+        width: 20px;
+        margin: 15px;
+    }
 
 
 
@@ -442,6 +479,7 @@ footer{
     grid-template-columns: 0.8fr repeat(2, 1fr) 2fr;
     grid-template-rows: repeat(2,1fr) auto;
     grid-template-areas: "val shop pay new" " val shop pay rs" " cop cop cop .";
+    margin-top: 60px;
 }
 
 footer h3{
@@ -534,7 +572,7 @@ footer img{
     font-size: 16px;
 }
 
-/* ----------------------- RESEAU SOCIAUX ------------------------------- */
+/* ----------------------- RESEAUX SOCIAUX ------------------------------- */
 
 .footerBoiteRs{
     justify-content: center;
