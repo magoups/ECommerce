@@ -435,14 +435,13 @@ header img{
 
 footer{
     background: rgba(236, 236, 236, .93);
-    width: 100%;
-    height: 310px;
+    height: auto;
     font-size: 15px;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
-    grid-template-rows:  1fr 1fr 1fr;
+    padding: 20px 15px 10px 46px;
     grid-gap: 10px;
-    padding: 20px;
-    grid-template-areas: "valeur shopping paiement news" "valeur shopping paiement rs" "copyr copyr copyr .";
+    grid-template-columns: 0.8fr repeat(2, 1fr) 2fr;
+    grid-template-rows: repeat(2,1fr) auto;
+    grid-template-areas: "val shop pay new" " val shop pay rs" " cop cop cop .";
 }
 
 footer h3{
@@ -450,49 +449,44 @@ footer h3{
 }
 
 footer img{
-    width: 35px;
-    height: 35px;
+    width: 65px;
+    height: 65px;
 }
 
 /* ----------------------- BLOCS ------------------------------- */
-
-/* .footerContainerBloc{
-    justify-content: space-between;
-    align-items: center;
-} */
-
-.footerBlocSize h3{
-    margin-bottom: 10px;
+.footerValeur h3, .footerShopping h3, .footerPaiement h3{
+    padding: 5px 0 10px 5px;
 }
 
-.footerBlocSize p{
-    padding: 0 20px;
+.footerPaiement h3{
+    text-align: center;
 }
 
-.footerValeurs{
+.footerValeur p, .footerShopping p{
+    padding-left: 25px;
+    line-height: 30px;
+}
 
-    grid-area: valeur;
-    background: burlywood;
+.footerValeur{
+    grid-area: val;
+    /* background-color: rebeccapurple; */
 }
 
 .footerShopping{
-    grid-area: shopping;
-    background: palevioletred;
-}
-
-.footerPaiement{
-    grid-area: paiement;
-    background: greenyellow;
+    grid-area: shop;
+    /* background: lavender; */
 }
 
 /* ----------------------- PAIEMENT ------------------------------- */
 .footerPaiement{
+    grid-area: pay;
+    /* background: lightpink; */
     flex-direction: column;
 }
 
-.footerPaiement img{
-    height: 58px;
-    width: auto;
+.footerPaiement h3{
+    padding: 5px 0 25px 5px;
+
 }
 
 .footerContainerPaiement1{
@@ -506,22 +500,80 @@ footer img{
 /* ----------------------- NEWSLETTER ------------------------------- */
 
 .footerNewsletter{
-   
-    background: lightcoral;
-  
+    grid-area: new;
+    /* background: lightcyan; */
+    align-items: center;
+}
+
+.footerNewsletter input, .footerNewsletter button{
+    border: 1px solid black;
+    font-family: 'Spectral', serif;
+}
+
+.footerNewsletter p{
+    font-size: clamp(12px, 4em,15px);
+    font-weight: bold;
+    padding: 5px 13px;
+}
+
+.footerNewsletter input{
+    background:rgba(236, 236, 236, 0.93);
+    height: 60px;
+    width: 250px;
+    padding-left: 10px;
+    font-size: clamp(12px, 4em,15px);
+}
+
+.footerNewsletter button{
+    background: rgba(132, 41, 37, .9);
+    color: #ECECEC;
+    border: 1px solid black;
+    height: 60px;
+    width: 156px;
+    font-weight:800;
+    font-size: 16px;
 }
 
 /* ----------------------- RESEAU SOCIAUX ------------------------------- */
 
-.footerRs{
+.footerBoiteRs{
+    justify-content: center;
+    /* background: rebeccapurple; */
     
-    background: lightgreen;
- 
+}
+
+.footerRs{
+    grid-area: rs;
+    /* background: lightgreen; */
+    flex-direction: column;
+    width: 270px;
+}
+
+.footerRs p{
+    font-size: clamp(20px, 4em, 35px);
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+.footerContainerRs{
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.footerContainerRs img{
+    height: 35px;
+    width: 35px; 
+    margin: 0 20px;
 }
 
 /* ----------------------- COPYRIGHT ------------------------------- */
 
 .footerCopy{
-    grid-area: copyr;
-    background: lightseagreen;
+    grid-area: cop;
+    font-size: 10px;
+    font-weight: 100;
+    /* background: lightgray; */
+    justify-content: space-around;
+    padding: 10px;
 }
