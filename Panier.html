@@ -82,27 +82,26 @@
     
                     <!----------  PANIER  -------->
         
-        <div class="paniertitre">
+        <div class="paniertitre panierflex">
             <h1>MON PANIER</h1>
         </div>
-    <section id="panierC">
+    <section id="panierC" class="panierflex">
             <!----------  Picture  -------->
-        <div class="panierarticle">
+        <div class="panierarticle panierflex"> 
 
             <div class="panierdetail">
                 <!-- Nom article + supp -->
             <div class="panierpull"><p>Pull Gallo</p></div>
 
             <a href="individuel.html">
-                <div class="supp">
+                <div class="paniersupp panierflex" >
                     <img src="Images/Christina/supprimer.png" alt="croix">
-            </a>    
+            </a> 
+          
         </div>
-
-       
             
             <!-- Couleur + selection de couleur -->
-            <div class="paniercouleur">
+            <div class="paniercouleur panierflex">
                 <p><span class="black">Couleur</span></p>
                 <img src="Images/Christina/couleur.png" alt="">
             </div>
@@ -125,17 +124,20 @@
                 </div>
             </div>
         </div>
+    </div>
 
             <!----------  PAIEMENT  -------->
         <section id="panierpaiement">
-            <div class="paniertotal">Total<span class="panierprix2">45€</span></div>
+            <div class="paniertotal panierflex">Total<span class="panierprix2">45€</span></div>
             <!-- BOUTON COMMANDE -->
             <div class="paniercommandeBouton">
                 <a href="paiement.html">
-                    <button type="submit">PAIMENT</button>
+                    <button
+                    class="paimentbutton"
+                    type="button">COMMANDE</button>
                 </a>
             </div>
-            <section id="panierlivraison">
+            <section id="panierlivraison" class="panierflex">
             <!-- FRAIS DE LIVRAISON -->
             <div><h1>Frais de Livraison</h1></div>
 
