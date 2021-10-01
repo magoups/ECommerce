@@ -346,8 +346,7 @@ header img{
 }
 .paniertitre{
     justify-content: center;
-    padding-top: 97px;
-    padding-bottom: 84px ;
+    padding: 0 0 97px 84px;
     font-size: 28px;
     font-weight: 700;
 }
@@ -388,7 +387,6 @@ header img{
 
 .panierpull{
     padding-top:62px; 
-    
 }
 .paniersupp{
     justify-content: flex-end;
