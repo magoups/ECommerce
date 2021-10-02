@@ -4,56 +4,303 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
 
     <header class="headerGrid">
 
-        <!------------------------------ LOGO ---------------------------->
-        
-                <div class="headerlogo">
-                    <div class="headerLogoSize">
-                        <img src="" alt="logo_de_la_marque">
-                    </div>
-                </div>
-        
-        <!------------------------------ RECHERCHE ---------------------------->
-        
-                <div class="headerRecherche headerFlexbox">
-                    <div class="headerRechercheBoite headerFlexbox">
-                        <p>Recherche</p>
-                        <img class="headerRechercheImage" src="Icones/loupe.png" alt="icone_en_forme_de_loupe">
-                    </div>
-                </div>
-        
-        <!------------------------------ ICONES ---------------------------->
-        
-                <div class="headerIcone headerFlexbox">
-                    <img src="Icones/woman.png" alt="icone_en_forme_de_femme">
-                    <img src="Icones/heart.png" alt="icone_en_forme_de_coeur">
-                    <img src="Icones/shopping-basket.png" alt="icone_en_forme_de_panier">
-                </div>
-        
-        <!------------------------------ CATEGORIES ---------------------------->
-        
-                <ul class="headerCategorie headerFlexbox">
-                    <div class="headerCategorieListe headerFlexbox promotion heartbeat">
-                        <li>PROMOTIONS !</li>
-                    </div>
-                    <div class="headerCategorieListe headerFlexbox vetement">
-                        <li>Vêtements</li>
-                        <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-                    </div>
-                    <div class="headerCategorieListe headerFlexbox chaussure">
-                        <li>Chaussures</li>
-                        <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-                    </div>
-                    <div class="headerCategorieListe headerFlexbox accessoire">
-                        <li>Accessoires</li>
-                        <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-                    </div>
-                </ul>
+<!------------------------------ LOGO ---------------------------->
+
+        <div class="headerlogo">
+            <div class="headerLogoSize">
+                <img src="" alt="logo_de_la_marque">
+            </div>
+        </div>
+
+<!------------------------------ RECHERCHE ---------------------------->
+
+        <div class="headerRecherche headerFlexbox">
+            <div class="headerRechercheBoite headerFlexbox">
+                <p>Recherche</p>
+                <img class="headerRechercheImage" src="Icones/loupe.png" alt="icone_en_forme_de_loupe">
+            </div>
+        </div>
+
+<!------------------------------ ICONES ---------------------------->
+
+        <div class="headerIcone headerFlexbox">
+            <img src="Icones/woman.png" alt="icone_en_forme_de_femme">
+            <img src="Icones/heart.png" alt="icone_en_forme_de_coeur">
+            <img src="Icones/shopping-basket.png" alt="icone_en_forme_de_panier">
+        </div>
+
+<!------------------------------ CATEGORIES ---------------------------->
+
+        <ul class="headerCategorie headerFlexbox">
+            <div class="headerCategorieListe headerFlexbox headerpromotion headerheartbeat">
+                <li>PROMOTIONS !</li>
+            </div>
+            <div class="headerCategorieListe headerFlexbox">
+                <li>Vêtements</li>
+                <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+            </div>
+            <div class="headerCategorieListe headerFlexbox">
+                <li>Chaussures</li>
+                <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+            </div>
+            <div class="headerCategorieListe headerFlexbox">
+                <li>Accessoires</li>
+                <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+            </div>
+        </ul>
     </header>
+
+    <!-- CHEMIN PAIEMENT -->
+
+
+    <section id="chemin">
+        <nav>
+            <div class="headerChemin headerFlexbox">
+                <a href="index.html"><p>Accueil</p></a>
+                <img src="Images/Christina/symbole-de-diamant 10x10.png" alt="icone_en_forme_de_losange">
+                <!-- ACCUEIL -->
+                <a href="collection.html"><p>Collection</p></a>
+                <img src="Images/Christina/symbole-de-diamant 10x10.png" alt="icone_en_forme_de_losange">
+                <!-- COLLECTION -->
+                <a href="individuel.html"><p>Pull</p></a>
+                <img src="Images/Christina/symbole-de-diamant 10x10.png" alt="icone_en_forme_de_losange">
+                <!-- INDIVIDUEL -->
+                <a href="Panier.html"><p>Panier</p></a>
+                <img src="Images/Christina/symbole-de-diamant 10x10.png" alt="icone_en_forme_de_losange">
+                <!-- PANIER -->
+                <a href="paiement.html"><p>Paiement</p></a>
+                <img src="Images/Christina/symbole-de-diamant 10x10.png" alt="icone_en_forme_de_losange">
+                <!-- PAIEMENT -->
+            </div>
+
+            
+        </nav>
+
+<!------------------------------ FIN DU HEADER ---------------------------->
+
+                                  <!-- BOITE PAIEMENT BANCAIRE -->
+                                  <div class="carte">
+        
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <div class="left border">
+                                                <div class="row"> <span class="h1paiement">PAIEMENT</span>
+                                                    <div class="icons"> <img src="https://img.icons8.com/color/48/000000/visa.png" /> <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" /> <img src="https://img.icons8.com/color/48/000000/maestro.png" /> </div>
+                                                </div>
+                                                <form> <span>Nom:</span> <input placeholder="Nom de la carte"> <span>Numéro de carte:</span> <input placeholder="0125 6780 4567 9909">
+                                                    <div class="row">
+                                                        <div class="col-4"><span>Date d'expiration:</span> <input placeholder="YY/MM"> </div>
+                                                        <div class="col-4"><span>CVV:</span> <input id="cvv"> </div>
+                                                    </div> <input type="checkbox" id="save_card" class="align-left"> <label for="save_card">Sauvegarder vos informations pour votre prochain achat</label>
+                                                </form>
+                                            </div>
+                                        </div>
+                        
+                        
+                                                            <!-- BOITE VOTRE COMMANDE -->
+                        
+                        
+                                        <div class="col-md-5">
+                                            <div class="right border">
+                                                <div class="header">Votre commande</div>
+                                                <p>1 article</p>
+                                                <div class="row item">
+                                                    <div class="col-4 align-self-center"><img class="image pull" src="pull gris col V.jpg"></div>
+                                                    <div class="col-8">
+                                                        <div class="row"><b>45€</b></div>
+                                                        <div class="row text-muted">Pull Gallo gris</div>
+                                                        <div class="row">Qté:1</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="row lower">
+                                                    <div class="col text-gauche">Sous-total</div>
+                                                    <div class="col text-droite">49€</div>
+                                                </div>
+                                                <div class="row lower">
+                                                    <div class="col text-gauche">Livraison</div>
+                                                    <div class="col text-droite">Gratuit</div>
+                                                </div>
+                                                <div class="row lower">
+                                                    <div class="col text-gauche"><b>Total de votre commande:</b></div>
+                                                    <div class="col text-droite"><b>49€</b></div>
+                                                </div>
+                                                <div class="row lower">
+                                                    <div class="col text-gauche"><a href="#"><u>Ajoutez un code promo</u></a></div>
+                                                </div> <button class="btn">Valider votre commande</button>
+                                                <p class="text-muted text-center">Winter Forest s'engage dans la protection de vos données.<br>Les informations collectées sont necessaires<br> au traitement et à la livraison des commandes.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div> </div>
+                            </div> 
+                        
+                                                    <!-- BOITE COORDONNEES -->
+                        
+                        </body>
+                        </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------ FOOTER ---------------------------->
+
+    <footer class="footerGrid">
+
+<!------------------------------ 3 BLOCS ---------------------------->
+
+        <div class="footerValeur">
+            <h3>NOS VALEURS</h3>
+            <p>Notre entreprise</p>
+            <p>Nos engagements</p>
+            <p>Recrutement</p>
+            <p>Espace Presse</p>
+            <p>Contactez-nous</p>
+        </div>
+
+        <div class="footerShopping">
+            <h3>E-SHOPPING SELON NOUS</h3>
+            <p>Suivre vos commandes</p>
+            <p>Guide des tailles</p>
+            <p>Retours</p>
+            <p>Livraisons</p>
+            <p>Paiement sécurisé</p>
+        </div>
+
+        <div class="footerPaiement footerFlexbox">
+            <h3>NOS MOYENS DE PAIEMENT</h3>
+            <div class="footerContainerPaiement1 footerFlexbox">
+                <img src="Icones/paypal.png" alt="icone_paypal">
+                <img src="Icones/visa.png" alt="icone_visa">
+            </div>
+            <div class="footerContainerPaiement2 footerFlexbox">
+                <img src="Icones/icons8-logo-mastercard-480.png" alt="icone_mastercard">
+            </div>
+        </div>
+
+    <!------------------------------ NEWSLETTER ---------------------------->
+
+        <div class="footerNewsletter footerFlexbox">
+            <div class="footerNewsletterContainer footerFlexbox">
+                <p>MA <br> NEWSLETTER</p>
+                <input type="email" name="" placeholder="Entrez votre email">
+                <button type="submit">ENVOYER</button>
+            </div>  
+        </div>
+
+    <!------------------------------ RESEAUX SOCIAUX ---------------------------->
+
+        <div class="footerBoiteRs footerFlexbox">
+            <div class="footerRs footerFlexbox">
+                <p>SUIVEZ-NOUS</p>
+                <div class="footerContainerRs footerFlexbox">
+                    <img src="Icones/facebook.png" alt="icone_facebook">
+                    <img src="Icones/instagram.png" alt="icone_instagram">
+                    <img src="Icones/twitter.png" alt="icone_twitter">
+                    <img src="Icones/youtube.png" alt="icone_youTube">
+                </div>
+            </div>
+        </div>
+
+    <!------------------------------ COPYRIGHT ---------------------------->
+
+
+        <div class="footerCopy footerFlexbox">
+            <p>© Copyright © 2021</p>
+            <p>CGV</p>
+            <p>Mentions légales</p>
+            <p>Plan du site</p>
+            <p>Protection des données personnelles</p>
+        </div>
+
+    </footer>
+</div>
 </body>
 </html>
