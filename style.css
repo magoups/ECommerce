@@ -282,9 +282,254 @@ header img{
 
 /* -------------------- PAGE ROBE --------------------- */
 /*  --------------------- ROSA ------------------------ */
-/* ----------------- CLASS : .robexxxxx --------------- */
+/* ----------------- CLASS : .pullxxxxx --------------- */
 /* ------------- ECRIRE SOUS CETTE LIGNE -------------- */
 
+.pullflex{
+    display: flex;
+  }
+
+.pullsection{
+    font-family:'spectral', sans-serif;  
+    background: #FAFAFA;
+    height: 100vh;    /* taille de la section à adapter à tes besoins*/
+    margin: 3%;    
+}
+
+.pulldescription{
+    flex-direction: column;
+    width:600px;
+    padding-left:50px;
+    align-items: center;
+    padding-top: 50px;   
+} 
+
+.pullphoto{
+     background: url(Images/Rosa/pullgalo.png) no-repeat;  
+    height: 890px;
+    width:633px; 
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 30px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+      
+}
+
+.pullstar img{
+     height: 20px;
+     width: 20px;
+     padding-right: 5px;;
+ }
+
+.pullcontainer img{
+        height: 25px;
+        width: 25px;
+    }
+
+.pullcontainer{
+        flex-direction: column; 
+        align-items: center;
+ }
+
+.pullcontainer p{
+    padding-bottom:50px 
+   
+}
+
+.pullcontainer span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.pullbouton{
+    flex-direction: column;
+}
+
+.pullbouton button{
+    width:400px ;
+    height: 51px;
+    background: black ;
+    border-radius:12px ;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+    gap:13px;
+    margin-bottom: 10px;
+    color:white;
+    border: none;
+}
+
+.pullbouton .rose{
+    color:black;
+    background: #C49CA8;
+}
+
+.pullcouleur img{
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.pulltaille p{
+    margin-right: 50px;
+}
+
+.pulltaille{
+    font-size: 20px;
+}
+
+h2{
+    margin-top: 30px;
+}
+
+.pullpicture{
+   
+}
+
+.pullpicture img,.pullphoto img{
+ 
+  width: 20px;
+  height: 20px;
+}
+
+.pullpicture1{
+    background: url('Images/Rosa/cardiganmaille.png') no-repeat center/cover;
+    height: 400px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.pullpicture2{
+    background: url('Images/Rosa/pullrose.png') no-repeat center/cover;
+    height: 400px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.pullpicture3{
+    background: url('Images/Rosa/pullcrochet.png') no-repeat center/cover;
+    height: 400px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.pullpicture4{
+    background: url('Images/Rosa/pullfistonné.png') no-repeat center/cover;
+    height: 400px;
+    width: 300px;
+}
+ 
+.pullrecommandation h2{
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.pullliste{
+    flex-direction: column;
+} 
+
+.pullliste h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+/* .DESC, .Compo, .Entre, .Dimen {
+    display: flex;
+    color:black;
+    border: 1px solid black;
+    cursor: pointer;
+    padding:20px; 
+    font-size: 20px;
+
+    }
+  
+    .pulldown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+   
+ 
+     }
+
+    .pull-downchild { 
+    display: none;
+    min-width: 50px;
+    border: 1px solid black;
+    }
+  
+    .pulldown:hover .pulldown-child { 
+    display: block;
+    }     
+
+
+ */
+ .pullDESC, .pullCompo, .pullEntre, .pullDimen {
+    display: flex;
+    color:black;
+    /* border: 1px solid black; */
+    cursor: pointer;
+    padding:20px; 
+    font-size: 30px;
+    }
+  
+    .pulldropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ 
+     }
+
+    .pulldropdown-child { 
+    display: none;
+    min-width: 50px; 
+    border: 1px solid black;
+    }
+  
+    .pulldropdown:active .pulldropdown-child { 
+    display: block;
+    }     
+
+
+    
+
+
+
+
+    
+    /* .pulldescription{
+    padding-top: 50px;
+    background: brown;
+    flex-direction: column;
+}  */
+
+ /* .pulltitre{
+  
+    background-color: yellow;
+    justify-content: space-between;
+   
+ }  */
+
+     /* .pullcontainer{
+    background: green;
+    flex-direction: column;
+    align-items: center;
+ 
+ } */
+
+/* .pullbouton{
+        flex-direction: column;
+    } */
+
+
+
+/* .pullrecommandation{
+    background:orange;
+    flex-direction: column;
+}  */
 
 
 
@@ -303,9 +548,7 @@ header img{
 /* -------------- ECRIRE SOUS CETTE LIGNE --------------- */
 
 
-div{
-    display: flex;
-}
+
 .panier{
     display: flex;
     justify-content: center;
