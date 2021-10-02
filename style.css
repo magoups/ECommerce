@@ -524,7 +524,7 @@ header img{
 /*  ---------------------- KAHINA ------------------------ */
 /* ---------------- CLASS : .paiementxxxxx --------------- */
 /* -------------- ECRIRE SOUS CETTE LIGNE ---------------- */
-body {
+/* body {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -701,7 +701,7 @@ input[type=checkbox] {
     background-position-y: center
 }
 
-#cvv:hover {}
+#cvv:hover {} */
 
 
 
