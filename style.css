@@ -14,7 +14,6 @@
 /* ----------- S'applique au contenu de toutes les pages  --------- */ 
 /*  ----------------------------- HEADER -------------------------- */
 
-
 *{
     margin: 0;
     padding: 0;
@@ -66,24 +65,23 @@
 * animation slide-in-left
 * ----------------------------------------*/
 
-    @keyframes headerCheminslide-in-left {
-    0% {
-    -webkit-transform: translateX(-1000px);
-         transform: translateX(-1000px);
-    opacity: 0;
-    }
-    100% {
-    -webkit-transform: translateX(0);
-          transform: translateX(0);
-    opacity: 1;
-    }
-    }
+@keyframes headerCheminslide-in-left {
+0% {
+-webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translateX(0);
+        transform: translateX(0);
+opacity: 1;
+}
+}
   
 body{
     background: #FAFAFA;
     font-family: 'Spectral', serif;
     font-size: clamp(12px, 2em, 13px);
-
 }
 
 header{
@@ -214,8 +212,8 @@ header img{
     grid-area: chemin;
     background: #ECECEC;
     opacity: 93%;
-    justify-content: center;
     align-items: center;
+    
 }
 
 .headerChemin span{
@@ -227,14 +225,18 @@ header img{
 }
 
 .headerCheminslide-in-left {
-	 animation: headerCheminslide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: headerCheminslide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-/* ------------------ PAGE D'ACCUEIL ------------------- */
-/*  -------------------- MAGALI ------------------------ */
-/* --------------- CLASS : .accueilxxxxx --------------- */
-/* ------------- ECRIRE SOUS CETTE LIGNE --------------- */
+.accueilHeaderChemin{
+    justify-content: center;
+    align-items: center;
+}
 
+/* ------------------------------------- PAGE D'ACCUEIL --------------------------------- */
+/*  --------------------------------------- MAGALI -------------------------------------- */
+/* --------------------------------- CLASS : .accueilxxxxx ------------------------------ */
+/* -------------------------------- ECRIRE SOUS CETTE LIGNE ----------------------------- */
 
 .accueilFlexbox{
     display: flex;
@@ -242,6 +244,11 @@ header img{
 
 .accueilGrid{
     display: grid;
+}
+
+.accueilMain img{
+    display: block;
+    max-width: 100%;
 }
 
 .accueilBg, .accueilBgText{
@@ -277,21 +284,65 @@ header img{
 
 /*  ------------------ COUPS DE COEUR ------------------- */
     
-    .accueilTitre{
-        justify-content: center;
-        align-items: center;
-        font-size: 35px;
-        font-weight: 600;
-    }
-    
-    .accueilTitre img{
-        height: 20px;
-        width: 20px;
-        margin: 15px;
-    }
+.accueilTitre{
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.accueilTitre img{
+    height: 20px;
+    width: 20px;
+    margin: 15px;
+}
 
 
+/*  ------------------------- ENGAGEMENTS --------------------------- */
 
+.accueilEngagementCont{
+    /* background: blueviolet; */
+    width: 1000px;
+    height: auto;
+    margin: 67px auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: clamp(10px, 4em, 12px);
+    font-weight: 100;
+}
+
+.accueilEngagementIcone{
+    background: rgba(236, 236, 236, 0.93);
+    width: 160px;
+    height: 110px;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.accueilEngagementIcone img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.accueilEngagementIcone h4{
+    font-size: clamp(12px, 4em, 13px);
+    font-weight: 600;
+}
+
+.accueilEngagementIconeStar{
+    justify-content: space-between;
+}
+
+.accueilEngagementIconeStar img{
+    height: 20px;
+    width: 20px;
+    margin-bottom: 10px;
+
+}
 
 
 
@@ -524,7 +575,7 @@ header img{
 /*  ---------------------- KAHINA ------------------------ */
 /* ---------------- CLASS : .paiementxxxxx --------------- */
 /* -------------- ECRIRE SOUS CETTE LIGNE ---------------- */
-body {
+/* body {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -558,7 +609,7 @@ body {
     background:;
     background-size: cover;
     background-repeat: no-repeat
-}
+} 
 
 /* @media(max-width:768px) {
     .card-body {
@@ -567,7 +618,7 @@ body {
         background-repeat: no-repeat
     } */
 
-    .carte-top {
+    /* .carte-top {
         padding: 0.7rem 1rem
     }
 }
@@ -701,7 +752,7 @@ input[type=checkbox] {
     background-position-y: center
 }
 
-#cvv:hover {}
+#cvv:hover {}  */
 
 
 
