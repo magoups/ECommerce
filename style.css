@@ -82,6 +82,7 @@ body{
     background: #FAFAFA;
     font-family: 'Spectral', serif;
     font-size: clamp(12px, 2em, 13px);
+
 }
 
 header{
