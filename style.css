@@ -314,7 +314,50 @@ header img{
 /*  ------------------ CARROUSSEL ------------------- */
 
 
+.accueilslider{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
 
+.slides{
+    width: 100%;
+    animation: glisse 10s infinite;
+}
+.slide{
+    float: left;
+}
+
+@keyframes glisse{
+
+0% {
+    transform: translateX(0);
+}
+10% {
+    transform: translateX(0);
+}
+23% {
+    transform: translateX(-500px);
+}
+33% {
+    transform: translateX(-500px);
+}
+46% {
+    transform: translateX(-1000px);
+}
+56% {
+    transform: translateX(-1000px);
+}
+66% {
+    transform: translateX(-1500px);
+}
+76% {
+    transform: translateX(-1500px);
+}
+100% {
+    transform: translateX(0);
+}
+}
 
 /*  ------------------ COUPS DE COEUR ------------------- */
     
