@@ -173,7 +173,11 @@ header img{
 }
 
 .headerheartbeat {
+<<<<<<< HEAD
 	animation: headerheartbeat 1.5s ease-in-out 10 both;
+=======
+	        animation: headerheartbeat 1.5s ease-in-out 10 both;
+>>>>>>> 719b7fc120e0e3b05099a980ea17709a67ce9bee
 }
 
 .headerpromotion{
@@ -396,7 +400,7 @@ header img{
 }
 .paniertitre{
     justify-content: center;
-    padding: 0 0 97px 84px;
+    padding: 05% 0 97px 84px;
     font-size: 28px;
     font-weight: 700;
 }
@@ -482,6 +486,7 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20%;
     padding-bottom:54px ;
 }
 .paniertotal {
@@ -504,10 +509,9 @@ header img{
         color: #fff;
         background: rgba(196, 156, 168, 0.5);
     }
-    .paimentbutton:hover {
+.paimentbutton:hover {
         background-color: rgba(132, 41, 37, .9);
     }
-
 .frais{
     font-size: 35px;
 }
@@ -527,7 +531,7 @@ header img{
     justify-content:space-around ;
 }
 .panierchan{
-    padding: 02%;
+    padding: 01%;
 }
 .pri{
     padding-left: 06%;
@@ -535,8 +539,11 @@ header img{
 .gratuitpr{
     padding-right: 02%;
 }
-
+.prb{
+    margin-left: 2%;
+}
 .panierboutton {
+    margin-top:2% ;
     width: 2em;
     height: 2em;
     background-color: white;
