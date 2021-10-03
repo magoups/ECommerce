@@ -381,66 +381,95 @@ header img{
     background: #FAFAFA;
     height: 100vh;    /* taille de la section à adapter à tes besoins*/
     margin: 3%;    
-}
-
-.pulldescription{
-    flex-direction: column;
-    width:600px;
-    padding-left:50px;
-    align-items: center;
-    padding-top: 50px;   
 } 
 
+               /* BLOC PHOTOS */
+
 .pullphoto{
-     background: url(Images/Rosa/pullgalo.png) no-repeat;  
+    background: url(Images/Rosa/pullgalo.png) no-repeat;  
     height: 890px;
-    width:633px; 
-    margin-bottom: 20px;
+    width:633px;  
+    margin-bottom: 40px;
+    justify-content: flex-end;
 }
 
-h1{
+.pullpicture img,.pullphoto img{
+ 
+    width: 20px;
+    height: 20px;
+    color: black;
+    background: white;
+  }
+
+                 /* BLOC DROIT */
+
+.pulldescription{
+    
+    width:600px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-left:50px;   
+} 
+
+          /*  NOM PULL */
+
+.pulltitre h1{
     font-size: 30px;
     padding-right: 200px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
       
 }
+
+          /* ETOILES AVIS */
 
 .pullstar img{
      height: 20px;
      width: 20px;
-     padding-right: 5px;;
+     
  }
 
-.pullcontainer img{
-        height: 25px;
-        width: 25px;
-    }
+           /* bloc infos a partir du prix */
 
-.pullcontainer{
-        flex-direction: column; 
-        align-items: center;
- }
-
-.pullcontainer p{
-    padding-bottom:50px 
-   
+ .pullcontainer{
+    flex-direction: column; 
+    align-items: center;
 }
 
+      /* LE PRIX */
 .pullcontainer span{
     font-size: 25px;
-    font-weight: bold;
+    font-weight: bold;   
 }
+
+      /* LES COULEURS */
+.pullcouleur img{
+        height: 20px;
+        width: 20px; 
+        margin:40px 10px;
+}
+
+        /* LES TAILLES */
+.pulltaille p{
+    font-size: 20px;
+    padding-bottom:40px ;
+    padding-right: 20px;
+    padding-left: 20px;   
+}
+
+         /* BOUTONS */
 
 .pullbouton{
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .pullbouton button{
-    width:400px ;
-    height: 51px;
+    width:300px ;
+    height: 50px;
     background: black ;
     border-radius:12px ;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 20px;
     justify-content: center;
     gap:13px;
@@ -454,35 +483,77 @@ h1{
     background: #C49CA8;
 }
 
-.pullcouleur img{
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
+     /*  DETAILS DE L'ARTICLE  */
 
-.pulltaille p{
-    margin-right: 50px;
-}
 
-.pulltaille{
-    font-size: 20px;
-}
+     .pullliste{
+         background:#f1f0f0;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding:50px;
+         width:300px;
+         border-radius:12px ;
+        
+     }
 
-h2{
+     .pullliste h2{
+         padding-bottom: 20px;
+     }
+
+/* .pullliste
+    flex-direction: column;
+} 
+
+.pullliste h2{
+    text-align: center;
+    font-size: 30px;
     margin-top: 30px;
-}
+    margin-bottom: 30px;
+} */
 
+ /* .pullDESC, .pullCompo, .pullEntre, .pullDimen {
+    display: flex;
+    color:black;
+    /* border: 1px solid black; */
+    /* cursor: pointer;
+    padding:20px; 
+    font-size: 30px; */ 
 
-.pullpicture img,.pullphoto img{
+/* }
+  
+    .pulldropdown {
+    position: relative;
+    display: flex;
+flex-direction: column;
+    width: 100%;
  
-  width: 20px;
-  height: 20px;
-}
+     }
+
+    .pulldropdown-child { */
+/* display: none;
+    min-width: 50px; 
+    border: 1px solid black;
+    }
+.pulldropdown:active .pulldropdown-child { 
+    display: block;
+    }      */
+
+
+        /* BLOCS RECOMMANDATIONS */
+
+.pullrecommandation h2{
+      
+            font-size: 30px;
+            padding-bottom: 40px;
+        }
 
 .pullpicture1{
     background: url('Images/Rosa/cardiganmaille.png') no-repeat center/cover;
     height: 400px;
     width: 300px;
     margin-right: 10px;
+    justify-content:flex-end;
 }
 
 .pullpicture2{
@@ -490,6 +561,7 @@ h2{
     height: 400px;
     width: 300px;
     margin-right: 10px;
+    justify-content:flex-end;
 }
 
 .pullpicture3{
@@ -497,129 +569,25 @@ h2{
     height: 400px;
     width: 300px;
     margin-right: 10px;
+    justify-content:flex-end;
 }
 
 .pullpicture4{
     background: url('Images/Rosa/pullfistonné.png') no-repeat center/cover;
     height: 400px;
     width: 300px;
+    justify-content:flex-end;
 }
  
-.pullrecommandation h2{
-    margin-bottom: 50px;
-    font-size: 30px;
-}
-
-.pullliste{
-    flex-direction: column;
-} 
-
-.pullliste h2{
-    text-align: center;
-    font-size: 30px;
-}
-
-/* .DESC, .Compo, .Entre, .Dimen {
-    display: flex;
-    color:black;
-    border: 1px solid black;
-    cursor: pointer;
-    padding:20px; 
-    font-size: 20px;
-
-    }
-  
-    .pulldown {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-   
- 
-     }
-
-    .pull-downchild { 
-    display: none;
-    min-width: 50px;
-    border: 1px solid black;
-    }
-  
-    .pulldown:hover .pulldown-child { 
-    display: block;
-    }     
-
-
- */
- .pullDESC, .pullCompo, .pullEntre, .pullDimen {
-    display: flex;
-    color:black;
-    /* border: 1px solid black; */
-    cursor: pointer;
-    padding:20px; 
-    font-size: 30px;
-    }
-  
-    .pulldropdown {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
- 
-     }
-
-    .pulldropdown-child { 
-    display: none;
-    min-width: 50px; 
-    border: 1px solid black;
-    }
-  
-    .pulldropdown:active .pulldropdown-child { 
-    display: block;
-    }     
-
-
-    
 
 
 
 
     
-    /* .pulldescription{
-    padding-top: 50px;
-    background: brown;
-    flex-direction: column;
-}  */
-
- /* .pulltitre{
+     
+    
   
-    background-color: yellow;
-    justify-content: space-between;
-   
- }  */
-
-     /* .pullcontainer{
-    background: green;
-    flex-direction: column;
-    align-items: center;
- 
- } */
-
-/* .pullbouton{
-        flex-direction: column;
-    } */
-
-
-
-/* .pullrecommandation{
-    background:orange;
-    flex-direction: column;
-}  */
-
-
-
-
-
-
+    
 
 
 
