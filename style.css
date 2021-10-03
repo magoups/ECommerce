@@ -173,11 +173,7 @@ header img{
 }
 
 .headerheartbeat {
-<<<<<<< HEAD
 	animation: headerheartbeat 1.5s ease-in-out 10 both;
-=======
-	        animation: headerheartbeat 1.5s ease-in-out 10 both;
->>>>>>> 719b7fc120e0e3b05099a980ea17709a67ce9bee
 }
 
 .headerpromotion{
