@@ -275,41 +275,53 @@ header img{
 
 .accueilBg, .accueilBgText{
     flex-direction: column;
-    justify-content: space-between;
+    text-align: center;
+    margin-top: 78px;
 }
 
- .accueilBg{
-    height: 870px;
-    background: url(Images/Accueil/bgPhoto.png) no-repeat center / cover;
-    filter: grayscale(30%);
+.accueilBg{
+    margin-top: 70px;
     font-size: clamp(9px,4em,20px);
-    color: #FAFAFA;
-    padding: 18px;
-    margin-bottom: 78px;
 } 
 
-.accueilBg h1{
+.accueilBgText h1{
     font-size: clamp(15px, 4em, 48px);
 }
 
+.accueilBgText p{
+    font-size: clamp(9px, 4em, 15px);    
+}
+
 .accueilBgText button{
-    border: 1px solid #FAFAFA;
-    color: #FAFAFA;
+    border: 1px solid black;
+    color: black;
     width: 160px;
     height: 40px;
     background: transparent;
     border-radius: 5px;
     font-size: clamp(9px,4em,20px);
     font-family: 'Spectral', serif;
-    margin: 16px 0 32px 80px;
+    margin: 16px 0 32px 0;
 }
+
+.accueilBgText button:hover{
+    color: #FAFAFA;
+    font-weight: 500 ;
+    background: rgba(132, 41, 37, .7);
+    border:none;
+}
+
+/*  ------------------ CARROUSSEL ------------------- */
+
+
+
 
 /*  ------------------ COUPS DE COEUR ------------------- */
     
 .accueilTitre{
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -319,24 +331,179 @@ header img{
     margin: 15px;
 }
 
+.accueilTitre h2{
+    margin: 78px 0;
+}
+
+/*  ------------------------ COUPS DE COEUR PHOTOS ------------------- */
+
+.accueilPhoto{
+    height: 100vh;
+    margin: 0 auto 50px;
+    width: 1218px;
+    grid-template-columns: 16.68% 23.79% 15.7% 16.19% 9.21% 9.21% 9.22%;
+    grid-template-rows: 23% 15% 12% 10% 17% 23%;
+    grid-template-areas: "p1 p1 p9 p9 p10 p10 p10"
+                            "p2 p3 p8 p8 p11 p12 p13" 
+                            "p2 p6 p8 p8 p14 p14 p14"  
+                            "p4 p6 p8 p8 p14 p14 p14"
+                            "p4 p6 p8 p8 p15 p16 p16"
+                            "p5 p7 p19 p18 p17 p16 p16";
+    grid-gap: 10px;
+}
+
+.accueilPhoto div{
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueilPhoto a{
+    text-decoration: none;
+    color: transparent;
+    padding: 20px;
+    font-size: clamp(20px, 4em, 30px);
+}
+
+.accueilp a:hover{
+    color:black;
+    background: rgba(236, 236, 236, .8);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.p1{
+    grid-area: p1;
+    background: url(Images/Accueil/p1.jpeg) no-repeat center / cover;
+}
+
+.p2{    /*Chapeau*/
+    grid-area: p2;
+    background: url(Images/Accueil/p2.jpeg) no-repeat bottom center / cover;
+}
+
+.p3{
+    grid-area: p3;
+    background:rgba(132, 41, 37, .9);
+}
+
+.accueilPhotoTexte{
+    font-size: clamp(20px,4em, 50px);
+    font-weight: 700;
+    color: #FAFAFA;
+}
+
+.accueilPhotoTexte span{
+    font-size: clamp(10px,4em, 16px);
+    font-weight: 500;
+    
+}
+
+.p4{     /*Jupe*/
+    grid-area: p4;
+    background: url(Images/Accueil/p4.jpeg) no-repeat center / cover;
+
+}
+
+.p5{    /*Baskets*/
+    grid-area: p5;
+    background: url(Images/Accueil/p5.jpeg) no-repeat center / cover;
+}
+
+.p6{     /*Manteaux*/
+    grid-area: p6;
+    background: url(Images/Accueil/p6.jpeg) no-repeat center / cover;
+}
+
+.p7{       /*Tee - Shirt*/
+    grid-area: p7;
+    background: url(Images/Accueil/p7.jpeg) no-repeat center / cover;
+}
+
+.p8{       /*Pulls*/
+    grid-area: p8;
+    background: url(Images/Accueil/p8.jpeg) no-repeat center / cover;
+}
+
+.p9{          /*Bonnets*/
+    grid-area: p9;
+    background: url(Images/Accueil/p9.jpeg) no-repeat top center / cover;
+}
+
+.p10{          /*Pantalons*/
+    grid-area: p10;
+    background: url(Images/Accueil/p10.jpeg) no-repeat bottom center / cover;
+}
+
+.p11{
+    grid-area: p11;
+    background: url(Images/Accueil/p11.jpeg) no-repeat center / cover;
+}
+
+.p12{  /*Bijoux*/
+    grid-area: p12;
+    background: url(Images/Accueil/p12.jpeg) no-repeat center / cover;
+}
+
+.accueilPhotoBijoux a:hover{
+    padding: 10px;
+}
+
+.p13{
+    grid-area: p13;
+    background: url(Images/Accueil/p13.jpeg) no-repeat center / cover;
+}
+
+.p14{
+    grid-area: p14;
+    background: rgba(132, 41, 37, .9);
+}
+
+.p15{         /*Sacs*/
+    grid-area: p15;
+    background: url(Images/Accueil/p15.jpeg) no-repeat center / cover;
+}
+
+.p16{    /*Robes*/
+    grid-area: p16;
+    background: url(Images/Accueil/p16.jpeg) no-repeat center / cover;
+}
+
+.p17{      /*Bottes*/
+    grid-area: p17;
+    background: url(Images/Accueil/p17.jpeg) no-repeat right center / cover;
+}
+
+.accueilPhotoBottes:hover{
+    line-height: 25px;
+}
+
+.p18{     /**/
+    grid-area: p18;
+    background: url(Images/Accueil/p18.jpeg) no-repeat center / cover;
+}
+
+.p19{  /*Ceinture*/
+    grid-area: p19;
+    background: url(Images/Accueil/p19.jpeg) no-repeat center / cover;
+}
 
 /*  ------------------------- ENGAGEMENTS --------------------------- */
 
 .accueilEngagementCont{
-    /* background: blueviolet; */
-    width: 1000px;
+    width: 60%;
     height: auto;
-    margin: 67px auto;
+    margin: 0px auto;
     justify-content: space-between;
     align-items: center;
-    font-size: clamp(10px, 4em, 12px);
+    font-size: clamp(10px, 4em, 14px);
     font-weight: 100;
 }
 
 .accueilEngagementIcone{
-    background: rgba(236, 236, 236, 0.93);
-    width: 160px;
-    height: 110px;
+    background: rgba(236, 236, 236, .93);
+    width: 180px;
+    height: 130px;
     border-radius: 20px;
     flex-direction: column;
     justify-content: center;
@@ -345,13 +512,13 @@ header img{
 }
 
 .accueilEngagementIcone img{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-bottom: 5px;
 }
 
 .accueilEngagementIcone h4{
-    font-size: clamp(12px, 4em, 13px);
+    font-size: clamp(12px, 4em, 15px);
     font-weight: 600;
 }
 
@@ -836,24 +1003,20 @@ footer img{
 
 .footerValeur{
     grid-area: val;
-    /* background-color: rebeccapurple; */
 }
 
 .footerShopping{
     grid-area: shop;
-    /* background: lavender; */
 }
 
 /* ----------------------- PAIEMENT ------------------------------- */
 .footerPaiement{
     grid-area: pay;
-    /* background: lightpink; */
     flex-direction: column;
 }
 
 .footerPaiement h3{
     padding: 5px 0 25px 5px;
-
 }
 
 .footerContainerPaiement1{
@@ -868,7 +1031,6 @@ footer img{
 
 .footerNewsletter{
     grid-area: new;
-    /* background: lightcyan; */
     align-items: center;
 }
 
@@ -904,14 +1066,11 @@ footer img{
 /* ----------------------- RESEAUX SOCIAUX ------------------------------- */
 
 .footerBoiteRs{
-    justify-content: center;
-    /* background: rebeccapurple; */
-    
+    justify-content: center;    
 }
 
 .footerRs{
     grid-area: rs;
-    /* background: lightgreen; */
     flex-direction: column;
     width: 270px;
 }
@@ -940,7 +1099,6 @@ footer img{
     grid-area: cop;
     font-size: 10px;
     font-weight: 100;
-    /* background: lightgray; */
     justify-content: space-around;
     padding: 10px;
 }
