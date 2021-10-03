@@ -11,7 +11,6 @@
     <title>Season Forrest</title>
 </head>
 <body>
-
     <header class="headerGrid">
 
 <!------------------------------ LOGO ---------------------------->
@@ -41,24 +40,46 @@
 
 <!------------------------------ CATEGORIES ---------------------------->
 
-        <ul class="headerCategorie headerFlexbox">
-            <div class="headerCategorieListe headerFlexbox headerpromotion headerheartbeat">
-                <li>PROMOTIONS !</li>
-            </div>
-            <div class="headerCategorieListe headerFlexbox">
-                <li>Vêtements</li>
-                <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-            </div>
-            <div class="headerCategorieListe headerFlexbox">
-                <li>Chaussures</li>
-                <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-            </div>
-            <div class="headerCategorieListe headerFlexbox">
-                <li>Accessoires</li>
-                <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-            </div>
+<nav class="headerCategorie headerFlexbox">
+    <div class=" headerFlexbox headerpromotion headerheartbeat">
+        <p>PROMOTIONS !</p>
+
+    </div>
+    <div class="headerCategorieListe headerFlexbox">
+        <button>Vêtements</button>
+        <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+        <ul class="headerdropdownChild">
+            <li><a href="#">Manteaux</a></li>
+            <li><a href="individuel.html">Pulls-Over</a></li>
+            <li><a href="#">Pantalons</a></li>
+            <li><a href="#">Robes</a></li>
+            <li><a href="#">Jupes</a></li>
+            <li><a href="#">Tee-shirts</a></li>
         </ul>
-        </div>
+    </div>
+    <div class="headerCategorieListe headerFlexbox">
+        <button>Chaussures</button>
+        <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+        <ul class="headerdropdownChild">
+            <li><a href="#">Bottes</a></li>
+            <li><a href="#">Baskets</a></li>
+            <li><a href="#">Escarpins</a></li>
+            <li><a href="#">Ballerines</a></li>
+            <li><a href="#">Derbies</a></li>
+        </ul>
+    </div>
+    <div class="headerCategorieListe headerFlexbox">
+        <button>Accessoires</button>
+        <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+        <ul class="headerdropdownChild ">
+            <li><a href="#">Sacs</a></li>
+            <li><a href="#">Bijoux</a></li>
+            <li><a href="#">Ceintures</a></li>
+            <li><a href="#">Echarpes</a></li>
+            <li><a href="#">Bonnets</a></li>
+        </ul>
+    </div> 
+</nav>
                 
 <!------------------------------ CHEMIN ---------------------------->
 
@@ -69,14 +90,20 @@
 
 <!------------------------------ PAGE ACCUEIL ---------------------------->
 
-    <main class="accueilMain">
-            <section class="accueilBg accueilFlexbox">
-                <h1>NOUVELLE COLLECTION <br> AUTOMNE - HIVER <br> 2022</h1>
-                <div class="accueilBgText accueilFlexbox">
-                    <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Non adipisci, dignissimos <br> illo veritatis architecto quae obcaecati? <br>Dolores porro molestias quam saepe libero aut harum placeat.</p>
-                    <a href="#"><button>Me découvrir</button></a>
-                </div>
-            </section>
+    <main class="accueil">
+
+        <div class="accueilBgText accueilFlexbox">
+            <h1>NOUVELLE COLLECTION <br> AUTOMNE - HIVER <br> 2022</h1>
+            <p>En route pour un hiver chaud et stylé.</p>
+            <p>Enveloppez-vous dans nos nouveaux pulls et manteaux.</p> 
+            <p>Complétez votre look avec nos accessoires tendances.</p>
+            <a href="collection.html"><button>Me découvrir</button></a>
+        </div>
+
+        <div class="accueilCarroussel">  <!--PLACE POUR LE CARROUSSEL-->
+        </div>
+
+<!-------------------- COUP DE COEUR ----------------------->
     
             <div class="accueilTitre accueilFlexbox">
                 <img src="Icones/losange.png" alt="icone_en_forme_de_losange">
@@ -84,7 +111,31 @@
                 <img src="Icones/losange.png" alt="icone_en_forme_de_losange">
             </div>
 
-            <div class="accueilPhoto"></div>
+<!-------------------- COUP DE COEUR PHOTO ----------------------->
+
+        <section class="accueilPhoto accueilGrid">
+            <div class="p1 accueilp accueilFlexbox"></div>
+            <div class="p2 accueilp accueilFlexbox"><a href="#">Chapeaux</a></div>
+            <div class="p3 accueilPhotoTexte accueilFlexbox">HAKUNA</div>
+            <div class="p4 accueilp accueilFlexbox"><a href="#">Jupes</a></div>
+            <div class="p5 accueilp accueilFlexbox"><a href="#">Baskets</a></div>
+            <div class="p6 accueilp accueilFlexbox"><a href="#">Manteaux</a></div>
+            <div class="p7 accueilp accueilFlexbox"><a href="#">Tee-shirts</a></div>
+            <div class="p8 accueilp accueilFlexbox"><a href="individuel.html">Pulls-Over</a></div>
+            <div class="p9 accueilp accueilFlexbox"><a href="#">Bonnets</a></div>
+            <div class="p10 accueilp accueilFlexbox"><a href="#">Pantalons</a></div>
+            <div class="p11"></div>
+            <div class="p12 accueilp accueilPhotoBijoux accueilFlexbox"><a href="#">Bijoux</a></div>
+            <div class="p13"></div>
+            <div class="p14 accueilPhotoTexte accueilFlexbox"> <p> MATATA <span> <br>La mode de tous les jours</span> </p></div>
+            <div class="p15 accueilp accueilFlexbox"><a href="#">Sacs</a></div>
+            <div class="p16 accueilp accueilFlexbox"><a href="#">Robes</a></div>
+            <div class="p17 accueilp accueilPhotoBottes accueilFlexbox"><a href="#"> B <br> o <br> t <br> t <br> e <br>s</a></div>
+            <div class="p18 accueilp accueilFlexbox"><a href="#">Echarpes</a></div>
+            <div class="p19 accueilp accueilPhotoCeinture accueilFlexbox""><a href="#">Ceintures</a></div> 
+        </section>
+
+<!----------------------- NOS ENGAGEMENTS ----------------------------->
             
             <div class="accueilTitre accueilFlexbox">
                 <img src="Icones/losange.png" alt="icone_en_forme_de_losange">
@@ -92,13 +143,7 @@
                 <img src="Icones/losange.png" alt="icone_en_forme_de_losange">
             </div>
 
-<!-------------------------- COUP DE COEUR ------------------------->
-
-
-
-
-
-<!---------------------------- ENGAGEMENTS ------------------------->
+<!---------------------------- ENGAGEMENTS ICONES------------------------->
 
     <section class="accueilEngagementCont accueilFlexbox">
         <div class="accueilEngagementIcone accueilFlexbox">
@@ -172,8 +217,8 @@
         <div class="footerNewsletter footerFlexbox">
             <div class="footerNewsletterContainer footerFlexbox">
                 <p>MA <br> NEWSLETTER</p>
-                <input type="email" name="" placeholder="Entrez votre email">
-                <button type="submit">ENVOYER</button>
+                <input type="email" name="email" placeholder="Entrez votre email">
+                <a href="mailto:hakunamatata@shop.com"><button type="submit">ENVOYER</button></a>
             </div>  
         </div>
 
@@ -183,11 +228,10 @@
             <div class="footerRs footerFlexbox">
                 <p>SUIVEZ-NOUS</p>
                 <div class="footerContainerRs footerFlexbox">
-                    <img src="Icones/facebook.png" alt="icone_facebook">
-                    <img src="Icones/instagram.png" alt="icone_instagram">
-                    <img src="Icones/twitter.png" alt="icone_twitter">
-                    <img src="Icones/youtube.png" alt="icone_youTube">
-                </div>
+                    <a href="https://www.facebook.com/" target="blank" id="facebook"><img src="Icones/facebookColor.png" alt="icone_facebook"></a>
+                    <a href="https://www.instagram.com/" target="blank"><img src="Icones/instagramColor.png" alt="icone_instagram"></a>
+                    <a href="https://twitter.com/" target="blank"><img src="Icones/twitterColor.png" alt="icone_twitter"></a>
+                    <a href="https://www.youtube.com/" target="blank"><img src="Icones/youtubecolor.png" alt="icone_youTube"></a>                </div>
             </div>
         </div>
 
@@ -200,7 +244,6 @@
             <p>Plan du site</p>
             <p>Protection des données personnelles</p>
         </div>
-
     </footer>
     
 </body>
