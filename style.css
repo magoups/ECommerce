@@ -1,5 +1,4 @@
-/* color: background:rgba(132, 41, 37, .9);
-    Rouge
+/* color: background:rgba(132, 41, 37, .9); Rouge
    opacity: 90%;
    color: #ECECEC;  rgb(236, 236, 236)    Chemin de direction 
    opacity: 93%;
@@ -13,7 +12,6 @@
      */
 
 /* ----------- S'applique au contenu de toutes les pages  --------- */
-
 /*  ----------------------------- HEADER -------------------------- */
 
 * {
@@ -25,8 +23,7 @@
 /**
  * ----------------------------------------
  * animation heartbeat
- * ----------------------------------------
- */
+ * ----------------------------------------*/
 
 @keyframes headerheartbeat {
     from {
@@ -68,6 +65,42 @@
     }
 }
 
+/**
+* ----------------------------------------
+* animation carroussel
+* ----------------------------------------*/
+
+@keyframes glisse {
+
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    23% {
+        transform: translateX(-500px);
+    }
+    33% {
+        transform: translateX(-500px);
+    }
+    46% {
+        transform: translateX(-1000px);
+    }
+    56% {
+        transform: translateX(-1000px);
+    }
+    66% {
+        transform: translateX(-1500px);
+    }
+    76% {
+        transform: translateX(-1500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 body {
     background: #FAFAFA;
     font-family: 'Spectral', serif;
@@ -82,7 +115,7 @@ header {
     grid-template-columns: 207px repeat(4, 1fr);
     grid-template-rows: repeat(3, 70px);
     grid-template-areas: "logo rech rech rech icone" "logo cat cat cat cat" "chemin chemin chemin chemin chemin";
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 }
 
 header img {
@@ -99,9 +132,7 @@ header img {
 }
 
 /* -------------------------------------------------------------------------- */
-
 /* ---------------------------------- LOGO ---------------------------------- */
-
 /* -------------------------------------------------------------------------- */
 
 .headerlogo {
@@ -117,9 +148,7 @@ header img {
 }
 
 /* -------------------------------------------------------------------------- */
-
 /* ------------------------------- RECHERCHE -------------------------------- */
-
 /* -------------------------------------------------------------------------- */
 
 .headerRecherche {
@@ -144,9 +173,7 @@ header img {
 }
 
 /* -------------------------------------------------------------------------- */
-
 /* -------------------------------- ICONES ---------------------------------- */
-
 /* -------------------------------------------------------------------------- */
 
 .headerIcone {
@@ -156,13 +183,10 @@ header img {
 }
 
 /* -------------------------------------------------------------------------- */
-
 /* ------------------------------ CATEGORIES -------------------------------- */
-
 /* -------------------------------------------------------------------------- */
 
-.headerCategorie img,
-.headerChemin img {
+.headerCategorie img, .headerChemin img {
     width: 10px;
     height: 10px;
 }
@@ -238,9 +262,7 @@ header img {
 }
 
 /* -------------------------------------------------------------------------- */
-
 /* -------------------------------- CHEMIN ---------------------------------- */
-
 /* -------------------------------------------------------------------------- */
 
 .headerChemin {
@@ -249,7 +271,6 @@ header img {
     background: #ECECEC;
     opacity: 93%;
     align-items: center;
-
 }
 
 .headerChemin span {
@@ -270,11 +291,8 @@ header img {
 }
 
 /* ------------------------------------- PAGE D'ACCUEIL --------------------------------- */
-
 /*  --------------------------------------- MAGALI -------------------------------------- */
-
 /* --------------------------------- CLASS : .accueilxxxxx ------------------------------ */
-
 /* -------------------------------- ECRIRE SOUS CETTE LIGNE ----------------------------- */
 
 .accueilFlexbox {
@@ -290,8 +308,7 @@ header img {
     max-width: 100%;
 }
 
-.accueilBg,
-.accueilBgText {
+.accueilBg, .accueilBgText {
     flex-direction: column;
     text-align: center;
     margin-top: 78px;
@@ -346,37 +363,6 @@ header img {
     float: left;
 }
 
-@keyframes glisse {
-
-    0% {
-        transform: translateX(0);
-    }
-    10% {
-        transform: translateX(0);
-    }
-    23% {
-        transform: translateX(-500px);
-    }
-    33% {
-        transform: translateX(-500px);
-    }
-    46% {
-        transform: translateX(-1000px);
-    }
-    56% {
-        transform: translateX(-1000px);
-    }
-    66% {
-        transform: translateX(-1500px);
-    }
-    76% {
-        transform: translateX(-1500px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
 /*  ------------------ COUPS DE COEUR ------------------- */
 
 .accueilTitre {
@@ -401,7 +387,7 @@ header img {
 .accueilPhoto {
     height: 100vh;
     margin: 0 auto 50px;
-    width: 1218px;
+    width: 60%;
     grid-template-columns: 16.68% 23.79% 15.7% 16.19% 9.21% 9.21% 9.22%;
     grid-template-rows: 23% 15% 12% 10% 17% 23%;
     grid-template-areas: "p1 p1 p9 p9 p10 p10 p10" "p2 p3 p8 p8 p11 p12 p13" "p2 p6 p8 p8 p14 p14 p14" "p4 p6 p8 p8 p14 p14 p14" "p4 p6 p8 p8 p15 p16 p16" "p5 p7 p19 p18 p17 p16 p16";
@@ -428,84 +414,76 @@ header img {
     text-align: center;
 }
 
-.p1 {
+.p1 {                    /*Matière*/
     grid-area: p1;
     background: url(Images/Accueil/p1.jpeg) no-repeat center / cover;
 }
 
-.p2 {
-    /*Chapeau*/
+.p2 {                     /*Chapeau*/
     grid-area: p2;
     background: url(Images/Accueil/p2.jpeg) no-repeat bottom center / cover;
 }
 
-.p3 {
+.p3 {                     /*Texte*/
     grid-area: p3;
     background: rgba(132, 41, 37, .9);
 }
 
-.accueilPhotoTexte {
+.accueilPhotoTexte p{
     font-size: clamp(20px, 4em, 50px);
     font-weight: 700;
+    text-align: center;
     color: #FAFAFA;
 }
 
 .accueilPhotoTexte span {
     font-size: clamp(10px, 4em, 16px);
-    font-weight: 500;
+    font-weight: 300;
 
 }
 
-.p4 {
-    /*Jupe*/
+.p4 {                      /*Jupe*/
     grid-area: p4;
     background: url(Images/Accueil/p4.jpeg) no-repeat center / cover;
 
 }
 
-.p5 {
-    /*Baskets*/
+.p5 {                    /*Baskets*/
     grid-area: p5;
     background: url(Images/Accueil/p5.jpeg) no-repeat center / cover;
 }
 
-.p6 {
-    /*Manteaux*/
+.p6 {                    /*Manteaux*/
     grid-area: p6;
     background: url(Images/Accueil/p6.jpeg) no-repeat center / cover;
 }
 
-.p7 {
-    /*Tee - Shirt*/
+.p7 {                    /*Tee - Shirt*/
     grid-area: p7;
     background: url(Images/Accueil/p7.jpeg) no-repeat center / cover;
 }
 
-.p8 {
-    /*Pulls*/
+.p8 {                    /*Pulls*/
     grid-area: p8;
     background: url(Images/Accueil/p8.jpeg) no-repeat center / cover;
 }
 
-.p9 {
-    /*Bonnets*/
+.p9 {                   /*Bonnets*/
     grid-area: p9;
     background: url(Images/Accueil/p9.jpeg) no-repeat top center / cover;
 }
 
-.p10 {
-    /*Pantalons*/
+.p10 {                  /*Pantalons*/
     grid-area: p10;
     background: url(Images/Accueil/p10.jpeg) no-repeat bottom center / cover;
 }
 
-.p11 {
+.p11 {                  /*Bijoux*/
     grid-area: p11;
     background: url(Images/Accueil/p11.jpeg) no-repeat center / cover;
 }
 
-.p12 {
-    /*Bijoux*/
+.p12 {                  /*Bijoux*/
     grid-area: p12;
     background: url(Images/Accueil/p12.jpeg) no-repeat center / cover;
 }
@@ -514,30 +492,27 @@ header img {
     padding: 10px;
 }
 
-.p13 {
+.p13 {                  /*Bijoux*/
     grid-area: p13;
     background: url(Images/Accueil/p13.jpeg) no-repeat center / cover;
 }
 
-.p14 {
+.p14 {                     /*Texte*/
     grid-area: p14;
     background: rgba(132, 41, 37, .9);
 }
 
-.p15 {
-    /*Sacs*/
+.p15 {                      /*Sacs*/
     grid-area: p15;
     background: url(Images/Accueil/p15.jpeg) no-repeat center / cover;
 }
 
-.p16 {
-    /*Robes*/
+.p16 {                      /*Robes*/
     grid-area: p16;
     background: url(Images/Accueil/p16.jpeg) no-repeat center / cover;
 }
 
-.p17 {
-    /*Bottes*/
+.p17 {                      /*Bottes*/
     grid-area: p17;
     background: url(Images/Accueil/p17.jpeg) no-repeat right center / cover;
 }
@@ -546,14 +521,12 @@ header img {
     line-height: 25px;
 }
 
-.p18 {
-    /**/
+.p18 {                      /* Echarpe*/
     grid-area: p18;
     background: url(Images/Accueil/p18.jpeg) no-repeat center / cover;
 }
 
-.p19 {
-    /*Ceinture*/
+.p19 {                      /*Ceinture*/
     grid-area: p19;
     background: url(Images/Accueil/p19.jpeg) no-repeat center / cover;
 }
@@ -566,6 +539,7 @@ header img {
     margin: 0px auto;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     font-size: clamp(10px, 4em, 14px);
     font-weight: 100;
 }
@@ -605,19 +579,34 @@ header img {
 
 
 /* ------------------ PAGE COLLECTION ------------------- */
-
 /*  --------------------- MARIAM ------------------------ */
-
 /* --------------- CLASS : .collectionxxxxx ------------- */
-
 /* -------------- ECRIRE SOUS CETTE LIGNE --------------- */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -------------------- PAGE ROBE --------------------- */
-
 /*  --------------------- ROSA ------------------------ */
-
 /* ----------------- CLASS : .pullxxxxx --------------- */
-
 /* ------------- ECRIRE SOUS CETTE LIGNE -------------- */
 
 .pullflex {
@@ -854,11 +843,8 @@ flex-direction: column;
 
 
 /* -------------------- PAGE PANIER --------------------- */
-
 /*  -------------------- CHRISTINA ---------------------- */
-
 /* ----------------- CLASS : .panierxxxxx --------------- */
-
 /* -------------- ECRIRE SOUS CETTE LIGNE --------------- */
 
 .panierflex {
@@ -1081,11 +1067,8 @@ flex-direction: column;
 /* PAIMENT */
 
 /* -------------------- PAGE PAIEMENT -------------------- */
-
 /*  ---------------------- KAHINA ------------------------ */
-
 /* ---------------- CLASS : .paiementxxxxx --------------- */
-
 /* -------------- ECRIRE SOUS CETTE LIGNE ---------------- */
 
 /* body {
@@ -1268,7 +1251,6 @@ input[type=checkbox] {
 #cvv:hover {}  */
 
 /* -------------- NE PAS ECRIRE SOUS CETTE LIGNE ---------------- */
-
 /* ----------------------- FOOTER ------------------------------- */
 
 .footerGrid {
@@ -1302,9 +1284,7 @@ footer img {
 
 /* ----------------------- BLOCS ------------------------------- */
 
-.footerValeur h3,
-.footerShopping h3,
-.footerPaiement h3 {
+.footerBlocSize h3 {
     padding: 5px 0 10px 5px;
 }
 
@@ -1312,8 +1292,7 @@ footer img {
     text-align: center;
 }
 
-.footerValeur p,
-.footerShopping p {
+.footerValeur p, .footerShopping p {
     padding-left: 25px;
     line-height: 30px;
 }
@@ -1352,8 +1331,7 @@ footer img {
     align-items: center;
 }
 
-.footerNewsletter input,
-.footerNewsletter button {
+.footerNewsletter input, .footerNewsletter button {
     border: 1px solid black;
     font-family: 'Spectral', serif;
 }
@@ -1404,12 +1382,12 @@ footer img {
 .footerContainerRs {
     padding-top: 10px;
     justify-content: center;
+    gap: 30px;
 }
 
 .footerContainerRs img {
     height: 35px;
     width: 35px;
-    margin: 0 20px;
 }
 
 /* ----------------------- COPYRIGHT ------------------------------- */
