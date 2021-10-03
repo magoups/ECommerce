@@ -173,8 +173,7 @@ header img{
 }
 
 .headerheartbeat {
-	-webkit-animation: headerheartbeat 1.5s ease-in-out 10 both;
-	        animation: headerheartbeat 1.5s ease-in-out 10 both;
+	animation: headerheartbeat 1.5s ease-in-out 10 both;
 }
 
 .headerpromotion{
@@ -225,7 +224,7 @@ header img{
 }
 
 .headerCheminslide-in-left {
-	animation: headerCheminslide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: headerCheminslide-in-left s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .accueilHeaderChemin{
@@ -312,7 +311,7 @@ header img{
 }
 
 .accueilEngagementIcone{
-    background: rgba(236, 236, 236, 0.93git );
+    background: rgba(236, 236, 236, 0.93);
     width: 160px;
     height: 110px;
     border-radius: 20px;
