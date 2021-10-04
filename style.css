@@ -861,194 +861,159 @@ flex-direction: column;
 
 /* -------------- ECRIRE SOUS CETTE LIGNE --------------- */
 
-.panierflex {
+.panierflex{
     display: flex;
 }
-
-.paniertitre,
-#panierC {
+.paniertitre, #panierC{
     font-family: 'Spectral', serif;
 }
-
-.paniertitre {
+.paniertitre{
     justify-content: center;
     padding: 05% 0 97px 84px;
     font-size: 28px;
     font-weight: 700;
 }
-
-#panierC {
+#panierC{
     justify-content: space-between;
+    gap: 03%;
     margin-left: 54px;
     margin-right: 51px;
     margin-bottom: 177px;
-
 }
 
-/* -------ARTICLE------ */
+            /* -------ARTICLE------ */
 
-/* TITRE */
+            /* TITRE */
 
-/* BLOCK ARTICLE */
 
-.panierpull,
-.paniersize,
-.paniercounter {
-    padding-left: 404px;
+        /* BLOCK ARTICLE */
+
+.panierpull, .paniersize, .paniercounter{
+    padding-left: 404px ;
     justify-content: center;
 }
-
-.panierpull,
-.paniersize,
-.paniercounter,
-.paniercouleur,
-#panierpaiement {
+.panierpull, .paniersize, .paniercounter, .panierct, #panierpaiement{
     font-size: 25px;
 }
-
 /* SECTION PHOTO + NOM + SUPP */
-
-.panierdetail {
-    background: url(Images/Christina/Pull\ Christina.png) no-repeat;
-    width: 100%;
+.panierdetail{
+     /* background: url(Images/Christina/Pull\ Christina.png) no-repeat; */
+     width: 100%;
 }
-
-.panierarticle,
-#panierpaiement {
-    background: #ECECEC;
+.panierarticle, #panierpaiement{
+    background: #ECECEC ;
     opacity: 93%;
 }
-
-.panierarticle {
+.panierarticle{
     height: 414px;
 }
 
-.panierpull {
-    padding-top: 62px;
-}
-
-.paniersupp {
+/* .panierpull{
+    padding-top:62px; 
+} */
+.paniersupp{
     justify-content: flex-end;
-    padding-right: 15%;
-    padding-bottom: 60px;
+    padding-right:15% ;
+    padding-bottom:60px ;
 }
 
 /* SECTION COULEUR */
 
-.paniercouleur {
+
+.panierct{
+    flex-direction: column;
     padding-left: 62%;
 }
-
-.paniercouleur img {
+.panierct img{
     border: transparent 10px solid;
 }
-
-.rblack {
-    justify-content: flex-end;
+.rblack{
+    width: 50px;
 }
-
 /* SECTION TAILLE */
 
-.paniercounter {
+.paniercounter{
     padding-top: 42px;
 }
-
-.panierbutton1 {
+.panierbutton1{
     border: black 1px solid;
     background: white;
     width: 30.55px;
     height: 32px;
     gap: 15.28px;
 }
-
-.panierbutton {
+.panierbutton{
     border: black 1px solid;
     background: white;
     width: 60.34px;
     height: 32px;
 }
-
-.panierprix {
+.panierprix{
     padding: 38px;
 }
-
-/* SECTION PANIER */
-
-#panierpaiement {
+    /* SECTION PANIER */
+#panierpaiement{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20%;
-    padding-bottom: 54px;
+    padding-bottom:54px ;
 }
-
 .paniertotal {
     justify-content: space-around;
     width: 100%;
-    padding-top: 55px;
+    padding-top:55px ;
     padding-bottom: 25px;
 }
-
-.panierprix2 {
+.panierprix2{
     font-weight: 700;
 }
-
-.paimentbutton {
-    border: 0;
-    line-height: 100px;
-    width: 421.5px;
-    margin: 27px;
-    padding: 0 20px;
-    font-size: 35px;
-    text-align: center;
-    color: #fff;
-    background: rgba(196, 156, 168, 0.5);
-}
-
+.paimentbutton{
+        border: 0;
+        line-height: 100px;
+        width:421.5px ;
+        margin: 27px ;
+        padding: 0 20px;
+        font-size: 35px;
+        text-align: center;
+        color: #fff;
+        background: rgba(196, 156, 168, 0.5);
+    }
 .paimentbutton:hover {
-    background-color: rgba(132, 41, 37, .9);
-}
-
-.frais {
+        background-color: rgba(132, 41, 37, .9);
+    }
+.frais{
     font-size: 35px;
 }
-
-#panierlivraison {
+#panierlivraison{
     flex-direction: column;
     justify-content: center;
 }
 
-.paniermaison,
-.paniermagasin,
-.pr {
+.paniermaison, .paniermagasin, .pr{
     border: solid black 1px;
     background: white;
     font-size: 14px;
-    width: 280.72px;
+    width:280.72px ;
     padding: 02%;
     margin: 02%;
     align-items: space-around;
-    justify-content: space-around;
+    justify-content:space-around ;
 }
-
-.panierchan {
+.panierchan{
     padding: 01%;
 }
-
-.pri {
+.pri{
     padding-left: 06%;
 }
-
-.gratuitpr {
+.gratuitpr{
     padding-right: 02%;
 }
-
-.prb {
+.prb{
     margin-left: 2%;
 }
-
 .panierboutton {
-    margin-top: 2%;
+    margin-top:2% ;
     width: 2em;
     height: 2em;
     background-color: white;
@@ -1060,7 +1025,6 @@ flex-direction: column;
     outline: none;
     cursor: pointer;
 }
-
 .panierboutton:checked {
     border: white solid 2px;
     background-color: black;
@@ -1068,7 +1032,26 @@ flex-direction: column;
 
 
 
-
+@media (max-width:1269px) {
+    #panierC {
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    .panierarticle, #panierpaiement{
+        background: none;
+    }
+    .panierdetail{
+        border: olive 2px solid;
+    }
+   
+    .panierdetail{
+        background: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+   }
+}
 
 
 
