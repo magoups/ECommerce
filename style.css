@@ -387,7 +387,7 @@ header img {
 .accueilPhoto {
     height: 100vh;
     margin: 0 auto 50px;
-    width: 60%;
+    width: 80%;
     grid-template-columns: 16.68% 23.79% 15.7% 16.19% 9.21% 9.21% 9.22%;
     grid-template-rows: 23% 15% 12% 10% 17% 23%;
     grid-template-areas: "p1 p1 p9 p9 p10 p10 p10" "p2 p3 p8 p8 p11 p12 p13" "p2 p6 p8 p8 p14 p14 p14" "p4 p6 p8 p8 p14 p14 p14" "p4 p6 p8 p8 p15 p16 p16" "p5 p7 p19 p18 p17 p16 p16";
