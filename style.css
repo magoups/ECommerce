@@ -524,192 +524,151 @@ header img{
 /*  ---------------------- KAHINA ------------------------ */
 /* ---------------- CLASS : .paiementxxxxx --------------- */
 /* -------------- ECRIRE SOUS CETTE LIGNE ---------------- */
-body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(0, 0, 34);
-    font-size: 0.8rem
-}
 
-.carte {
-    max-width: 1000px;
-    margin: 2vh
-}
 
-.carte-top {
-    padding: 0.7rem 5rem
-}
+  
+  
 
-.carte-top a {
-    float: left;
-    margin-top: 0.7rem
-}
+  form#paiement {
+    background: #ececec;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    border: 2px solid red;
+  }
 
-#logo {
-    font-family: 'spectral';
+  form#paiement fieldset {
+    border: none;
+    margin-bottom: 10px;
+  }
+  form#paiement fieldset:last-of-type {
+    margin-bottom: 0;
+  }
+
+  form#paiement legend {
+    color: black;
+    font-size: 16px;
     font-weight: bold;
-    font-size: 1.6rem
+    padding-bottom: 10px;
+    text-shadow: 0 1px 1px black;
+  }
+
+  form#paiement > fieldset > legend:before {
+    content: "Étape" counter(fieldsets) " : ";
+    counter-increment: fieldsets;
+  }
+
+  form#paiement fieldset fieldset legend {
+    color: #111111;
+    font-size: 13px;
+    font-weight: normal;
+    padding-bottom: 0;
+  }
+
+  form#paiement ol li {
+    background: #b9cf6a;
+    background: rgba(255,255,255,.3);
+    border-color: #e3ebc3;
+    border-color: rgba(255,255,255,.6);
+    border-style: solid;
+    border-width: 2px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    line-height: 30px;
+    list-style: none;
+    padding: 5px 10px;
+    margin-bottom: 2px;
+  }
+  form#paiement ol ol li {
+    background: none;
+    border: none;
+    float: left;
+  }
+
+  form#paiement label {
+    float: left;
+    font-size: 13px;
+    width: 110px;
+  }
+  form#paiement fieldset fieldset label {
+    background:none no-repeat left 50%;
+    line-height: 20px;
+    padding: 0 0 0 30px;
+    width: auto;
+  }
+  form#paiement label[for=paypal] {
+    background-image: url(images/imagepaiement/iconepaypalpaiement.png);
+  }
+  form#paiement label[for=visa] {
+    background-image: url(images/imagepaiement/iconevisapaiement.png);
+  }
+  
+  form#paiement label[for=mastercard] {
+    background-image: url(images/imagepaiement/iconemastercardpaiement.png); 
+  }
+  form#paiement fieldset fieldset label:hover {
+    cursor: pointer;
+  }
+
+  form#paiement input:not([type=radio]),
+form#paiement textarea {
+  background: #ffffff;
+  border: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  font: italic 13px spectral, sans-serif;
+  outline: none;
+  padding: 5px;
+  width: 200px;
+}
+form#paiement input:not([type=submit]):focus,
+form#paiement textarea:focus {
+  background: #eaeaea;
+}
+form#paiement input[type=radio] {
+  float: left;
+  margin-right: 5px;
 }
 
-.carte-body {
-    padding: 0 5rem 5rem 5rem;
-    background:;
-    background-size: cover;
-    background-repeat: no-repeat
+form#paiement button {
+    background: #384313;
+    border: none;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    display: block;
+    font: 18px spectral, sans-serif;
+    letter-spacing: 1px;
+    margin: auto;
+    padding: 7px 25px;
+    text-shadow: 0 1px 1px #000000;
+    text-transform: uppercase;
+  }
+  form#paiement button:hover {
+    background: #1e2506;
+    cursor: pointer;
+  }
+/* ----------------------------------BOITE DE COMMANDE----------------------------------- */
+ 
+
+.commandepaiement, .protectionclient, #paiement{
+  border: 2px solid red;
+  height: auto;
+  width: 400px;
+  
 }
 
-/* @media(max-width:768px) {
-    .card-body {
-        padding: 0 1rem 1rem 1rem;
-        background-size: cover;
-        background-repeat: no-repeat
-    } */
-
-    .carte-top {
-        padding: 0.7rem 1rem
-    }
-}
-
-.row {
-    margin: 0
-}
-
-.upper {
-    padding: 1rem 0;
-    justify-content: space-evenly
-}
-
-#three {
-    border-radius: 1rem;
-    width: 22px;
-    height: 22px;
-    margin-right: 3px;
-    border: 1px solid blue;
-    text-align: center;
-    display: inline-block
-}
-
-#paiement {
-    margin: 0;
-    color: black;
-}
-
-.icons {
-    margin-left: auto
-}
-
-form span {
-    color: rgb(179, 179, 179)
-}
-
-form {
-    padding: 2vh 0
-}
-
-input {
-    border: 1px solid rgba(0, 0, 0, 0.137);
-    padding: 1vh;
-    margin-bottom: 4vh;
-    outline: none;
-    width: 100%;
-    background-color: rgb(247, 247, 247)
-}
-
-input:focus::-webkit-input-placeholder {
-    color: transparent
-}
-
-.h1paiement {
-    font-size: 1.5rem
-}
-
-.gauche {
-    background-color: #ffffff;
-    padding: 2vh
-}
-
-.gauche img {
-    width: 2rem
-}
-
-.gauche .col-4 {
-    padding-left: 0
-}
-
-.droite .item {
-    padding: 0.3rem 0
-}
-
-.droite {
-    background-color: #ffffff;
-    padding: 2vh
-}
-
-.col-8 {
-    padding: 0 1vh
-}
-
-.lower {
-    line-height: 2
-}
-
-.btn {
-    background-color: rgb(23, 4, 189);
-    border-color: rgb(23, 4, 189);
-    color: white;
-    width: 100%;
-    font-size: 0.7rem;
-    margin: 4vh 0 1.5vh 0;
-    padding: 1.5vh;
-    border-radius: 0
-}
-
-.btn:focus {
-    box-shadow: none;
-    outline: none;
-    box-shadow: none;
-    color: white;
-    -webkit-box-shadow: none;
-    -webkit-user-select: none;
-    transition: none
-}
-
-.btn:hover {
-    color: white
-}
-
-a {
-    color: black
-}
-
-a:hover {
-    color: black;
-    text-decoration: none
-}
-
-input[type=checkbox] {
-    width: unset;
-    margin-bottom: unset
-}
-
-#cvv {
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.575), rgba(255, 255, 255, 0.541)), url("https://img.icons8.com/material-outlined/24/000000/help.png");
-    background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: center
-}
-
-#cvv:hover {}
-
-
-
-
-
-
-
-
+.flex{
+display: flex;
+} 
+ 
 
 
 
