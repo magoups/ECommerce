@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <title>Individuel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header class="headerGrid">
 
-<!------------------------------ LOGO ---------------------------->
+        <!------------------------------ LOGO ---------------------------->
 
         <div class="headerlogo">
             <div class="headerLogoSize">
@@ -18,7 +25,7 @@
             </div>
         </div>
 
-<!------------------------------ RECHERCHE ---------------------------->
+        <!------------------------------ RECHERCHE ---------------------------->
 
         <div class="headerRecherche headerFlexbox">
             <div class="headerRechercheBoite headerFlexbox">
@@ -27,183 +34,287 @@
             </div>
         </div>
 
-<!------------------------------ ICONES ---------------------------->
+        <!------------------------------ ICONES ---------------------------->
 
         <div class="headerIcone headerFlexbox">
             <img src="Icones/woman.png" alt="icone_en_forme_de_femme">
-            <img src="Icones/heart.png" alt="icone_en_forme_de_coeur">
+            <img src="Icones/sweetheart.png" alt="icone_en_forme_de_coeur">
             <img src="Icones/shopping-basket.png" alt="icone_en_forme_de_panier">
         </div>
 
-<!------------------------------ CATEGORIES ---------------------------->
+        <!------------------------------ CATEGORIES ---------------------------->
 
-        <ul class="headerCategorie headerFlexbox">
-            <div class="headerCategorieListe headerFlexbox promotion heartbeat">
-                <li>PROMOTIONS !</li>
+        <nav class="headerCategorie headerFlexbox">
+            <div class=" headerFlexbox headerpromotion headerheartbeat">
+                <p>PROMOTIONS !</p>
+
             </div>
-            <div class="headerCategorieListe headerFlexbox vetement">
-                <li>Vêtements</li>
+            <div class="headerCategorieListe headerFlexbox">
+                <button>Vêtements</button>
                 <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+                <ul class="headerdropdownChild">
+                    <li><a href="#">Manteaux</a></li>
+                    <li><a href="#">Pulls-Over</a></li>
+                    <li><a href="#">Pantalons</a></li>
+                    <li><a href="#">Robes</a></li>
+                    <li><a href="#">Jupes</a></li>
+                    <li><a href="#">Tee-shirts</a></li>
+                </ul>
             </div>
-            <div class="headerCategorieListe headerFlexbox chaussure">
-                <li>Chaussures</li>
+            <div class="headerCategorieListe headerFlexbox">
+                <button>Chaussures</button>
                 <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+                <ul class="headerdropdownChild">
+                    <li><a href="#">Bottes</a></li>
+                    <li><a href="#">Baskets</a></li>
+                    <li><a href="#">Escarpins</a></li>
+                    <li><a href="#">Ballerines</a></li>
+                    <li><a href="#">Derbies</a></li>
+                </ul>
             </div>
-            <div class="headerCategorieListe headerFlexbox accessoire">
-                <li>Accessoires</li>
+            <div class="headerCategorieListe headerFlexbox">
+                <button>Accessoires</button>
                 <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+                <ul class="headerdropdownChild ">
+                    <li><a href="#">Sacs</a></li>
+                    <li><a href="#">Bijoux</a></li>
+                    <li><a href="#">Ceintures</a></li>
+                    <li><a href="#">Echarpes</a></li>
+                    <li><a href="#">Bonnets</a></li>
+                </ul>
             </div>
-        </ul>
-        </div>
+        </nav>
+
     </header>
-<!------------------------------ FIN DU HEADER ---------------------------->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!------------------------------ FOOTER ---------------------------->
-
-    <footer class="footerGrid">
-
-<!------------------------------ 3 BLOCS ---------------------------->
-
-        <div class="footerValeur">
-            <h3>NOS VALEURS</h3>
-            <p>Notre entreprise</p>
-            <p>Nos engagements</p>
-            <p>Recrutement</p>
-            <p>Espace Presse</p>
-            <p>Contactez-nous</p>
-        </div>
-
-        <div class="footerShopping">
-            <h3>E-SHOPPING SELON NOUS</h3>
-            <p>Suivre vos commandes</p>
-            <p>Guide des tailles</p>
-            <p>Retours</p>
-            <p>Livraisons</p>
-            <p>Paiement sécurisé</p>
-        </div>
-
-        <div class="footerPaiement footerFlexbox">
-            <h3>NOS MOYENS DE PAIEMENT</h3>
-            <div class="footerContainerPaiement1 footerFlexbox">
-                <img src="Icones/paypal.png" alt="icone_paypal">
-                <img src="Icones/visa.png" alt="icone_visa">
+    <!---------CHEMIN--------->
+
+
+    <section id="chemin">
+        <nav>
+            <div class="headerChemin headerFlexbox">
+                <!-- ACCUEIL -->
+                <a href="index.html">
+                    <p>Accueil</p>
+                </a>
+                <img src="Images/Christina/symbole-de-diamant 10x10.png" alt="icone_en_forme_de_losange">
+                <!-- COLLECTION -->
+                <a href="collection.html">
+                    <p>Collection</p>
+                </a>
+                <img src="Images/Christina/symbole-de-diamant 10x10.png" alt="icone_en_forme_de_losange">
+
+                <a href="individuel.html">
+                    <p>Pull</p>
+                </a>
+                <!-- <img src="Images/Christina/symbole-de-diamant 10x10.png" alt="icone_en_forme_de_losange"> -->
             </div>
-            <div class="footerContainerPaiement2 footerFlexbox">
-                <img src="Icones/icons8-logo-mastercard-480.png" alt="icone_mastercard">
+        </nav>
+    </section>
+
+    <!--------SECTION PAGE INDIVIDUELLE----------->
+
+    <section class="pullsection ">
+
+        <section class="pullsection1 pullflex">
+
+            <!-- PHOTO GAUCHE -->
+
+            <div class="pullphoto pullflex ">
+                <img src="Icones/sweetheart.png" alt="icone coeur">
             </div>
-        </div>
 
-    <!------------------------------ NEWSLETTER ---------------------------->
+            <!-- BLOC DROIT -->
 
-        <div class="footerNewsletter footerFlexbox">
-            <div class="footerNewsletterContainer footerFlexbox">
-                <p>MA <br> NEWSLETTER</p>
-                <input type="email" name="" placeholder="Entrez votre email">
-                <button type="submit">ENVOYER</button>
-            </div>  
-        </div>
+            <div class="pulldescription pullflex ">
 
-    <!------------------------------ RESEAUX SOCIAUX ---------------------------->
+                <div class="pulltitre pullflex ">
 
-        <div class="footerBoiteRs footerFlexbox">
-            <div class="footerRs footerFlexbox">
-                <p>SUIVEZ-NOUS</p>
-                <div class="footerContainerRs footerFlexbox">
-                    <img src="Icones/facebook.png" alt="icone_facebook">
-                    <img src="Icones/instagram.png" alt="icone_instagram">
-                    <img src="Icones/twitter.png" alt="icone_twitter">
-                    <img src="Icones/youtube.png" alt="icone_youTube">
+                    <h1>Pull col v recto</h1>
+                             
+                    <div class="pullstar">
+                        <img src="Icones/starnoir.png" alt="icone etoile">
+                        <img src="Icones/starnoir.png" alt="icone etoile">
+                        <img src="Icones/starnoir.png" alt="icone etoile">
+                        <img src="Icones/starnoir.png" alt="icone etoile">
+                        <img src="Icones/starblanche.png" alt="icone etoile">
+                    </div>
+                </div>
+
+                <div class="pullcontainer pullflex">
+
+                    <p><span>49,99€</span></p>
+
+                    <div class="pullcouleur pullflex">
+                        <img src="Icones/rouge.png" alt="icone cercle">
+                        <img src="Icones/marron.png" alt="icone cercle">
+                        <img src="Icones/noir.png" alt="icone cercle">
+                        <img src="Icones/violet.png" alt="icone cercle">
+                    </div>
+
+                    <!-- TAILLE -->
+
+                    <div class="pulltaille pullflex">
+                        <p>S</p>
+                        <p>M</p>
+                        <p>L</p>
+                        <p>XL</p>
+                    </div>
+
+                    <!-- BOUTON -->
+
+                    <div class="pullbouton pullflex">
+                        <a href="Panier.html"> <button>AJOUTER AU PANIER</button></a>
+                        <a href=""> <button class="rose">RESERVER EN BOUTIQUE</button></a>
+                    </div>
+
+
+                    <!-- DESCRIPTION -->
+
+                                       
+                    <div class="pullliste pullflex">
+
+                        <h2>Détails de l'article</h2>
+                        
+                                               <h3> Déscription</h3>
+                                               <p>Tissu en maille fine 100% laine. Tissu élastique.Col V. Bords côtelés.</p>
+                                                
+                                               <h3> Composition</h3>
+                                                 <p>83% viscose,17% polyamide</p>
+
+                                               <h3>Entretien</h3>
+
+                                               <div class="pulllavage">
+                                                 <img src="Icones/icone-entretien/lavage30.jpg" title="Lavage en machine 30°" alt="icone lavage30">
+                                                 <img src="Icones/icone-entretien/pas-eau-javel.jpg" title="Pas de traitement à l'eau de javel" alt="icone eau javel">
+                                                 <img src="Icones/icone-entretien/pas-de-sechage-tambour.jfif" title="Pas de séchage au tambour" alt="icone sechage tambour">
+                                                 <img src="Icones/icone-entretien/repassageinterdit.png" title="Pas de repassage" alt="icone rapassage">
+                                                 <img src="Icones/icone-entretien/aucun-nettoyage-a-sec.png" title="Aucun nettoyage à sec" alt="icone nettoyage a sec">
+                                               </div>
+                                                
+                                            </div>  
+                                         </div>
+                                     </div>
+
+                            </section>
+                                          
+                                              <!-- RECOMMANDATIONS -->
+
+                                       
+
+                         
+
+    <!-- RECOMMANDATIONS -->
+
+
+    <section class="pullsection2">
+
+        <div class="pullrecommandation">
+
+            <h2>Nous vous recommandons</h2>
+
+            <div class="pullpicture pullflex">
+
+                <div class="pullpicture1 pullflex">
+                    <img src="Icones/sweetheart.png" alt="icone coeur">
+                </div>
+                <div class="pullpicture2 pullflex">
+                    <img src="Icones/sweetheart.png" alt="icone coeur">
+                </div>
+                <div class="pullpicture3 pullflex">
+                    <img src="Icones/sweetheart.png" alt="icone coeur">
+                </div>
+                <div class="pullpicture4 pullflex">
+                    <img src="Icones/sweetheart.png" alt="icone coeur">
                 </div>
             </div>
         </div>
 
-    <!------------------------------ COPYRIGHT ---------------------------->
 
-        <div class="footerCopy footerFlexbox">
-            <p>© Copyright © 2021</p>
-            <p>CGV</p>
-            <p>Mentions légales</p>
-            <p>Plan du site</p>
-            <p>Protection des données personnelles</p>
-        </div>
 
-    </footer>
-</body>
-</html>
+    </section>
+
+ 
+
+
+
+
+
+
+
+
+
+    <!--------------------- NE PAS ECRIRE SOUS CETTE LIGNE ---------------------------->
+
+ <!------------------------------ FOOTER ---------------------------->
+
+    <footer class="footerGrid">
+
+    <!------------------------------ 3 BLOCS ---------------------------->
+    
+            <div class="footerValeur footerBlocSize">
+                <h3>NOS VALEURS</h3>
+                <p class="footerBlocP">Notre entreprise</p>
+                <p class="footerBlocP">Nos engagements</p>
+                <p class="footerBlocP">Recrutement</p>
+                <p class="footerBlocP">Espace Presse</p>
+                <p class="footerBlocP">Contactez-nous</p>
+            </div>
+    
+            <div class="footerShopping footerBlocSize">
+                <h3>E-SHOPPING SELON NOUS</h3>
+                <p class="footerBlocP">Suivre vos commandes</p>
+                <p class="footerBlocP">Guide des tailles</p>
+                <p class="footerBlocP">Retours</p>
+                <p class="footerBlocP">Livraisons</p>
+                <p class="footerBlocP">Paiement sécurisé</p>
+            </div>
+    
+            <div class="footerPaiement footerFlexbox footerBlocSize">
+                <h3>NOS MOYENS DE PAIEMENT</h3>
+                <div class="footerContainerPaiement1 footerFlexbox footerBlocP">
+                    <img src="Icones/paypal.png" alt="icone_paypal">
+                    <img src="Icones/visa.png" alt="icone_visa">
+                </div>
+                <div class="footerContainerPaiement2 footerFlexbox footerBlocP">
+                    <img src="Icones/icons8-logo-mastercard-480.png" alt="icone_mastercard">
+                </div>
+            </div>
+    
+        <!------------------------------ NEWSLETTER ---------------------------->
+    
+            <div class="footerNewsletter footerFlexbox">
+                <div class="footerNewsletterContainer footerFlexbox">
+                    <p>MA<br>NEWSLETTER</p>
+                    <div class="footerFlexbox">
+                        <input type="email" name="email" placeholder="Entrez votre email">
+                        <a href="mailto:lookée&stylée@shop.com"><button type="submit">ENVOYER</button></a>
+                    </div>
+                </div>  
+            </div>
+    
+        <!------------------------------ RESEAUX SOCIAUX ---------------------------->
+    
+            <div class="footerBoiteRs footerFlexbox">
+                <div class="footerRs footerFlexbox">
+                    <p>SUIVEZ-NOUS</p>
+                    <div class="footerContainerRs footerFlexbox">
+                        <a href="https://www.facebook.com/" target="blank" id="facebook"><img src="Icones/facebookColor.png" alt="icone_facebook"></a>
+                        <a href="https://www.instagram.com/" target="blank"><img src="Icones/instagramColor.png" alt="icone_instagram"></a>
+                        <a href="https://twitter.com/" target="blank"><img src="Icones/twitterColor.png" alt="icone_twitter"></a>
+                        <a href="https://www.youtube.com/" target="blank"><img src="Icones/youtubecolor.png" alt="icone_youTube"></a>                </div>
+                </div>
+            </div>
+    
+        <!------------------------------ COPYRIGHT ---------------------------->
+    
+            <div class="footerCopy footerFlexbox">
+                <p>© Copyright © 2021</p>
+                <p>CGV</p>
+                <p>Mentions légales</p>
+                <p>Plan du site</p>
+                <p>Protection des données personnelles</p>
+            </div>
+        </footer>
+        
+    </body>
+    </html>

@@ -1,5 +1,4 @@
-/* color: background:rgba(132, 41, 37, .9);
-    Rouge
+/* color: background:rgba(132, 41, 37, .9); Rouge
    opacity: 90%;
    color: #ECECEC;  rgb(236, 236, 236)    Chemin de direction 
    opacity: 93%;
@@ -11,11 +10,11 @@
    font-family: 'Spectral', serif;
 
      */
-/* ----------- S'applique au contenu de toutes les pages  --------- */ 
+
+/* ----------- S'applique au contenu de toutes les pages  --------- */
 /*  ----------------------------- HEADER -------------------------- */
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,89 +23,111 @@
 /**
  * ----------------------------------------
  * animation heartbeat
- * ----------------------------------------
- */
-  @keyframes headerheartbeat {
+ * ----------------------------------------*/
+
+@keyframes headerheartbeat {
     from {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: center center;
-              transform-origin: center center;
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
     }
     10% {
-      -webkit-transform: scale(0.91);
-              transform: scale(0.91);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
     }
     17% {
-      -webkit-transform: scale(0.98);
-              transform: scale(0.98);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
     }
     33% {
-      -webkit-transform: scale(0.87);
-              transform: scale(0.87);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
     }
     45% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
+        transform: scale(1);
+        animation-timing-function: ease-out;
     }
-  }
+}
 
 /**
 * ----------------------------------------
 * animation slide-in-left
 * ----------------------------------------*/
 
-    @keyframes headerCheminslide-in-left {
+@keyframes headerCheminslide-in-left {
     0% {
-    -webkit-transform: translateX(-1000px);
-         transform: translateX(-1000px);
-    opacity: 0;
+        transform: translateX(-1000px);
+        opacity: 0;
     }
     100% {
-    -webkit-transform: translateX(0);
-          transform: translateX(0);
-    opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
+}
+
+/**
+* ----------------------------------------
+* animation carroussel
+* ----------------------------------------*/
+
+@keyframes glisse {
+
+    0% {
+        transform: translateX(0);
     }
-  
-body{
+    10% {
+        transform: translateX(0);
+    }
+    23% {
+        transform: translateX(-500px);
+    }
+    33% {
+        transform: translateX(-500px);
+    }
+    46% {
+        transform: translateX(-1000px);
+    }
+    56% {
+        transform: translateX(-1000px);
+    }
+    66% {
+        transform: translateX(-1500px);
+    }
+    76% {
+        transform: translateX(-1500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+body {
     background: #FAFAFA;
     font-family: 'Spectral', serif;
     font-size: clamp(12px, 2em, 13px);
-
 }
 
-header{
-    /* background: gainsboro; */
+header {
     font-size: clamp(15px, 2em, 20px);
     font-weight: bold;
     height: 140px;
-    grid-template-columns: 207px repeat(4,1fr);
-    grid-template-rows: repeat(3,70px);
+    width: 100%;
+    grid-template-columns: 207px repeat(4, 1fr);
+    grid-template-rows: repeat(3, 70px);
     grid-template-areas: "logo rech rech rech icone" "logo cat cat cat cat" "chemin chemin chemin chemin chemin";
-    margin-bottom: 70px;
+    /* margin-bottom: 60px; */
 }
 
-header img{
+header img {
     width: 40px;
     height: 40px;
 }
 
-.headerFlexbox{
+.headerFlexbox {
     display: flex;
 }
 
-.headerGrid{
+.headerGrid {
     display: grid;
 }
 
@@ -114,43 +135,40 @@ header img{
 /* ---------------------------------- LOGO ---------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-.headerlogo{
+.headerlogo {
     grid-area: logo;
-    /* background: red; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.headerLogoSize{
+.headerLogoSize {
     width: 187px;
     height: 120px;
-        /* background: rgba(224, 147, 55, 0.8); */
 }
 
 /* -------------------------------------------------------------------------- */
 /* ------------------------------- RECHERCHE -------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-.headerRecherche{
+.headerRecherche {
     grid-area: rech;
-    /* background: teal; */
     justify-content: flex-end;
     align-items: center;
 }
 
-.headerRechercheBoite{
+.headerRechercheBoite {
     border-bottom: 2px solid black;
     margin-right: 20px;
     align-items: center;
 }
 
-.headerRecherche p{
+.headerRecherche p {
     margin: 0 0 -10px 10px;
     font-weight: 500;
 }
 
-.headerRechercheImage{
+.headerRechercheImage {
     margin: 0 0 5px 400px;
 }
 
@@ -158,145 +176,406 @@ header img{
 /* -------------------------------- ICONES ---------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-.headerIcone{
+.headerIcone {
     grid-area: icone;
-    /* background: lightpink; */
     justify-content: space-around;
     align-items: center;
-} 
+}
 
 /* -------------------------------------------------------------------------- */
 /* ------------------------------ CATEGORIES -------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-.headerCategorie img, .headerChemin img{
+.headerCategorie img, .headerChemin img {
     width: 10px;
     height: 10px;
 }
 
 .headerheartbeat {
-	-webkit-animation: headerheartbeat 1.5s ease-in-out 10 both;
-	        animation: headerheartbeat 1.5s ease-in-out 10 both;
+    animation: headerheartbeat 1.5s ease-in-out 10 both;
 }
 
-.headerpromotion{
-    /* background: rgba(224, 147, 55, 0.8); */
-    background:rgba(132, 41, 37, .9);
+.headerpromotion {
+    background: rgba(132, 41, 37, .9);
     color: #FAFAFA;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
 }
 
-.headerCategorie{
-    list-style: none;
+.headerCategorie {
     grid-area: cat;
-    /* background: lightblue; */
-    align-items: center;
     text-align: center;
 }
 
-.headerCategorie div{
+.headerCategorie div {
     width: 100%;
 }
 
-.headerCategorieListe{
-    height: 70px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.headerCategorie a {
+    display: block;
+    text-decoration: none;
+    color: black;
 }
 
+.headerCategorieListe {
+    height: 70px;
+    position: relative;
+    display: inline-block;
+}
+
+.headerCategorieListe button {
+    border: none;
+    background: none;
+    font-size: clamp(15px, 2em, 20px);
+    font-weight: bold;
+    font-family: 'Spectral', serif;
+    margin-top: 20px;
+}
+
+/* ---------------------- MENU DEROULANT ------------------------------------ */
+
+.headerdropdownChild {
+    display: none;
+    border-radius: 20px;
+    background: rgba(236, 236, 236, .93);
+    min-width: 50px;
+    z-index: 1000;
+    position: sticky;
+    list-style: none;
+    font-weight: 100;
+}
+
+.headerdropdownChild a {
+    text-decoration: none;
+    display: block;
+}
+
+.headerCategorieListe:hover .headerdropdownChild {
+    display: block;
+    width: 100%;
+}
+
+.headerdropdownChild li a:hover {
+    font-weight: 500;
+    color: rgba(132, 41, 37, .9);
+}
 
 /* -------------------------------------------------------------------------- */
 /* -------------------------------- CHEMIN ---------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-.headerChemin{
+.headerChemin {
     font-weight: normal;
     grid-area: chemin;
     background: #ECECEC;
     opacity: 93%;
+    align-items: center;
+}
+
+.headerChemin span {
+    font-weight: bold;
+}
+
+.headerChemin p {
+    padding: 17px;
+}
+
+.headerCheminslide-in-left {
+    animation: headerCheminslide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.accueilHeaderChemin {
     justify-content: center;
     align-items: center;
 }
 
-.headerChemin span{
-    font-weight: bold;
-}
+/* ------------------------------------- PAGE D'ACCUEIL --------------------------------- */
+/*  --------------------------------------- MAGALI -------------------------------------- */
+/* --------------------------------- CLASS : .accueilxxxxx ------------------------------ */
+/* -------------------------------- ECRIRE SOUS CETTE LIGNE ----------------------------- */
 
-.headerChemin p{
-    padding: 17px;  
-}
-
-.headerCheminslide-in-left {
-	 animation: headerCheminslide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-/* ------------------ PAGE D'ACCUEIL ------------------- */
-/*  -------------------- MAGALI ------------------------ */
-/* --------------- CLASS : .accueilxxxxx --------------- */
-/* ------------- ECRIRE SOUS CETTE LIGNE --------------- */
-
-
-.accueilFlexbox{
+.accueilFlexbox {
     display: flex;
 }
 
-.accueilGrid{
+.accueilGrid {
     display: grid;
 }
 
-.accueilBg, .accueilBgText{
-    flex-direction: column;
-    justify-content: space-between;
+.accueilMain img {
+    display: block;
+    max-width: 100%;
 }
 
- .accueilBg{
-    height: 870px;
-    background: url(Images/Accueil/bgPhoto.png) no-repeat center / cover;
-    filter: grayscale(30%);
-    font-size: clamp(9px,4em,20px);
-    color: #FAFAFA;
-    padding: 18px;
-    margin-bottom: 78px;
-} 
+.accueilBg, .accueilBgText {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 78px;
+}
 
-.accueilBg h1{
+.accueilBg {
+    margin-top: 70px;
+    font-size: clamp(9px, 4em, 20px);
+}
+
+.accueilBgText h1 {
     font-size: clamp(15px, 4em, 48px);
 }
 
-.accueilBgText button{
-    border: 1px solid #FAFAFA;
-    color: #FAFAFA;
+.accueilBgText p {
+    font-size: clamp(9px, 4em, 15px);
+}
+
+.accueilBgText button {
+    border: 1px solid black;
+    color: black;
     width: 160px;
     height: 40px;
     background: transparent;
     border-radius: 5px;
-    font-size: clamp(9px,4em,20px);
+    font-size: clamp(9px, 4em, 20px);
     font-family: 'Spectral', serif;
-    margin: 16px 0 32px 80px;
+    margin: 16px 0 32px 0;
+}
+
+.accueilBgText button:hover {
+    color: #FAFAFA;
+    font-weight: 500;
+    background: rgba(132, 41, 37, .7);
+    border: none;
+}
+
+/*  ------------------ CARROUSSEL ------------------- */
+
+.accueilslider {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slides {
+    width: 100%;
+    animation: glisse 10s infinite;
+}
+
+.slide {
+    float: left;
 }
 
 /*  ------------------ COUPS DE COEUR ------------------- */
-    
-    .accueilTitre{
-        justify-content: center;
-        align-items: center;
-        font-size: 35px;
-        font-weight: 600;
-    }
-    
-    .accueilTitre img{
-        height: 20px;
-        width: 20px;
-        margin: 15px;
-    }
 
+.accueilTitre {
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+}
 
+.accueilTitre img {
+    height: 20px;
+    width: 20px;
+    margin: 15px;
+}
 
+.accueilTitre h2 {
+    margin: 78px 0;
+}
 
+/*  ------------------------ COUPS DE COEUR PHOTOS ------------------- */
 
+.accueilPhoto {
+    height: 100vh;
+    margin: 0 auto 50px;
+    width: 80%;
+    grid-template-columns: 16.68% 23.79% 15.7% 16.19% 9.21% 9.21% 9.22%;
+    grid-template-rows: 23% 15% 12% 10% 17% 23%;
+    grid-template-areas: "p1 p1 p9 p9 p10 p10 p10" "p2 p3 p8 p8 p11 p12 p13" "p2 p6 p8 p8 p14 p14 p14" "p4 p6 p8 p8 p14 p14 p14" "p4 p6 p8 p8 p15 p16 p16" "p5 p7 p19 p18 p17 p16 p16";
+    grid-gap: 10px;
+}
 
+.accueilPhoto div {
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
 
+.accueilPhoto a {
+    text-decoration: none;
+    color: transparent;
+    padding: 20px;
+    font-size: clamp(20px, 4em, 30px);
+}
 
+.accueilp a:hover {
+    color: black;
+    background: rgba(236, 236, 236, .8);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.p1 {                    /*Matière*/
+    grid-area: p1;
+    background: url(Images/Accueil/p1.jpeg) no-repeat center / cover;
+}
+
+.p2 {                     /*Chapeau*/
+    grid-area: p2;
+    background: url(Images/Accueil/p2.jpeg) no-repeat bottom center / cover;
+}
+
+.p3 {                     /*Texte*/
+    grid-area: p3;
+    background: rgba(132, 41, 37, .9);
+}
+
+.accueilPhotoTexte p{
+    font-size: clamp(20px, 4em, 50px);
+    font-weight: 700;
+    text-align: center;
+    color: #FAFAFA;
+}
+
+.accueilPhotoTexte span {
+    font-size: clamp(10px, 4em, 16px);
+    font-weight: 300;
+
+}
+
+.p4 {                      /*Jupe*/
+    grid-area: p4;
+    background: url(Images/Accueil/p4.jpeg) no-repeat center / cover;
+
+}
+
+.p5 {                    /*Baskets*/
+    grid-area: p5;
+    background: url(Images/Accueil/p5.jpeg) no-repeat center / cover;
+}
+
+.p6 {                    /*Manteaux*/
+    grid-area: p6;
+    background: url(Images/Accueil/p6.jpeg) no-repeat center / cover;
+}
+
+.p7 {                    /*Tee - Shirt*/
+    grid-area: p7;
+    background: url(Images/Accueil/p7.jpeg) no-repeat center / cover;
+}
+
+.p8 {                    /*Pulls*/
+    grid-area: p8;
+    background: url(Images/Accueil/p8.jpeg) no-repeat center / cover;
+}
+
+.p9 {                   /*Bonnets*/
+    grid-area: p9;
+    background: url(Images/Accueil/p9.jpeg) no-repeat top center / cover;
+}
+
+.p10 {                  /*Pantalons*/
+    grid-area: p10;
+    background: url(Images/Accueil/p10.jpeg) no-repeat bottom center / cover;
+}
+
+.p11 {                  /*Bijoux*/
+    grid-area: p11;
+    background: url(Images/Accueil/p11.jpeg) no-repeat center / cover;
+}
+
+.p12 {                  /*Bijoux*/
+    grid-area: p12;
+    background: url(Images/Accueil/p12.jpeg) no-repeat center / cover;
+}
+
+.accueilPhotoBijoux a:hover {
+    padding: 10px;
+}
+
+.p13 {                  /*Bijoux*/
+    grid-area: p13;
+    background: url(Images/Accueil/p13.jpeg) no-repeat center / cover;
+}
+
+.p14 {                     /*Texte*/
+    grid-area: p14;
+    background: rgba(132, 41, 37, .9);
+}
+
+.p15 {                      /*Sacs*/
+    grid-area: p15;
+    background: url(Images/Accueil/p15.jpeg) no-repeat center / cover;
+}
+
+.p16 {                      /*Robes*/
+    grid-area: p16;
+    background: url(Images/Accueil/p16.jpeg) no-repeat center / cover;
+}
+
+.p17 {                      /*Bottes*/
+    grid-area: p17;
+    background: url(Images/Accueil/p17.jpeg) no-repeat right center / cover;
+}
+
+.accueilPhotoBottes:hover {
+    line-height: 25px;
+}
+
+.p18 {                      /* Echarpe*/
+    grid-area: p18;
+    background: url(Images/Accueil/p18.jpeg) no-repeat center / cover;
+}
+
+.p19 {                      /*Ceinture*/
+    grid-area: p19;
+    background: url(Images/Accueil/p19.jpeg) no-repeat center / cover;
+}
+
+/* ----------------------------- ENGAGEMENTS ------------------------- */
+
+.accueilEngagementCont {
+    width: 60%;
+    height: auto;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: clamp(10px, 4em, 14px);
+    font-weight: 100;
+}
+
+.accueilEngagementIcone {
+    background: rgba(236, 236, 236, .93);
+    width: 180px;
+    height: 130px;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.accueilEngagementIcone img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.accueilEngagementIcone h4 {
+    font-size: clamp(12px, 4em, 15px);
+    font-weight: 600;
+}
+
+.accueilEngagementIconeStar {
+    justify-content: space-between;
+}
+
+.accueilEngagementIconeStar img {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 10px;
+
+}
 
 
 /* ------------------ PAGE COLLECTION ------------------- */
@@ -316,10 +595,233 @@ header img{
 
 
 
+
+
+
+
+
+
+
+
+
 /* -------------------- PAGE ROBE --------------------- */
 /*  --------------------- ROSA ------------------------ */
-/* ----------------- CLASS : .robexxxxx --------------- */
+/* ----------------- CLASS : .pullxxxxx --------------- */
 /* ------------- ECRIRE SOUS CETTE LIGNE -------------- */
+
+.pullflex {
+    display: flex;
+}
+
+.pullsection {
+    font-family: 'spectral', sans-serif;
+    background: #FAFAFA;
+    height: 100vh;
+    /* taille de la section à adapter à tes besoins*/
+    margin: 3%;
+}
+
+/* BLOC PHOTOS */
+
+
+     .pullphoto{
+    background: url(Images/Rosa/pullgalo.png) no-repeat;   
+    height: 890px;
+    width:633px;  
+     margin-bottom: 40px;
+     justify-content: flex-end;  
+} 
+
+ 
+
+.pullpicture img,
+.pullphoto img {
+
+    width: 20px;
+    height: 20px;
+    color: black;
+    background: white;
+  } 
+
+
+/* BLOC DROIT */
+
+.pulldescription {
+
+    width: 600px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+/*  NOM PULL */
+
+.pulltitre h1 {
+    font-size: 30px;
+    padding-right: 200px;
+    padding-bottom: 40px;
+
+}
+
+/* ETOILES AVIS */
+
+.pullstar img {
+    height: 20px;
+    width: 20px;
+
+}
+
+/* bloc infos a partir du prix */
+
+.pullcontainer {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* LE PRIX */
+
+.pullcontainer span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* LES COULEURS */
+
+.pullcouleur img {
+    height: 20px;
+    width: 20px;
+    margin: 40px 10px;
+}
+
+/* LES TAILLES */
+
+.pulltaille p {
+    font-size: 20px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* BOUTONS */
+
+.pullbouton {
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.pullbouton button {
+    width: 300px;
+    height: 50px;
+    background: black;
+    border-radius: 12px;
+    /* font-weight: bold; */
+    font-size: 15px;
+    justify-content: center;
+    gap: 13px;
+    margin-bottom: 10px;
+    color: white;
+    border: none;
+    font-family: 'spectral', sans-serif;
+}
+
+.pullbouton .rose{
+    background:#C49CA8 ;
+    color: black;
+}
+.pullbouton button:hover{
+    background: rgba(132, 41, 37, .9);
+}
+.pullbouton .rose {
+    background: #C49CA8;
+
+}
+
+
+/*  DETAILS DE L'ARTICLE  */
+
+.pullliste{
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding:50px;
+         width:300px;
+         border-radius:12px ;
+        background:  #ECECEC;
+     }
+
+.pullliste h3{
+         padding-top: 20px;
+     }
+
+.pulllavage img{
+ width: 20px;
+ height: 20px;
+ margin-top: 10px;
+}
+
+.pullliste {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 300px;
+    border-radius: 12px;
+    background: #ECECEC;
+    
+}
+
+.pullliste h2 {
+    padding-bottom: 20px;
+}
+
+
+/* BLOCS RECOMMANDATIONS */
+
+.pullrecommandation h2 {
+
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+
+.pullsection2 {
+    margin-bottom: 200px;
+}
+
+.pullpicture1{
+    background: url('Images/Rosa/Pullviolet.png') no-repeat center/cover;
+    height: 400px;
+    width: 300px;
+    margin-right: 10px;
+    justify-content: flex-end;
+}
+
+.pullpicture2 {
+    background: url('Images/Rosa/pullrose.png') no-repeat center/cover;
+    height: 400px;
+    width: 300px;
+    margin-right: 10px;
+    justify-content: flex-end;
+}
+
+.pullpicture3{
+    background: url('Images/Rosa/Pullvert.png') no-repeat center/cover;
+    height: 400px;
+    width: 300px;
+    margin-right: 10px;
+    justify-content: flex-end;
+}
+
+.pullpicture4{
+    background: url('Images/Rosa/Pullclair.png') no-repeat center/cover;
+    height: 400px;
+    width: 300px;
+    justify-content: flex-end;
+}
+
+
+
 
 
 
@@ -346,16 +848,16 @@ header img{
 }
 .paniertitre{
     justify-content: center;
-    padding: 0 0 97px 84px;
+    padding: 05% 0 97px 84px;
     font-size: 28px;
     font-weight: 700;
 }
 #panierC{
     justify-content: space-between;
+    gap: 03%;
     margin-left: 54px;
     margin-right: 51px;
     margin-bottom: 177px;
-    
 }
 
             /* -------ARTICLE------ */
@@ -369,7 +871,7 @@ header img{
     padding-left: 404px ;
     justify-content: center;
 }
-.panierpull, .paniersize, .paniercounter, .paniercouleur, #panierpaiement{
+.panierpull, .paniersize, .paniercounter, .panierct, #panierpaiement{
     font-size: 25px;
 }
 /* SECTION PHOTO + NOM + SUPP */
@@ -397,14 +899,15 @@ header img{
 /* SECTION COULEUR */
 
 
-.paniercouleur{
+.panierct{
+    flex-direction: column;
     padding-left: 62%;
 }
-.paniercouleur img{
+.panierct img{
     border: transparent 10px solid;
 }
 .rblack{
-    justify-content: flex-end;
+    width: 50px;
 }
 /* SECTION TAILLE */
 
@@ -432,6 +935,7 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20%;
     padding-bottom:54px ;
 }
 .paniertotal {
@@ -443,7 +947,7 @@ header img{
 .panierprix2{
     font-weight: 700;
 }
-.paimentbutton{
+.panierbutton{
         border: 0;
         line-height: 100px;
         width:421.5px ;
@@ -454,10 +958,9 @@ header img{
         color: #fff;
         background: rgba(196, 156, 168, 0.5);
     }
-    .paimentbutton:hover {
+.panierbutton:hover {
         background-color: rgba(132, 41, 37, .9);
     }
-
 .frais{
     font-size: 35px;
 }
@@ -477,7 +980,7 @@ header img{
     justify-content:space-around ;
 }
 .panierchan{
-    padding: 02%;
+    padding: 01%;
 }
 .pri{
     padding-left: 06%;
@@ -485,8 +988,11 @@ header img{
 .gratuitpr{
     padding-right: 02%;
 }
-
+.prb{
+    margin-left: 2%;
+}
 .panierboutton {
+    margin-top:2% ;
     width: 2em;
     height: 2em;
     background-color: white;
@@ -505,6 +1011,43 @@ header img{
 
 
 
+@media (max-width:1269px) {
+    #panierC {
+        border: purple solid 2px;
+        /* width: 50%; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .panierarticle, #panierpaiement{
+        background: none;
+    }
+    .panierarticle{
+       border: red solid 2px;
+       
+     height: 100%; 
+        /* justify-content: flex-end; */
+       
+    }
+   
+    .panierdetail{
+        border: olive 2px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 500px;
+        background: url(Images/Christina/Pull\ Christina.png)no-repeat center;
+        
+   }
+   .panierpull{
+       display: flex;
+       flex-direction: column;
+    border: black 1px solid;
+}
+
+}
 
 
 
@@ -514,20 +1057,66 @@ header img{
 
 
 
-
-            /* PAIMENT */
-
-
-
+/* PAIMENT */
 
 /* -------------------- PAGE PAIEMENT -------------------- */
 /*  ---------------------- KAHINA ------------------------ */
 /* ---------------- CLASS : .paiementxxxxx --------------- */
 /* -------------- ECRIRE SOUS CETTE LIGNE ---------------- */
+<<<<<<< HEAD
+=======
+
+/* body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 34);
+    font-size: 0.8rem
+}
+
+.carte {
+    max-width: 1000px;
+    margin: 2vh
+}
+
+.carte-top {
+    padding: 0.7rem 5rem
+}
+
+.carte-top a {
+    float: left;
+    margin-top: 0.7rem
+}
+
+#logo {
+    font-family: 'spectral';
+    font-weight: bold;
+    font-size: 1.6rem
+}
+
+.carte-body {
+    padding: 0 5rem 5rem 5rem;
+    background:;
+    background-size: cover;
+    background-repeat: no-repeat
+} 
+>>>>>>> 01fbb4fdff81fa3c79ef00242b027cc65232fd99
 
 
+<<<<<<< HEAD
   
   
+=======
+/* .carte-top {
+        padding: 0.7rem 1rem
+    }
+}
+
+.row {
+    margin: 0
+}
+>>>>>>> 01fbb4fdff81fa3c79ef00242b027cc65232fd99
 
   form#paiement {
     background: #ececec;
@@ -665,165 +1254,163 @@ form#paiement button {
   
 }
 
+<<<<<<< HEAD
 .flex{
 display: flex;
 } 
  
 
 
+=======
+#cvv:hover {}  */
+>>>>>>> 01fbb4fdff81fa3c79ef00242b027cc65232fd99
 
 /* -------------- NE PAS ECRIRE SOUS CETTE LIGNE ---------------- */
 /* ----------------------- FOOTER ------------------------------- */
-.footerGrid{
+
+.footerGrid {
     display: grid;
 }
 
-.footerFlexbox{
+.footerFlexbox {
     display: flex;
 }
 
-footer{
+footer {
     background: rgba(236, 236, 236, .93);
     height: auto;
     font-size: 15px;
     padding: 20px 15px 10px 46px;
     grid-gap: 10px;
     grid-template-columns: 0.8fr repeat(2, 1fr) 2fr;
-    grid-template-rows: repeat(2,1fr) auto;
+    grid-template-rows: repeat(2, 1fr) auto;
     grid-template-areas: "val shop pay new" " val shop pay rs" " cop cop cop .";
     margin-top: 60px;
 }
 
-footer h3{
+footer h3 {
     font-size: clamp(12px, 2em, 16px);
 }
 
-footer img{
+footer img {
     width: 65px;
     height: 65px;
 }
 
 /* ----------------------- BLOCS ------------------------------- */
-.footerValeur h3, .footerShopping h3, .footerPaiement h3{
+
+.footerBlocSize h3 {
     padding: 5px 0 10px 5px;
 }
 
-.footerPaiement h3{
+.footerPaiement h3 {
     text-align: center;
 }
 
-.footerValeur p, .footerShopping p{
+.footerValeur p, .footerShopping p {
     padding-left: 25px;
     line-height: 30px;
 }
 
-.footerValeur{
+.footerValeur {
     grid-area: val;
-    /* background-color: rebeccapurple; */
 }
 
-.footerShopping{
+.footerShopping {
     grid-area: shop;
-    /* background: lavender; */
 }
 
 /* ----------------------- PAIEMENT ------------------------------- */
-.footerPaiement{
+
+.footerPaiement {
     grid-area: pay;
-    /* background: lightpink; */
     flex-direction: column;
 }
 
-.footerPaiement h3{
+.footerPaiement h3 {
     padding: 5px 0 25px 5px;
-
 }
 
-.footerContainerPaiement1{
+.footerContainerPaiement1 {
     justify-content: space-around;
 }
 
-.footerContainerPaiement2{
+.footerContainerPaiement2 {
     justify-content: center;
 }
 
 /* ----------------------- NEWSLETTER ------------------------------- */
 
-.footerNewsletter{
+.footerNewsletter {
     grid-area: new;
-    /* background: lightcyan; */
     align-items: center;
 }
 
-.footerNewsletter input, .footerNewsletter button{
+.footerNewsletter input, .footerNewsletter button {
     border: 1px solid black;
     font-family: 'Spectral', serif;
 }
 
-.footerNewsletter p{
-    font-size: clamp(12px, 4em,15px);
+.footerNewsletter p {
+    font-size: clamp(12px, 4em, 15px);
     font-weight: bold;
     padding: 5px 13px;
 }
 
-.footerNewsletter input{
-    background:rgba(236, 236, 236, 0.93);
+.footerNewsletter input {
+    background: rgba(236, 236, 236, 0.93);
     height: 60px;
     width: 250px;
     padding-left: 10px;
-    font-size: clamp(12px, 4em,15px);
+    font-size: clamp(12px, 4em, 15px);
 }
 
-.footerNewsletter button{
+.footerNewsletter button {
     background: rgba(132, 41, 37, .9);
     color: #ECECEC;
     border: 1px solid black;
     height: 60px;
     width: 156px;
-    font-weight:800;
+    font-weight: 800;
     font-size: 16px;
 }
 
 /* ----------------------- RESEAUX SOCIAUX ------------------------------- */
 
-.footerBoiteRs{
+.footerBoiteRs {
     justify-content: center;
-    /* background: rebeccapurple; */
-    
 }
 
-.footerRs{
+.footerRs {
     grid-area: rs;
-    /* background: lightgreen; */
     flex-direction: column;
     width: 270px;
 }
 
-.footerRs p{
+.footerRs p {
     font-size: clamp(20px, 4em, 35px);
     font-weight: bold;
     text-align: center;
     border-bottom: 3px solid black;
 }
 
-.footerContainerRs{
+.footerContainerRs {
     padding-top: 10px;
     justify-content: center;
+    gap: 30px;
 }
 
-.footerContainerRs img{
+.footerContainerRs img {
     height: 35px;
-    width: 35px; 
-    margin: 0 20px;
+    width: 35px;
 }
 
 /* ----------------------- COPYRIGHT ------------------------------- */
 
-.footerCopy{
+.footerCopy {
     grid-area: cop;
     font-size: 10px;
     font-weight: 100;
-    /* background: lightgray; */
     justify-content: space-around;
     padding: 10px;
 }

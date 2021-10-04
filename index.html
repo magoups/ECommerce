@@ -11,7 +11,6 @@
     <title>Season Forrest</title>
 </head>
 <body>
-
     <header class="headerGrid">
 
 <!------------------------------ LOGO ---------------------------->
@@ -41,60 +40,149 @@
 
 <!------------------------------ CATEGORIES ---------------------------->
 
-        <ul class="headerCategorie headerFlexbox">
-            <div class="headerCategorieListe headerFlexbox headerpromotion headerheartbeat">
-                <li>PROMOTIONS !</li>
+        <nav class="headerCategorie headerFlexbox">
+            <div class=" headerFlexbox headerpromotion headerheartbeat">
+                <p>PROMOTIONS !</p>
+
             </div>
-            <div class="headerCategorieListe headerFlexbox vetement">
-                <li>Vêtements</li>
+            <div class="headerCategorieListe headerFlexbox">
+                <button>Vêtements</button>
                 <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+                <ul class="headerdropdownChild">
+                    <li><a href="#">Manteaux</a></li>
+                    <li><a href="individuel.html">Pulls-Over</a></li>
+                    <li><a href="#">Pantalons</a></li>
+                    <li><a href="#">Robes</a></li>
+                    <li><a href="#">Jupes</a></li>
+                    <li><a href="#">Tee-shirts</a></li>
+                </ul>
             </div>
-            <div class="headerCategorieListe headerFlexbox chaussure">
-                <li>Chaussures</li>
+            <div class="headerCategorieListe headerFlexbox">
+                <button>Chaussures</button>
                 <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+                <ul class="headerdropdownChild">
+                    <li><a href="#">Bottes</a></li>
+                    <li><a href="#">Baskets</a></li>
+                    <li><a href="#">Escarpins</a></li>
+                    <li><a href="#">Ballerines</a></li>
+                    <li><a href="#">Derbies</a></li>
+                </ul>
             </div>
-            <div class="headerCategorieListe headerFlexbox accessoire">
-                <li>Accessoires</li>
+            <div class="headerCategorieListe headerFlexbox">
+                <button>Accessoires</button>
                 <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-            </div>
-        </ul>
-        </div>
+                <ul class="headerdropdownChild ">
+                    <li><a href="#">Sacs</a></li>
+                    <li><a href="#">Bijoux</a></li>
+                    <li><a href="#">Ceintures</a></li>
+                    <li><a href="#">Echarpes</a></li>
+                    <li><a href="#">Bonnets</a></li>
+                </ul>
+            </div> 
+        </nav>
                 
 <!------------------------------ CHEMIN ---------------------------->
 
-        <div class="headerChemin headerFlexbox">
+        <div class="headerChemin headerFlexbox accueilHeaderChemin">
             <p class="headerCheminslide-in-left"><span>BLACK FRIDAY:</span> - 30% sur votre article préféré avec le code <span>BF2021</span></p>
         </div>
     </header>
 
 <!------------------------------ PAGE ACCUEIL ---------------------------->
 
-    <main>
-        <main>
-        
-            <section class="accueilBg accueilFlexbox">
-                <h1>NOUVELLE COLLECTION <br> AUTOMNE - HIVER <br> 2022</h1>
-                <div class="accueilBgText accueilFlexbox">
-                    <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Non adipisci, dignissimos <br> illo veritatis architecto quae obcaecati? <br>Dolores porro molestias quam saepe libero aut harum placeat.</p>
-                    <a href="#"><button>Me découvrir</button></a>
+    <main class="accueil">
+
+        <div class="accueilBgText accueilFlexbox">
+            <h1>NOUVELLE COLLECTION <br> AUTOMNE - HIVER <br> 2022</h1>
+            <p>En route pour un hiver chaud et stylé.</p>
+            <p>Enveloppez-vous dans nos nouveaux pulls et manteaux.</p> 
+            <p>Complétez votre look avec nos accessoires tendances.</p>
+            <a href="collection.html"><button>Me découvrir</button></a>
+        </div>
+
+<!--------------------------------- CARROUSSEL ---------------------------------->
+
+        <div class="accueilslider">
+            <div class=slides>
+                <div class="slide">
+                    <img class="ia" src="Images/Christina/imageaccueil.jpg" alt="image d'accueil"/>
                 </div>
-            </section>
+            </div>
+        </div>
+
+<!-------------------- COUP DE COEUR ----------------------->
     
-            <div class="accueilTitre accueilFlexbox">
-                <img src="Icones/losange.png" alt="icone_en_forme_de_losange">
-                <h2>COUPS DE COEUR</h2>
-                <img src="Icones/losange.png" alt="icone_en_forme_de_losange">
+        <div class="accueilTitre accueilFlexbox">
+            <img src="Icones/losange.png" alt="icone_en_forme_de_losange">
+            <h2>COUPS DE COEUR</h2>
+            <img src="Icones/losange.png" alt="icone_en_forme_de_losange">
+        </div>
+
+<!-------------------- COUP DE COEUR PHOTO ----------------------->
+
+        <section class="accueilPhoto accueilGrid">
+            <div class="p1 accueilp accueilFlexbox"></div>
+            <div class="p2 accueilp accueilFlexbox"><a href="#">Chapeaux</a></div>
+            <div class="p3 accueilPhotoTexte accueilFlexbox"><p>LOOKEE</p></div>
+            <div class="p4 accueilp accueilFlexbox"><a href="#">Jupes</a></div>
+            <div class="p5 accueilp accueilFlexbox"><a href="#">Baskets</a></div>
+            <div class="p6 accueilp accueilFlexbox"><a href="#">Manteaux</a></div>
+            <div class="p7 accueilp accueilFlexbox"><a href="#">Tee-shirts</a></div>
+            <div class="p8 accueilp accueilFlexbox"><a href="individuel.html">Pulls-Over</a></div>
+            <div class="p9 accueilp accueilFlexbox"><a href="#">Bonnets</a></div>
+            <div class="p10 accueilp accueilFlexbox"><a href="#">Pantalons</a></div>
+            <div class="p11"></div>
+            <div class="p12 accueilp accueilPhotoBijoux accueilFlexbox"><a href="#">Bijoux</a></div>
+            <div class="p13"></div>
+            <div class="p14 accueilPhotoTexte accueilFlexbox"> <p>STYLEE<span><br>La mode de tous les jours</span> </p></div>
+            <div class="p15 accueilp accueilFlexbox"><a href="#">Sacs</a></div>
+            <div class="p16 accueilp accueilFlexbox"><a href="#">Robes</a></div>
+            <div class="p17 accueilp accueilPhotoBottes accueilFlexbox"><a href="#"> B <br> o <br> t <br> t <br> e <br>s</a></div>
+            <div class="p18 accueilp accueilFlexbox"><a href="#">Echarpes</a></div>
+            <div class="p19 accueilp accueilPhotoCeinture accueilFlexbox""><a href="#">Ceintures</a></div> 
+        </section>
+
+<!----------------------- NOS ENGAGEMENTS ----------------------------->
+            
+        <div class="accueilTitre accueilFlexbox">
+            <img src="Icones/losange.png" alt="icone_en_forme_de_losange">
+            <h2>NOS ENGAGEMENTS</h2>
+            <img src="Icones/losange.png" alt="icone_en_forme_de_losange">
+        </div>
+
+<!---------------------------- ENGAGEMENTS ICONES------------------------->
+
+        <section class="accueilEngagementCont accueilFlexbox">
+            <div class="accueilEngagementIcone accueilFlexbox">
+                <img src="icones/shipped.png" alt="icone_livraison">
+                <h4>LIVRAISON GRATUITE</h4>
+                <p>A domicile ou relais colis <br> dès 50€ d’achats</p>
             </div>
 
-            
-            <div class="accueilPhoto"></div>
-            
-
-            <div class="accueilTitre accueilFlexbox">
-                <img src="Icones/losange.png" alt="icone_en_forme_de_losange">
-                <h2>NOS ENGAGEMENTS</h2>
-                <img src="Icones/losange.png" alt="icone_en_forme_de_losange">
+            <div class="accueilEngagementIcone accueilFlexbox">
+                <img src="icones/exchange.png" alt="icone_retour">
+                <h4>RETOUR GRATUIT</h4>
+                <p>En relais colis sous <br> 30 jours</p>
             </div>
+
+            <div class="accueilEngagementIcone accueilFlexbox">
+                <img src="icones/shield.png" alt="icone_sécurité">
+                <h4>PAIEMENT SÉCURISÉ</h4>
+                <p>100% fiable <br> et sécurisé</p>
+            </div>
+
+            <div class="accueilEngagementIcone accueilFlexbox">
+                <div class="accueilEngagementIconeStar accueilFlexbox">
+                    <img src="icones/star.png" alt="icone_étoile">
+                    <img src="icones/star.png" alt="icone_étoile">
+                    <img src="icones/star.png" alt="icone_étoile">
+                    <img src="icones/star.png" alt="icone_étoile">
+                    <img src="icones/star.png" alt="icone_étoile">
+                </div>
+                <h4>VOTRE SATISFATION</h4>
+                <p> 4,5/5 d’avis positifs <br> de nos clientes </p>
+            </div>
+        </section>
     </main>
 
 <!------------------------------ FOOTER ---------------------------->
@@ -103,31 +191,31 @@
 
 <!------------------------------ 3 BLOCS ---------------------------->
 
-        <div class="footerValeur">
+        <div class="footerValeur footerBlocSize">
             <h3>NOS VALEURS</h3>
-            <p>Notre entreprise</p>
-            <p>Nos engagements</p>
-            <p>Recrutement</p>
-            <p>Espace Presse</p>
-            <p>Contactez-nous</p>
+            <p class="footerBlocP">Notre entreprise</p>
+            <p class="footerBlocP">Nos engagements</p>
+            <p class="footerBlocP">Recrutement</p>
+            <p class="footerBlocP">Espace Presse</p>
+            <p class="footerBlocP">Contactez-nous</p>
         </div>
 
-        <div class="footerShopping">
+        <div class="footerShopping footerBlocSize">
             <h3>E-SHOPPING SELON NOUS</h3>
-            <p>Suivre vos commandes</p>
-            <p>Guide des tailles</p>
-            <p>Retours</p>
-            <p>Livraisons</p>
-            <p>Paiement sécurisé</p>
+            <p class="footerBlocP">Suivre vos commandes</p>
+            <p class="footerBlocP">Guide des tailles</p>
+            <p class="footerBlocP">Retours</p>
+            <p class="footerBlocP">Livraisons</p>
+            <p class="footerBlocP">Paiement sécurisé</p>
         </div>
 
-        <div class="footerPaiement footerFlexbox">
+        <div class="footerPaiement footerFlexbox footerBlocSize">
             <h3>NOS MOYENS DE PAIEMENT</h3>
-            <div class="footerContainerPaiement1 footerFlexbox">
+            <div class="footerContainerPaiement1 footerFlexbox footerBlocP">
                 <img src="Icones/paypal.png" alt="icone_paypal">
                 <img src="Icones/visa.png" alt="icone_visa">
             </div>
-            <div class="footerContainerPaiement2 footerFlexbox">
+            <div class="footerContainerPaiement2 footerFlexbox footerBlocP">
                 <img src="Icones/icons8-logo-mastercard-480.png" alt="icone_mastercard">
             </div>
         </div>
@@ -136,9 +224,11 @@
 
         <div class="footerNewsletter footerFlexbox">
             <div class="footerNewsletterContainer footerFlexbox">
-                <p>MA <br> NEWSLETTER</p>
-                <input type="email" name="" placeholder="Entrez votre email">
-                <button type="submit">ENVOYER</button>
+                <p>MA<br>NEWSLETTER</p>
+                <div class="footerFlexbox">
+                    <input type="email" name="email" placeholder="Entrez votre email">
+                    <a href="mailto:lookée&stylée@shop.com"><button type="submit">ENVOYER</button></a>
+                </div>
             </div>  
         </div>
 
@@ -148,16 +238,14 @@
             <div class="footerRs footerFlexbox">
                 <p>SUIVEZ-NOUS</p>
                 <div class="footerContainerRs footerFlexbox">
-                    <img src="Icones/facebook.png" alt="icone_facebook">
-                    <img src="Icones/instagram.png" alt="icone_instagram">
-                    <img src="Icones/twitter.png" alt="icone_twitter">
-                    <img src="Icones/youtube.png" alt="icone_youTube">
-                </div>
+                    <a href="https://www.facebook.com/" target="blank" id="facebook"><img src="Icones/facebookColor.png" alt="icone_facebook"></a>
+                    <a href="https://www.instagram.com/" target="blank"><img src="Icones/instagramColor.png" alt="icone_instagram"></a>
+                    <a href="https://twitter.com/" target="blank"><img src="Icones/twitterColor.png" alt="icone_twitter"></a>
+                    <a href="https://www.youtube.com/" target="blank"><img src="Icones/youtubecolor.png" alt="icone_youTube"></a>                </div>
             </div>
         </div>
 
     <!------------------------------ COPYRIGHT ---------------------------->
-
 
         <div class="footerCopy footerFlexbox">
             <p>© Copyright © 2021</p>
@@ -166,7 +254,6 @@
             <p>Plan du site</p>
             <p>Protection des données personnelles</p>
         </div>
-
     </footer>
     
 </body>
