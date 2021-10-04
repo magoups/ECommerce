@@ -1012,6 +1012,9 @@ header img {
 
 
 @media (max-width:1269px) {
+    .paniertitre{
+        font-size: 25px;
+    }
     #panierC {
         flex-direction: column;
         align-items: center;
