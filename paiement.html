@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
     <title>Document</title>
 </head>
 <body>
@@ -28,7 +24,7 @@
         <div class="headerRecherche headerFlexbox">
             <div class="headerRechercheBoite headerFlexbox">
                 <p>Recherche</p>
-                <img class="headerRechercheImage" src="Icones/loupe.png" alt="icone_en_forme_de_loupe">
+                <img class="headerRechercheImage" src="Icone/loupe.png" alt="icone_en_forme_de_loupe">
             </div>
         </div>
 
@@ -42,46 +38,23 @@
 
 <!------------------------------ CATEGORIES ---------------------------->
 
-        <nav class="headerCategorie headerFlexbox">
-            <div class=" headerFlexbox headerpromotion headerheartbeat">
-                <p>PROMOTIONS !</p>
-
+        <ul class="headerCategorie headerFlexbox">
+            <div class="headerCategorieListe headerFlexbox promotion heartbeat">
+                <li>PROMOTIONS !</li>
             </div>
-            <div class="headerCategorieListe headerFlexbox">
-                <button>Vêtements</button>
+            <div class="headerCategorieListe headerFlexbox vetement">
+                <li>Vêtements</li>
                 <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-                <ul class="headerdropdownChild">
-                    <li><a href="#">Manteaux</a></li>
-                    <li><a href="#">Pulls-Over</a></li>
-                    <li><a href="#">Pantalons</a></li>
-                    <li><a href="#">Robes</a></li>
-                    <li><a href="#">Jupes</a></li>
-                    <li><a href="#">Tee-shirts</a></li>
-                </ul>
             </div>
-            <div class="headerCategorieListe headerFlexbox">
-                <button>Chaussures</button>
+            <div class="headerCategorieListe headerFlexbox chaussure">
+                <li>Chaussures</li>
                 <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-                <ul class="headerdropdownChild">
-                    <li><a href="#">Bottes</a></li>
-                    <li><a href="#">Baskets</a></li>
-                    <li><a href="#">Escarpins</a></li>
-                    <li><a href="#">Ballerines</a></li>
-                    <li><a href="#">Derbies</a></li>
-                </ul>
             </div>
-            <div class="headerCategorieListe headerFlexbox">
-                <button>Accessoires</button>
+            <div class="headerCategorieListe headerFlexbox accessoire">
+                <li>Accessoires</li>
                 <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-                <ul class="headerdropdownChild ">
-                    <li><a href="#">Sacs</a></li>
-                    <li><a href="#">Bijoux</a></li>
-                    <li><a href="#">Ceintures</a></li>
-                    <li><a href="#">Echarpes</a></li>
-                    <li><a href="#">Bonnets</a></li>
-                </ul>
-            </div> 
-        </nav>
+            </div>
+        </ul>
     </header>
 
     <!-- CHEMIN PAIEMENT -->
@@ -110,108 +83,143 @@
             
         </nav>
 
-<!------------------------------ FIN DU HEADER ---------------------------->
-
-                                  <!-- BOITE PAIEMENT BANCAIRE -->
-                                  <div class="carte">
-        
-                                    <div class="row">
-                                        <div class="col-md-7">
-                                            <div class="left border">
-                                                <div class="row"> <span class="h1paiement">PAIEMENT</span>
-                                                    <div class="icons"> <img src="https://img.icons8.com/color/48/000000/visa.png" /> <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" /> <img src="https://img.icons8.com/color/48/000000/maestro.png" /> </div>
-                                                </div>
-                                                <form> <span>Nom:</span> <input placeholder="Nom de la carte"> <span>Numéro de carte:</span> <input placeholder="0125 6780 4567 9909">
-                                                    <div class="row">
-                                                        <div class="col-4"><span>Date d'expiration:</span> <input placeholder="YY/MM"> </div>
-                                                        <div class="col-4"><span>CVV:</span> <input id="cvv"> </div>
-                                                    </div> <input type="checkbox" id="save_card" class="align-left"> <label for="save_card">Sauvegarder vos informations pour votre prochain achat</label>
-                                                </form>
-                                            </div>
-                                        </div>
+<!------------------------------ FIN DU HEADER ---------------------------->                                          
                         
+ <!-- ------------------------------- formulaire paiement> ----------------------->                                                         -->
+
+                          
+                          <bodypaiement></bodypaiement>
+                          <form id=paiement flex>
+                            <fieldset>
+                              <legend>Votre identité</legend>
+                          
+                              <ol>
+                                <li>
+                                  <label for=nom>Nom</label>
+                                  <input id=nom name=nom type=text placeholder="Prénom et nom" required autofocus>
+                                </li>
+                                <li>
+                                  <label for=email>Email</label>
+                                  <input id=email name=email type=email placeholder="exemple@domaine.com" required>
+                                </li>
+                                <li>
+                                  <label for=telephone>Téléphone</label>
+                                  <input id=telephone name=telephone type=tel placeholder="par ex&nbsp;: +3375500000000" required>
+                                </li>
+                              </ol>
+                            </fieldset>
+                          
+                            <fieldset>
+                              <legend>Adresse de livraison</legend>
+                                <ol>
+                                  <li>
+                                    <label for=adresse>Adresse</label>
+                                    <textarea id=adresse name=adresse rows=5 required></textarea>
+                                  </li>
+                                  <li>
+                                    <label for=codepostal>Code postal</label>
+                                    <input id=codepostal name=codepostal type=text required>
+                                  </li>
+                                  <li>
+                                    <label for="ville">Ville</label>
+                                    <input id=ville name=ville type=text required>
+                                  </li>
+
+                                    <li>
+                                    <label for=pays>Pays</label>
+                                    <input id=pays name=pays type=text required>
+                                  </li>
+                                </ol>
+                              </fieldset>
+                            <fieldset>
+                              <legend>Informations bancaires</legend>
+                              <ol>
+                                <li>
+                                  <fieldset>
+                                    <legend>Type de carte bancaire</legend>
+                                    <ol>
+                                      <li>
+                                        <input id=paypal name=type_de_carte type=radio>
+                                        <label for=paypal>Paypal</label> 
                         
-                                                            <!-- BOITE VOTRE COMMANDE -->
+                                      </li>
+                                      <li>
+                                        <input id=visa name=type_de_carte type=radio>
+                                        <label for=visa>VISA</label>
+                                      </li>
+                                      <li>
+                                        <input id=mastercard name=type_de_carte type=radio>
+                                        <label for=mastercard>Mastercard</label>
+                                      </li>
+                                    </ol>
+                                  </fieldset>
+                                </li>
+                                <li>
+                                  <label for=numero_de_carte>N° de carte</label>
+                                  <input id=numero_de_carte name=numero_de_carte type=number required>
+                                </li>
+                                <li>
+                                  <label for=securite>Code sécurité</label>
+                                  <input id=securite name=securite type=number required>
+                                </li>
+                                <li>
+                                  <label for=nom_porteur>Nom du porteur</label>
+                                  <input id=nom_porteur name=nom_porteur type=text placeholder="Même nom que sur la carte" required>
+                                </li>
+                              </ol>
+                            </fieldset>
+
+                            <input type="checkbox" name="s'abonner">
+                            <p>Sauvegarder vos informations pour la prochain achat</p>
+
+                            <fieldset>
+                              <button type=submit>VALIDER MA COMMANDE</button>
+                            </fieldset>
+
+                           
+                          </form>                      
                         
-                        
-                                        <div class="col-md-5">
-                                            <div class="right border">
-                                                <div class="header">Votre commande</div>
-                                                <p>1 article</p>
-                                                <div class="row item">
-                                                    <div class="col-4 align-self-center"><img class="image pull" src="pull gris col V.jpg"></div>
-                                                    <div class="col-8">
-                                                        <div class="row"><b>45€</b></div>
-                                                        <div class="row text-muted">Pull Gallo gris</div>
-                                                        <div class="row">Qté:1</div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="row lower">
-                                                    <div class="col text-gauche">Sous-total</div>
-                                                    <div class="col text-droite">49€</div>
-                                                </div>
-                                                <div class="row lower">
-                                                    <div class="col text-gauche">Livraison</div>
-                                                    <div class="col text-droite">Gratuit</div>
-                                                </div>
-                                                <div class="row lower">
-                                                    <div class="col text-gauche"><b>Total de votre commande:</b></div>
-                                                    <div class="col text-droite"><b>49€</b></div>
-                                                </div>
-                                                <div class="row lower">
-                                                    <div class="col text-gauche"><a href="#"><u>Ajoutez un code promo</u></a></div>
-                                                </div> <button class="btn">Valider votre commande</button>
-                                                <p class="text-muted text-center">Winter Forest s'engage dans la protection de vos données.<br>Les informations collectées sont necessaires<br> au traitement et à la livraison des commandes.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div> </div>
-                            </div> 
-                        
-                                                    <!-- BOITE COORDONNEES -->
-                        
-                        </body>
-                        </html>
 
+<!-- -------------------------------------- BOITE COMMANDE -----------------------------------------> 
 
+    <div class="pagepaiement ">
+      <div class="commandepaiement flex" >
+        <div class="bord droit">
+            <div class="h1paiement">Votre commande</div>
+            <p>1 article</p>
+            <div class="ligne article">
+                <div class="colonne gauche"><img class="image pull" src="Images/imagepaiement/pullgrispaiement.jpg" height="100px" width="80px"></div>
+                <div class="colonne droite flex">
+                    <div class="col-text-droit"><b>49€</b></div>
+                    <div class="nom pull">Pull Gallo gris</div>
+                    <div class="qte">Qté:1</div>
+                </div>
+            </div>
+            
+            <div class="ligne bas">
+                <div class="col-text-gauche">Sous-total</div>
+                <div class="col-text-droit">49€</div>
+            </div>
+            <div class="ligne bas">
+                <div class="col-text-gauche">Livraison</div>
+                <div class="col-text-droit">Gratuit</div>
+            </div>
+            <div class="ligne bas">
+                <div class="col-text-gauche"><b>Total de votre commande:</b></div>
+                <div class="col-text-droit"><b>49€</b></div>
+            </div>
+            <div class="ligne bas">
+                <div class="col-text-gauche"><a href="#"><u>Ajoutez un code promo</u></a></div>
+            </div> 
+        </div>
+    </div>
+<div class="protectionclient flex a3">
+  <img src="Images/imagepaiement/clepaiement.png" alt="cle" height="25px" width="25px">
+  <p class="text-muted text-center">Winter Forest s'engage dans la protection de vos données.<br>Les informations collectées sont necessaires<br> au traitement et à la livraison des commandes.</p>
+</div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</bodypaiement>
 
 
 
@@ -255,74 +263,75 @@
 
 <!------------------------------ FOOTER ---------------------------->
 
-<footer class="footerGrid">
+    <footer class="footerGrid">
 
-    <!------------------------------ 3 BLOCS ---------------------------->
-    
-            <div class="footerValeur footerBlocSize">
-                <h3>NOS VALEURS</h3>
-                <p class="footerBlocP">Notre entreprise</p>
-                <p class="footerBlocP">Nos engagements</p>
-                <p class="footerBlocP">Recrutement</p>
-                <p class="footerBlocP">Espace Presse</p>
-                <p class="footerBlocP">Contactez-nous</p>
+<!------------------------------ 3 BLOCS ---------------------------->
+
+        <div class="footerValeur">
+            <h3>NOS VALEURS</h3>
+            <p>Notre entreprise</p>
+            <p>Nos engagements</p>
+            <p>Recrutement</p>
+            <p>Espace Presse</p>
+            <p>Contactez-nous</p>
+        </div>
+
+        <div class="footerShopping">
+            <h3>E-SHOPPING SELON NOUS</h3>
+            <p>Suivre vos commandes</p>
+            <p>Guide des tailles</p>
+            <p>Retours</p>
+            <p>Livraisons</p>
+            <p>Paiement sécurisé</p>
+        </div>
+
+        <div class="footerPaiement footerFlexbox">
+            <h3>NOS MOYENS DE PAIEMENT</h3>
+            <div class="footerContainerPaiement1 footerFlexbox">
+                <img src="Icones/paypal.png" alt="icone_paypal">
+                <img src="Icones/visa.png" alt="icone_visa">
             </div>
-    
-            <div class="footerShopping footerBlocSize">
-                <h3>E-SHOPPING SELON NOUS</h3>
-                <p class="footerBlocP">Suivre vos commandes</p>
-                <p class="footerBlocP">Guide des tailles</p>
-                <p class="footerBlocP">Retours</p>
-                <p class="footerBlocP">Livraisons</p>
-                <p class="footerBlocP">Paiement sécurisé</p>
+            <div class="footerContainerPaiement2 footerFlexbox">
+                <img src="Icones/icons8-logo-mastercard-480.png" alt="icone_mastercard">
             </div>
-    
-            <div class="footerPaiement footerFlexbox footerBlocSize">
-                <h3>NOS MOYENS DE PAIEMENT</h3>
-                <div class="footerContainerPaiement1 footerFlexbox footerBlocP">
-                    <img src="Icones/paypal.png" alt="icone_paypal">
-                    <img src="Icones/visa.png" alt="icone_visa">
-                </div>
-                <div class="footerContainerPaiement2 footerFlexbox footerBlocP">
-                    <img src="Icones/icons8-logo-mastercard-480.png" alt="icone_mastercard">
-                </div>
-            </div>
-    
-        <!------------------------------ NEWSLETTER ---------------------------->
-    
-            <div class="footerNewsletter footerFlexbox">
-                <div class="footerNewsletterContainer footerFlexbox">
-                    <p>MA<br>NEWSLETTER</p>
-                    <div class="footerFlexbox">
-                        <input type="email" name="email" placeholder="Entrez votre email">
-                        <a href="mailto:lookée&stylée@shop.com"><button type="submit">ENVOYER</button></a>
-                    </div>
-                </div>  
-            </div>
-    
-        <!------------------------------ RESEAUX SOCIAUX ---------------------------->
-    
-            <div class="footerBoiteRs footerFlexbox">
-                <div class="footerRs footerFlexbox">
-                    <p>SUIVEZ-NOUS</p>
-                    <div class="footerContainerRs footerFlexbox">
-                        <a href="https://www.facebook.com/" target="blank" id="facebook"><img src="Icones/facebookColor.png" alt="icone_facebook"></a>
-                        <a href="https://www.instagram.com/" target="blank"><img src="Icones/instagramColor.png" alt="icone_instagram"></a>
-                        <a href="https://twitter.com/" target="blank"><img src="Icones/twitterColor.png" alt="icone_twitter"></a>
-                        <a href="https://www.youtube.com/" target="blank"><img src="Icones/youtubecolor.png" alt="icone_youTube"></a>                </div>
+        </div>
+
+    <!------------------------------ NEWSLETTER ---------------------------->
+
+        <div class="footerNewsletter footerFlexbox">
+            <div class="footerNewsletterContainer footerFlexbox">
+                <p>MA <br> NEWSLETTER</p>
+                <input type="email" name="" placeholder="Entrez votre email">
+                <button type="submit">ENVOYER</button>
+            </div>  
+        </div>
+
+    <!------------------------------ RESEAUX SOCIAUX ---------------------------->
+
+        <div class="footerBoiteRs footerFlexbox">
+            <div class="footerRs footerFlexbox">
+                <p>SUIVEZ-NOUS</p>
+                <div class="footerContainerRs footerFlexbox">
+                    <img src="Icones/facebook.png" alt="icone_facebook">
+                    <img src="Icones/instagram.png" alt="icone_instagram">
+                    <img src="Icones/twitter.png" alt="icone_twitter">
+                    <img src="Icones/youtube.png" alt="icone_youTube">
                 </div>
             </div>
-    
-        <!------------------------------ COPYRIGHT ---------------------------->
-    
-            <div class="footerCopy footerFlexbox">
-                <p>© Copyright © 2021</p>
-                <p>CGV</p>
-                <p>Mentions légales</p>
-                <p>Plan du site</p>
-                <p>Protection des données personnelles</p>
-            </div>
-        </footer>
-        
-    </body>
-    </html>
+        </div>
+
+    <!------------------------------ COPYRIGHT ---------------------------->
+
+
+        <div class="footerCopy footerFlexbox">
+            <p>© Copyright © 2021</p>
+            <p>CGV</p>
+            <p>Mentions légales</p>
+            <p>Plan du site</p>
+            <p>Protection des données personnelles</p>
+        </div>
+
+    </footer>
+</div>
+</body>
+</html>
