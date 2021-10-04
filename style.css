@@ -623,13 +623,16 @@ header img {
 
 /* BLOC PHOTOS */
 
-.pullphoto {
-    background: url(Images/Rosa/pullgalo.png) no-repeat;
+
+     .pullphoto{
+    background: url(Images/Rosa/pullgalo.png) no-repeat;   
     height: 890px;
-    width: 633px;
-    margin-bottom: 40px;
-    justify-content: flex-end;
-}
+    width:633px;  
+     margin-bottom: 40px;
+     justify-content: flex-end;  
+} 
+
+ 
 
 .pullpicture img,
 .pullphoto img {
@@ -638,7 +641,8 @@ header img {
     height: 20px;
     color: black;
     background: white;
-}
+  } 
+
 
 /* BLOC DROIT */
 
@@ -718,8 +722,16 @@ header img {
     margin-bottom: 10px;
     color: white;
     border: none;
+    font-family: 'spectral', sans-serif;
 }
 
+.pullbouton .rose{
+    background:#C49CA8 ;
+    color: black;
+}
+.pullbouton button:hover{
+    background: rgba(132, 41, 37, .9);
+}
 .pullbouton .rose {
     background: #C49CA8;
 
@@ -727,6 +739,26 @@ header img {
 
 
 /*  DETAILS DE L'ARTICLE  */
+
+.pullliste{
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding:50px;
+         width:300px;
+         border-radius:12px ;
+        background:  #ECECEC;
+     }
+
+.pullliste h3{
+         padding-top: 20px;
+     }
+
+.pulllavage img{
+ width: 20px;
+ height: 20px;
+ margin-top: 10px;
+}
 
 .pullliste {
     flex-direction: column;
@@ -736,52 +768,13 @@ header img {
     width: 300px;
     border-radius: 12px;
     background: #ECECEC;
-    ;
+    
 }
 
 .pullliste h2 {
     padding-bottom: 20px;
 }
 
-/* .pullliste
-    flex-direction: column;
-} 
-
-.pullliste h2{
-    text-align: center;
-    font-size: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-} */
-
-/* .pullDESC, .pullCompo, .pullEntre, .pullDimen {
-    display: flex;
-    color:black;
-    /* border: 1px solid black; */
-
-/* cursor: pointer;
-    padding:20px; 
-    font-size: 30px; */
-
-/* }
-  
-    .pulldropdown {
-    position: relative;
-    display: flex;
-flex-direction: column;
-    width: 100%;
- 
-     }
-
-    .pulldropdown-child { */
-
-/* display: none;
-    min-width: 50px; 
-    border: 1px solid black;
-    }
-.pulldropdown:active .pulldropdown-child { 
-    display: block;
-    }      */
 
 /* BLOCS RECOMMANDATIONS */
 
@@ -796,8 +789,8 @@ flex-direction: column;
     margin-bottom: 200px;
 }
 
-.pullpicture1 {
-    background: url('Images/Rosa/cardiganmaille.png') no-repeat center/cover;
+.pullpicture1{
+    background: url('Images/Rosa/Pullviolet.png') no-repeat center/cover;
     height: 400px;
     width: 300px;
     margin-right: 10px;
@@ -812,16 +805,16 @@ flex-direction: column;
     justify-content: flex-end;
 }
 
-.pullpicture3 {
-    background: url('Images/Rosa/pullcrochet.png') no-repeat center/cover;
+.pullpicture3{
+    background: url('Images/Rosa/Pullvert.png') no-repeat center/cover;
     height: 400px;
     width: 300px;
     margin-right: 10px;
     justify-content: flex-end;
 }
 
-.pullpicture4 {
-    background: url('Images/Rosa/pullfistonné.png') no-repeat center/cover;
+.pullpicture4{
+    background: url('Images/Rosa/Pullclair.png') no-repeat center/cover;
     height: 400px;
     width: 300px;
     justify-content: flex-end;
