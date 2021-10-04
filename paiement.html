@@ -5,60 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <title>Page de Paiement</title>
 </head>
 <body>
 
-    <header class="headerGrid">
+  <header class="headerGrid">
 
 <!------------------------------ LOGO ---------------------------->
 
-        <div class="headerlogo">
-            <div class="headerLogoSize">
-                <img src="" alt="logo_de_la_marque">
-            </div>
+    <div class="headerlogo">
+        <div class="headerLogoSize">
+          <a href="index.html"><img src="Images/Accueil/logo.png" alt="logo_de_la_marque"></a>
         </div>
+    </div>
 
 <!------------------------------ RECHERCHE ---------------------------->
 
-        <div class="headerRecherche headerFlexbox">
-            <div class="headerRechercheBoite headerFlexbox">
-                <p>Recherche</p>
-                <img class="headerRechercheImage" src="Icone/loupe.png" alt="icone_en_forme_de_loupe">
-            </div>
+    <div class="headerRecherche headerFlexbox">
+        <div class="headerRechercheBoite headerFlexbox">
+            <p>Recherche</p>
+            <img class="headerRechercheImage" src="Icones/loupe.png" alt="icone_en_forme_de_loupe">
         </div>
+    </div>
 
 <!------------------------------ ICONES ---------------------------->
 
-        <div class="headerIcone headerFlexbox">
-            <img src="Icones/woman.png" alt="icone_en_forme_de_femme">
-            <img src="Icones/heart.png" alt="icone_en_forme_de_coeur">
-            <img src="Icones/shopping-basket.png" alt="icone_en_forme_de_panier">
-        </div>
+    <div class="headerIcone headerFlexbox">
+        <img src="Icones/woman.png" alt="icone_en_forme_de_femme">
+        <img src="Icones/heart.png" alt="icone_en_forme_de_coeur">
+        <img src="Icones/shopping-basket.png" alt="icone_en_forme_de_panier">
+    </div>
 
 <!------------------------------ CATEGORIES ---------------------------->
 
-        <ul class="headerCategorie headerFlexbox">
-            <div class="headerCategorieListe headerFlexbox promotion heartbeat">
-                <li>PROMOTIONS !</li>
-            </div>
-            <div class="headerCategorieListe headerFlexbox vetement">
-                <li>Vêtements</li>
-                <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-            </div>
-            <div class="headerCategorieListe headerFlexbox chaussure">
-                <li>Chaussures</li>
-                <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-            </div>
-            <div class="headerCategorieListe headerFlexbox accessoire">
-                <li>Accessoires</li>
-                <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
-            </div>
-        </ul>
+    <nav class="headerCategorie headerFlexbox">
+        <div class=" headerFlexbox headerpromotion headerheartbeat">
+          <p>PROMOTIONS !</p>
+        </div>
+
+        <div class="headerCategorieListe headerFlexbox">
+          <button>Vêtements</button>
+          <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+          <ul class="headerdropdownChild">
+              <li><a href="#">Manteaux</a></li>
+              <li><a href="#">Pulls-Over</a></li>
+              <li><a href="#">Pantalons</a></li>
+              <li><a href="#">Robes</a></li>
+              <li><a href="#">Jupes</a></li>
+              <li><a href="#">Tee-shirts</a></li>
+          </ul>
+        </div>
+
+        <div class="headerCategorieListe headerFlexbox">
+          <button>Chaussures</button>
+          <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+          <ul class="headerdropdownChild">
+              <li><a href="#">Bottes</a></li>
+              <li><a href="#">Baskets</a></li>
+              <li><a href="#">Escarpins</a></li>
+              <li><a href="#">Ballerines</a></li>
+              <li><a href="#">Derbies</a></li>
+          </ul>
+        </div>
+
+        <div class="headerCategorieListe headerFlexbox">
+          <button>Accessoires</button>
+          <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+          <ul class="headerdropdownChild ">
+              <li><a href="#">Sacs</a></li>
+              <li><a href="#">Bijoux</a></li>
+              <li><a href="#">Ceintures</a></li>
+              <li><a href="#">Echarpes</a></li>
+              <li><a href="#">Bonnets</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <!-- CHEMIN PAIEMENT -->
-
 
     <section id="chemin">
         <nav>
