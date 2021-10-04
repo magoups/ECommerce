@@ -117,7 +117,9 @@ header {
     grid-template-areas: "logo rech rech rech icone" "logo cat cat cat cat" "chemin chemin chemin chemin chemin";
     /* margin-bottom: 60px; */
 }
-
+#headerResponsiveBarre{
+    display: none;
+}
 header img {
     width: 40px;
     height: 40px;
@@ -137,14 +139,16 @@ header img {
 
 .headerlogo {
     grid-area: logo;
+    margin-top: 30px;
+    width:auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .headerLogoSize {
-    width: 187px;
-    height: 120px;
+    width: auto;
+    height: auto;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -1044,8 +1048,89 @@ header img {
 }
 }
 @media (max-width:740px){
+/* --------------------HEADER---------------- */
+    .headerCategorieListe{
+        display: none;
+    }
+    .headerLogoSize, .headerRecherche{
+        display: block;
+    }
+     #headerResponsiveBarre{
+        display: block;
+        position: absolute;
+        width: 230px;
+        height: 100%;
+        background: rgba(132, 41, 37, 1);
+        left: -230px;
+        transition: .5s ease-out;
+        z-index: 4;
+    }
+    
+    #headerResponsiveBarre a{
+        text-decoration: none;
+    }
+    
+    .headerToggleButton{
+        position: absolute;
+        top: 20px;
+        left: 250px;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .headerToggleButton span{
+        width: 60px;
+        height: 10px;
+        border-radius: 5px;
+        background: rgba(132, 41, 37, 1);
+        display: block;
+        margin-top: 4px;
+        transition: .5s ease;
+    }
+    
+    .liste{
+        color: #fafafa;
+        list-style-type: none;
+        font-size: 30px;
+        cursor: pointer;
+        padding-left: 5px;
+        text-decoration: none;
+    }
+    
+    .liste:hover{
+        background: rgba(236,236,236, 0.5);
+        color: #fafafa;
+    }
+    
+    #headerResponsiveBarre.active{
+        left: 0;
+    }
+    
+    #headerResponsiveBarre.active .headerToggleButton{
+        top: 2.8rem;
+        left: 235px;
+    }
+    
+    #headerResponsiveBarre.active span{
+        position: absolute;
+    }
+    #headerResponsiveBarre.active span:nth-child(1){
+        transform: rotate(45deg);
+    }
+    
+    #headerResponsiveBarre.active span:nth-child(2){
+        opacity: 0;
+    }
+    #headerResponsiveBarre.active span:nth-child(3){
+        transform: rotate(-45deg);
+    }
 
+    /* ------------------PAGE------------------ */
     .paniertitre{
+        padding-top:50px ;
+        padding-right:20% ;
+        
         font-size: 20px;
     }
     .panierpull, .paniersize, .paniercounter, .panierct, #panierpaiement{
@@ -1088,6 +1173,13 @@ header img {
         text-align: center;
         color: #fff;
         background: rgba(196, 156, 168, 0.5);
+    }
+
+    .panierchan{
+        padding-top:3% ;
+    }
+    .pri{
+        padding-left: 2%;
     }
 }
 
