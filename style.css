@@ -1507,7 +1507,7 @@ header img {
 
     /* ------------------PAGE------------------ */
     .paniertitre{
-        padding-top:50px ;
+        padding-top:80px;
         padding-right:20% ;
         
         font-size: 20px;
@@ -1735,7 +1735,7 @@ form#paiement button {
     font-size: x-large;
 }
 
-}
+
 .align{
     display: flex;
     justify-content: flex-start;
@@ -1749,8 +1749,10 @@ form#paiement button {
 }
 @media(max-width:600px){
 
-        .boxpaiement{
+    
 
+        .boxpaiement{
+            padding-top: 50px;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -2112,7 +2114,7 @@ footer img {
     transition: .5s ease;
 }
 
-.liste{
+.accueilburgerliste{
     color: #fafafa;
     list-style-type: none;
     font-size: 30px;
@@ -2121,7 +2123,7 @@ footer img {
     text-decoration: none;
 }
 
-.liste:hover{
+.accueilburgerliste:hover{
     background: rgba(236,236,236, 0.5);
     color: #fafafa;
 }
