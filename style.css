@@ -1712,7 +1712,12 @@ form#paiement button {
   width: 400px;
   margin: 30px;
   padding: 20px;
-  
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+
+
+
 }
 .col-text-droit{
     text-align: right;
@@ -1730,8 +1735,6 @@ form#paiement button {
     font-size: x-large;
 }
 
-/* .protectionclient{
-    display: flex; */
 }
 .align{
     display: flex;
