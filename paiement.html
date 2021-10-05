@@ -113,7 +113,7 @@
 
 <!------------------------------ FIN DU HEADER ---------------------------->                                          
                         
- <!-- ------------------------------- formulaire paiement> ----------------------->                                                         -->
+ <!--------------------------------- formulaire paiement> ----------------------->                                                         
 
                           
                          <section class="boxpaiement flex"> 
@@ -199,8 +199,10 @@
                               </ol>
                             </fieldset>
 
-                            <input type="checkbox" name="s'abonner">
-                            <p>Sauvegarder vos informations pour la prochain achat</p>
+                        <div class="align flex">
+                            <input type="checkbox" name="sauvegarder">
+                            <p class=>Sauvegarder vos informations pour la prochain achat</p>
+                        </div>
 
                             <fieldset>
                               <button type=submit>VALIDER MA COMMANDE</button>
@@ -216,38 +218,38 @@
     <div class="pagepaiement">
       <div class="commandepaiement flex" >
         <div class="bord droit">
-            <div class="h1paiement">Votre commande</div>
-            <p>1 article</p>
-            <div class="ligne article">
+            <div class="h1paiement"><b>Votre commande</b></div>
+
+            <div class="ligne-article flex">
                 <div class="colonne gauche"><img class="image pull" src="Images/imagepaiement/giletcamel.png"></div>
-                <div class="colonne droite flex">
-                    <div class="col-text-droit"><b>49€</b></div>
-                    <div class="nom pull">Pull Gallo gris</div>
-                    <div class="qte">Qté:1</div>
+                <div class="colonne-droite">
+                <p><b>1 article</b></p>   
+                <p><b> Gilet ajouré</b></p>
+                    <div class="qte"><b>Qté:1</b></div>
+                  </div>
                 </div>
             </div>
             
-            <div class="ligne bas flex">
+            <div class="ligne-bas flex">
                 <div class="col-text-gauche">Sous-total</div>
                 <div class="col-text-droit flex">49€</div>
             </div>
-            <div class="ligne bas flex">
-                <div class="col-text-gauche">Livraison</div>
-                <div class="col-text-droit flex">Gratuit</div>
+            <div class="ligne-bas flex">
+                <div class="col-text-gauche"><b>Livraison</b></div>
+                <div class="col-text-droit flex"><b>GRATUIT</b></div>
             </div>
-            <div class="ligne bas flex">
+            <div class="ligne-bas flex">
                 <div class="col-text-gauche"><b>Total de votre commande:</b></div>
                 <div class="col-text-droit flex"><b>49€</b></div>
             </div>
-            <div class="ligne bas flex">
+            <div class="ligne-bas flex">
                 <div class="col-text-gauche"><a href="#"><u>Ajoutez un code promo</u></a></div>
+                <img src="Images/imagepaiement/clepaiement.png" alt="cle" height="20px" width="20px">
+                <p class="">Lookée & Stylée s'engage dans la protection de vos données.<br>Les informations collectées sont necessaires<br> au traitement et à la livraison des commandes.</p>
+
             </div> 
         </div>
     </div>
-<div class="protectionclient flex">
-  <img src="Images/imagepaiement/clepaiement.png" alt="cle" height="20px" width="20px">
-  <p class="">Lookée & Stylée s'engage dans la protection de vos données.<br>Les informations collectées sont necessaires<br> au traitement et à la livraison des commandes.</p>
-</div>
 </div>
 </section>
 

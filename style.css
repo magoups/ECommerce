@@ -1259,7 +1259,7 @@ form#paiement {
     border-radius: 5px;
     padding: 20px;
     width: 400px;
-    border: 2px solid red;
+    border: 2px solid #C49CA8;
   }
 
   form#paiement fieldset {
@@ -1381,28 +1381,44 @@ form#paiement button {
  
 
 .commandepaiement, .protectionclient, #paiement{
-  border: 2px solid red;
+  border: 2px solid #C49CA8;
   height: auto;
-  width: 400px;
+  width: 430px;
   
 }
 .col-text-droit{
     text-align: right;
 } 
-.ligne bas{
+.ligne-bas{
      display: flex;
-     flex-direction: column;
-     justify-content: space-around;
+     justify-content: space-between;
+ }
+
+ .nom.pull{
+     display: flex;
+     /* flex-direction: column; */
  }
 .h1paiement{
-    font-size: xx-large;
-}
-.protectionclient{
-    display: flex;
+    font-size: x-large;
 }
 
+/* .protectionclient{
+    display: flex; */
+}
+.align{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ligne-article{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
 @media(max-width:600px){
-    .boxpaiement{
+
+        .boxpaiement{
 
         flex-direction: column;
         justify-content: space-around;
