@@ -395,7 +395,7 @@ header img {
 .accueilPhoto {
     height: 100vh;
     margin: 0 auto 50px;
-    width: 60%;
+    width: 80%;
     grid-template-columns: 16.68% 23.79% 15.7% 16.19% 9.21% 9.21% 9.22%;
     grid-template-rows: 23% 15% 12% 10% 17% 23%;
     grid-template-areas: "p1 p1 p9 p9 p10 p10 p10" "p2 p3 p8 p8 p11 p12 p13" "p2 p6 p8 p8 p14 p14 p14" "p4 p6 p8 p8 p14 p14 p14" "p4 p6 p8 p8 p15 p16 p16" "p5 p7 p19 p18 p17 p16 p16";
@@ -438,7 +438,7 @@ header img {
 }
 
 .accueilPhotoTexte p{
-    font-size: clamp(20px, 4em, 50px);
+    font-size: clamp(20px, 4em, 40px);
     font-weight: 700;
     text-align: center;
     color: #FAFAFA;
@@ -608,7 +608,7 @@ header img {
       /* h2 */
       .collectionh2{
         text-align: center;
-        margin-top: 67px;
+        padding-top: 67px;
         font-size: 50px;
         
     }
@@ -654,7 +654,7 @@ header img {
                     /* grid */
     
     #collection{
-        background-color: white;
+        background-color:#fafafa;
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
         grid-gap: 50px;
@@ -846,25 +846,6 @@ header img {
     }
     
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* -------------------- PAGE ROBE --------------------- */
 /*  --------------------- ROSA ------------------------ */
@@ -1922,20 +1903,6 @@ footer img {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------*/
 /* -------------------- MEDIA QUERIES 1300PX -------------------------*/
 /* ------------------------------------------------------------------*/
@@ -2047,21 +2014,6 @@ footer img {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------*/
 /* -------------------- MEDIA QUERIES 900PX -------------------------*/
 /* ------------------------------------------------------------------*/
@@ -2089,24 +2041,12 @@ footer img {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------*/
 /* -------------------- MEDIA QUERIES 500PX -------------------------*/
 /* ------------------------------------------------------------------*/
 
 @media (max-width:500px) {     
-    .headerGrid, .headerRecherche, .headerIcone, .headerCategorieListe, .headerChemin, .accueilslider, .accueilpRespons, .footerBlocP, .footerValeurResp, .footerPaiementIcones{
+    .headerGrid, .headerRecherche, .headerIcone, .headerCategorieListe, .headerChemin, .accueilslider, .accueilpRespons, .footerBlocP, .footerValeurResp, .footerPaiementIcones, .p7, .p16{
         display: none;  
     }
 
