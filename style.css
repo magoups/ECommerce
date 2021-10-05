@@ -625,12 +625,18 @@ header img {
 
 
      .pullphoto{
-    background: url(Images/Rosa/pullgalo.png) no-repeat;   
+    background: url(Images/Rosa/gilet-ajoure-decollete-v-face.png) no-repeat;   
     height: 890px;
     width:633px;  
      margin-bottom: 40px;
      justify-content: flex-end;  
 } 
+
+ .pullphoto:hover{
+    background: url(Images/Rosa/gilet-ajoure-decollete-v-dos.png) no-repeat;
+    height: 890px;
+    width:633px;  
+}  
 
  
 
@@ -700,7 +706,8 @@ header img {
     font-size: 20px;
     padding-bottom: 40px;
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 20px; 
+  
 }
 
 /* BOUTONS */
@@ -715,7 +722,6 @@ header img {
     height: 50px;
     background: black;
     border-radius: 12px;
-    /* font-weight: bold; */
     font-size: 15px;
     justify-content: center;
     gap: 13px;
@@ -823,15 +829,37 @@ header img {
 
 
 
+@media(max-width:600px){
+    
+   
+.pullsection1{
+    flex-direction: column;
+}
+.pulltitre{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pullphoto{
+   
+    width:600px;
+}
+
+.pullliste{
+    display: none;
+}
+
+.pullpicture3, .pullpicture4{
+    display: none;
+}
+
+
+} 
 
 
 
 
-
-
-
-
-
+ 
 
 
 
