@@ -262,7 +262,7 @@ header img {
 
 .headerdropdownChild li a:hover {
     font-weight: 500;
-    color: rgba(131, 42, 37, 0.902);
+    color: rgba(132, 41, 37, .9);
 }
 
 #headerResponsiveBarre{
@@ -438,7 +438,7 @@ header img {
 }
 
 .accueilPhotoTexte p{
-    font-size: clamp(20px, 4em, 40px);
+    font-size: clamp(20px, 4em, 50px);
     font-weight: 700;
     text-align: center;
     color: #FAFAFA;
@@ -1718,7 +1718,7 @@ footer img {
 
 @media (max-width:900px) {
 
-    .headerRecherche, .headerIcone, .headerCategorie, .p1, .p2, .p4, .p9, .p10, .p11, .p12, .p13, .p17, .p18, #headerResponsiveBarre{
+    .headerRecherche, .headerIcone, .headerCategorie, .p1, .p2, .p4, .p9, .p10, .p11, .p12, .p13, .p17, .p18{
         display: none;
     }
 
@@ -1755,7 +1755,7 @@ footer img {
 /* ------------------------------------------------------------------*/
 
 @media (max-width:500px) {     
-    .headerGrid, .headerRecherche, .headerIcone, .headerCategorieListe, .headerChemin, .accueilslider, .accueilpRespons, .footerBlocP, .footerValeurResp, .footerPaiementIcones, .p7, .p16{
+    .headerGrid, .headerRecherche, .headerIcone, .headerCategorieListe, .headerChemin, .accueilslider, .accueilpRespons, .footerBlocP, .footerValeurResp, .footerPaiementIcones{
         display: none;  
     }
 
@@ -1763,8 +1763,7 @@ footer img {
 .headerLogoSize{
     display: block;
 }
-
-#headerResponsiveBarre{
+ #headerResponsiveBarre{
     display: block;
     position: absolute;
     width: 230px;
