@@ -1216,55 +1216,7 @@ header img {
 /* ---------------- CLASS : .paiementxxxxx --------------- */
 /* -------------- ECRIRE SOUS CETTE LIGNE ---------------- */
 
-/* body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(0, 0, 34);
-    font-size: 0.8rem
-}
-
-.carte {
-    max-width: 1000px;
-    margin: 2vh
-}
-
-.carte-top {
-    padding: 0.7rem 5rem
-}
-
-.carte-top a {
-    float: left;
-    margin-top: 0.7rem
-}
-
-#logo {
-    font-family: 'spectral';
-    font-weight: bold;
-    font-size: 1.6rem
-}
-
-.carte-body {
-    padding: 0 5rem 5rem 5rem;
-    background:;
-    background-size: cover;
-    background-repeat: no-repeat
-} 
-
-
-  
-  
-/* .carte-top {
-        padding: 0.7rem 1rem
-    }
-}
-
-.row {
-    margin: 0
-}
-
-  form#paiement {
+form#paiement {
     background: #ececec;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -1303,9 +1255,9 @@ header img {
   }
 
   form#paiement ol li {
-    background: #b9cf6a;
+    background: #8B0000;
     background: rgba(255,255,255,.3);
-    border-color: #e3ebc3;
+    border-color: #8B0000;
     border-color: rgba(255,255,255,.6);
     border-style: solid;
     border-width: 2px;
@@ -1335,17 +1287,18 @@ header img {
     width: auto;
   }
   form#paiement label[for=paypal] {
-    background-image: url(images/imagepaiement/iconepaypalpaiement.png);
+    background-image: url(iconepaypalpaiement.png);width: 5px;
   }
   form#paiement label[for=visa] {
-    background-image: url(images/imagepaiement/iconevisapaiement.png);
+    background-image: url(iconevisapaiement.png);width: 15px;
+    height: fit-content;
   }
   
   form#paiement label[for=mastercard] {
-    background-image: url(images/imagepaiement/iconemastercardpaiement.png); 
+    background-image: url(iconemastercardpaiement.png);width: 15px; 
   }
   form#paiement fieldset fieldset label:hover {
-    cursor: pointer;
+    cursor: crosshair;
   }
 
   form#paiement input:not([type=radio]),
@@ -1359,7 +1312,7 @@ form#paiement textarea {
   font: italic 13px spectral, sans-serif;
   outline: none;
   padding: 5px;
-  width: 200px;
+  width: 250px;
 }
 form#paiement input:not([type=submit]):focus,
 form#paiement textarea:focus {
@@ -1371,7 +1324,7 @@ form#paiement input[type=radio] {
 }
 
 form#paiement button {
-    background: #384313;
+    background: #8B0000;
     border: none;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -1379,7 +1332,6 @@ form#paiement button {
     border-radius: 20px;
     color: #ffffff;
     display: block;
-    font: 18px spectral, sans-serif;
     letter-spacing: 1px;
     margin: auto;
     padding: 7px 25px;
@@ -1389,7 +1341,14 @@ form#paiement button {
   form#paiement button:hover {
     background: #1e2506;
     cursor: pointer;
+   }
+  .bodypaiement{
+    display: flex;
+    align-items: center;
   }
+
+    
+   
 /* ----------------------------------BOITE DE COMMANDE----------------------------------- */
  
 
