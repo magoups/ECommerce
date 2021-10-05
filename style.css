@@ -1287,15 +1287,15 @@ form#paiement {
     width: auto;
   }
   form#paiement label[for=paypal] {
-    background-image: url(iconepaypalpaiement.png);width: 5px;
+    background-image: url(icones/paypal.png);
   }
   form#paiement label[for=visa] {
-    background-image: url(iconevisapaiement.png);width: 15px;
-    height: fit-content;
+    background-image: url(icones/visa.png);
+    
   }
   
   form#paiement label[for=mastercard] {
-    background-image: url(iconemastercardpaiement.png);width: 15px; 
+    background-image: url(icones/icons8-logo-mastercard-480.png); 
   }
   form#paiement fieldset fieldset label:hover {
     cursor: crosshair;
@@ -1303,7 +1303,7 @@ form#paiement {
 
   form#paiement input:not([type=radio]),
 form#paiement textarea {
-  background: #ffffff;
+  background: #ececec;
   border: none;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -1342,11 +1342,13 @@ form#paiement button {
     background: #1e2506;
     cursor: pointer;
    }
-  .bodypaiement{
-    display: flex;
-    align-items: center;
-  }
+  
 
+.boxpaiement{
+    display: flex;
+    justify-content: space-around;
+    
+}
     
    
 /* ----------------------------------BOITE DE COMMANDE----------------------------------- */
@@ -1358,12 +1360,17 @@ form#paiement button {
   width: 400px;
   
 }
-
-.flex{
-display: flex;
+.col-text-droit{
+    text-align: right;
 } 
- 
-
+.ligne bas{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+ }
+.h1paiement{
+    font-size: xx-large;
+}
 
 
 /* -------------- NE PAS ECRIRE SOUS CETTE LIGNE ---------------- */
