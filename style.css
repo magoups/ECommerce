@@ -1358,7 +1358,7 @@ header img {
     padding: 01%;
 }
 .pri{
-    padding-left: 06%;
+    padding-left: 4%;
 }
 .gratuitpr{
     padding-right: 02%;
@@ -1582,9 +1582,10 @@ form#paiement {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    margin: 30px;
     padding: 20px;
     width: 400px;
-    border: 2px solid red;
+    border: 2px solid #C49CA8;
   }
 
   form#paiement fieldset {
@@ -1601,11 +1602,6 @@ form#paiement {
     font-weight: bold;
     padding-bottom: 10px;
     text-shadow: 0 1px 1px black;
-  }
-
-  form#paiement > fieldset > legend:before {
-    content: "Étape" counter(fieldsets) " : ";
-    counter-increment: fieldsets;
   }
 
   form#paiement fieldset fieldset legend {
@@ -1647,17 +1643,12 @@ form#paiement {
     padding: 0 0 0 30px;
     width: auto;
   }
-  form#paiement label[for=paypal] {
-    background-image: url(icones/paypal.png);
+
+
+  .paiementicone img{
+      height: 30px; width: 30px;
   }
-  form#paiement label[for=visa] {
-    background-image: url(icones/visa.png);
-    
-  }
-  
-  form#paiement label[for=mastercard] {
-    background-image: url(icones/icons8-logo-mastercard-480.png); 
-  }
+ 
   form#paiement fieldset fieldset label:hover {
     cursor: crosshair;
   }
@@ -1677,7 +1668,7 @@ form#paiement textarea {
 }
 form#paiement input:not([type=submit]):focus,
 form#paiement textarea:focus {
-  background: #eaeaea;
+  background: #C49CA8;
 }
 form#paiement input[type=radio] {
   float: left;
@@ -1700,7 +1691,7 @@ form#paiement button {
     text-transform: uppercase;
   }
   form#paiement button:hover {
-    background: #1e2506;
+    background: black;
     cursor: pointer;
    }
   
@@ -1716,23 +1707,53 @@ form#paiement button {
  
 
 .commandepaiement, .protectionclient, #paiement{
-  border: 2px solid red;
+  border: 2px solid #C49CA8;
   height: auto;
   width: 400px;
+  margin: 30px;
+  padding: 20px;
   
 }
 .col-text-droit{
     text-align: right;
 } 
-.ligne bas{
+.ligne-bas{
      display: flex;
-     flex-direction: column;
-     justify-content: space-around;
+     justify-content: space-between;
+ }
+
+ .nom.pull{
+     display: flex;
+     /* flex-direction: column; */
  }
 .h1paiement{
-    font-size: xx-large;
+    font-size: x-large;
 }
 
+/* .protectionclient{
+    display: flex; */
+}
+.align{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ligne-article{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+@media(max-width:600px){
+
+        .boxpaiement{
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+}
 
 /* -------------- NE PAS ECRIRE SOUS CETTE LIGNE ---------------- */
 /* ----------------------- FOOTER ------------------------------- */
@@ -2296,44 +2317,3 @@ footer img {
         font-size: 8px;
     } 
 } 
-
-/* -------------------- PAGE COLLECTION -------------------- */
-/*  ---------------------- MARIAM -------------------------- */
-/* -------------- ECRIRE SOUS CETTE LIGNE ------------------ */
-
-
-
-
-
-/* -------------------- PAGE INDIVIDUEL -------------------- */
-/*  ------------------------ ROSA -------------------------- */
-/* -------------- ECRIRE SOUS CETTE LIGNE ------------------ */
-
-
-
-
-
-
-/* ------------------------ PAGE PANIER -------------------- */
-/*  ------------------------ CHRISTINA --------------------- */
-/* ---------------- ECRIRE SOUS CETTE LIGNE ---------------- */
-
-
-
-
-
-
-
-
-/* -------------------- PAGE PAIEMENT -------------------- */
-/*  ---------------------- KAHINA -------------------------- */
-/* -------------- ECRIRE SOUS CETTE LIGNE ------------------ */
-
-
-
-
-
-
-
-
-/* -------------------- MEDIA QUERIES PX -------------------------*/
