@@ -1034,6 +1034,9 @@ header img {
 
 
 @media (max-width:1269px) {
+    #headerResponsiveBarre{
+        display: none;
+    }
     .paniertitre{
         font-size: 25px;
     }
@@ -1067,6 +1070,12 @@ header img {
 }
 @media (max-width:740px){
 /* --------------------HEADER---------------- */
+#headerResponsiveBarre{
+    display: none;
+}
+    #headerResponsiveBarre{
+        display: none;
+    }
     .headerCategorieListe{
         display: none;
     }
@@ -1074,7 +1083,6 @@ header img {
         display: block;
     }
      #headerResponsiveBarre{
-        display: block;
         position: absolute;
         width: 230px;
         height: 100%;
