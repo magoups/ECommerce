@@ -18,7 +18,7 @@
 
         <div class="headerlogo">
             <div class="headerLogoSize">
-                <img src="" alt="logo_de_la_marque">
+                <img src="Images/logo1.png" alt="logo_de_la_marque">
             </div>
         </div>
 
@@ -41,20 +41,52 @@
 
 <!------------------------------ CATEGORIES ---------------------------->
 
-        <ul class="headerCategorie headerFlexbox">
-            <div class="headerCategorieListe headerFlexbox promotion heartbeat">
-                <li>PROMOTIONS !</li>
+        <nav class="headerCategorie headerFlexbox">
+
+            <!-- <div id="headerResponsiveBarre">
+                <div class="headerToggleButton" id="headerToggleButton">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+    
+                <ul>
+                    <a href="#"><li class="liste">Accueil</li></a>
+                    <a href="collection.html"><li class="liste">Vêtements</li></a>
+                    <a href="#"><li class="liste">Chaussures</li></a>
+                    <a href="#"><li class="liste">Accessoires</li></a>
+                </ul>
+            </div> -->
+
+            <div class=" headerFlexbox headerpromotion headerheartbeat">
+                <p>PROMOTIONS !</p>
+
             </div>
-            <div class="headerCategorieListe headerFlexbox vetement">
-                <li>Vêtements</li>
+            <div class="headerCategorieListe headerFlexbox">
+                <button>Vêtements</button>
                 <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+                <ul class="headerdropdownChild">
+                    <li><a href="#">Manteaux</a></li>
+                    <li><a href="#">Pulls-Over</a></li>
+                    <li><a href="#">Pantalons</a></li>
+                    <li><a href="#">Robes</a></li>
+                    <li><a href="#">Jupes</a></li>
+                    <li><a href="#">Tee-shirts</a></li>
+                </ul>
             </div>
-            <div class="headerCategorieListe headerFlexbox chaussure">
-                <li>Chaussures</li>
+            <div class="headerCategorieListe headerFlexbox">
+                <button>Chaussures</button>
                 <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
+                <ul class="headerdropdownChild">
+                    <li><a href="#">Bottes</a></li>
+                    <li><a href="#">Baskets</a></li>
+                    <li><a href="#">Escarpins</a></li>
+                    <li><a href="#">Ballerines</a></li>
+                    <li><a href="#">Derbies</a></li>
+                </ul>
             </div>
-            <div class="headerCategorieListe headerFlexbox accessoire">
-                <li>Accessoires</li>
+            <div class="headerCategorieListe headerFlexbox">
+                <button>Accessoires</button>
                 <img src="Icones/arrowDown.png" alt="icone_en_forme_de_fleche">
             </div>
         </ul>
@@ -79,6 +111,21 @@
             </div>
         </nav>
     </section>
+
+    <div id="headerResponsiveBarre">
+        <div class="headerToggleButton" id="headerToggleButton">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul>
+            <a href="#"><li class="liste">Accueil</li></a>
+            <a href="collection.html"><li class="liste">Vêtements</li></a>
+            <a href="#"><li class="liste">Chaussures</li></a>
+            <a href="#"><li class="liste">Accessoires</li></a>
+        </ul>
+    </div>
     
                     <!----------  PANIER  -------->
         
@@ -101,16 +148,21 @@
         </div>
             
             <!-- Couleur + selection de couleur -->
-            <div class="paniercouleur panierflex">
-                <p><span class="black panierflex">Couleur:</span></p>
-                <img class="rblack panierflex" src="Images/Christina/couleur.png" alt="">
+            <div class="panierct panierflex">
+                <p class="black panierflex">Couleur:
+                <img class="rblack panierflex" src="Images/Christina/couleur.png" alt="icone noire"></p>
+                <p>Taille:<span class="taille">S</span></p>
             </div>
             
             <!-- Size  -->
                  <div class="paniersize">
+<<<<<<< HEAD
                      <p>Taille:
                          <span class="taille"></span>
                     </p>
+=======
+                     
+>>>>>>> d6e6a313de8002c87a8ae21fdaf61aa8f8e57a3c
                  </div>
                 <div class="paniercounter">
                     <class="button">
@@ -133,7 +185,7 @@
             <div class="paniercommandeBouton">
                 <a href="paiement.html">
                     <button
-                    class="paimentbutton"
+                    class="panierpbutton"
                     type="button">COMMANDE</button>
                 </a>
             </div>
@@ -155,7 +207,7 @@
                 <p class="panierchan">GRATUIT</p> 
             </div>
             <div class="pr panierflex">
-                <input type="checkbox" class="panierboutton "/>
+                <input type="checkbox" class="panierboutton prb "/>
                 <img class="pri" src="Images/Christina/point relais.png" alt="logopr">
                 <p class=" panierchan">Point Relais</p>
                 <p class=" panierchan">GRATUIT</p> 
@@ -238,74 +290,76 @@
 
 <!------------------------------ FOOTER ---------------------------->
 
-<footer class="footerGrid">
+    <footer class="footerGrid">
 
-<!------------------------------ 3 BLOCS ---------------------------->
-
-        <div class="footerValeur">
-            <h3>NOS VALEURS</h3>
-            <p>Notre entreprise</p>
-            <p>Nos engagements</p>
-            <p>Recrutement</p>
-            <p>Espace Presse</p>
-            <p>Contactez-nous</p>
-        </div>
-
-        <div class="footerShopping">
-            <h3>E-SHOPPING SELON NOUS</h3>
-            <p>Suivre vos commandes</p>
-            <p>Guide des tailles</p>
-            <p>Retours</p>
-            <p>Livraisons</p>
-            <p>Paiement sécurisé</p>
-        </div>
-
-        <div class="footerPaiement footerFlexbox">
-            <h3>NOS MOYENS DE PAIEMENT</h3>
-            <div class="footerContainerPaiement1 footerFlexbox">
-                <img src="Icones/paypal.png" alt="icone_paypal">
-                <img src="Icones/visa.png" alt="icone_visa">
+    <!------------------------------ 3 BLOCS ---------------------------->
+    
+            <div class="footerValeur footerBlocSize">
+                <h3>NOS VALEURS</h3>
+                <p class="footerBlocP">Notre entreprise</p>
+                <p class="footerBlocP">Nos engagements</p>
+                <p class="footerBlocP">Recrutement</p>
+                <p class="footerBlocP">Espace Presse</p>
+                <p class="footerBlocP">Contactez-nous</p>
             </div>
-            <div class="footerContainerPaiement2 footerFlexbox">
-                <img src="Icones/icons8-logo-mastercard-480.png" alt="icone_mastercard">
+    
+            <div class="footerShopping footerBlocSize">
+                <h3>E-SHOPPING SELON NOUS</h3>
+                <p class="footerBlocP">Suivre vos commandes</p>
+                <p class="footerBlocP">Guide des tailles</p>
+                <p class="footerBlocP">Retours</p>
+                <p class="footerBlocP">Livraisons</p>
+                <p class="footerBlocP">Paiement sécurisé</p>
             </div>
-        </div>
-
-    <!------------------------------ NEWSLETTER ---------------------------->
-
-        <div class="footerNewsletter footerFlexbox">
-            <div class="footerNewsletterContainer footerFlexbox">
-                <p>MA <br> NEWSLETTER</p>
-                <input type="email" name="" placeholder="Entrez votre email">
-                <button type="submit">ENVOYER</button>
-            </div>  
-        </div>
-
-    <!------------------------------ RESEAUX SOCIAUX ---------------------------->
-
-        <div class="footerBoiteRs footerFlexbox">
-            <div class="footerRs footerFlexbox">
-                <p>SUIVEZ-NOUS</p>
-                <div class="footerContainerRs footerFlexbox">
-                    <img src="Icones/facebook.png" alt="icone_facebook">
-                    <img src="Icones/instagram.png" alt="icone_instagram">
-                    <img src="Icones/twitter.png" alt="icone_twitter">
-                    <img src="Icones/youtube.png" alt="icone_youTube">
+    
+            <div class="footerPaiement footerFlexbox footerBlocSize">
+                <h3>NOS MOYENS DE PAIEMENT</h3>
+                <div class="footerContainerPaiement1 footerFlexbox footerBlocP">
+                    <img src="Icones/paypal.png" alt="icone_paypal">
+                    <img src="Icones/visa.png" alt="icone_visa">
+                </div>
+                <div class="footerContainerPaiement2 footerFlexbox footerBlocP">
+                    <img src="Icones/icons8-logo-mastercard-480.png" alt="icone_mastercard">
                 </div>
             </div>
-        </div>
+    
+        <!------------------------------ NEWSLETTER ---------------------------->
+    
+            <div class="footerNewsletter footerFlexbox">
+                <div class="footerNewsletterContainer footerFlexbox">
+                    <p>MA<br>NEWSLETTER</p>
+                    <div class="footerFlexbox">
+                        <input type="email" name="email" placeholder="Entrez votre email">
+                        <a href="mailto:lookée&stylée@shop.com"><button type="submit">ENVOYER</button></a>
+                    </div>
+                </div>  
+            </div>
+    
+        <!------------------------------ RESEAUX SOCIAUX ---------------------------->
+    
+            <div class="footerBoiteRs footerFlexbox">
+                <div class="footerRs footerFlexbox">
+                    <p>SUIVEZ-NOUS</p>
+                    <div class="footerContainerRs footerFlexbox">
+                        <a href="https://www.facebook.com/" target="blank" id="facebook"><img src="Icones/facebookColor.png" alt="icone_facebook"></a>
+                        <a href="https://www.instagram.com/" target="blank"><img src="Icones/instagramColor.png" alt="icone_instagram"></a>
+                        <a href="https://twitter.com/" target="blank"><img src="Icones/twitterColor.png" alt="icone_twitter"></a>
+                        <a href="https://www.youtube.com/" target="blank"><img src="Icones/youtubecolor.png" alt="icone_youTube"></a>                </div>
+                </div>
+            </div>
+    
+        <!------------------------------ COPYRIGHT ---------------------------->
+    
+            <div class="footerCopy footerFlexbox">
+                <p>© Copyright © 2021</p>
+                <p>CGV</p>
+                <p>Mentions légales</p>
+                <p>Plan du site</p>
+                <p>Protection des données personnelles</p>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 
-    <!------------------------------ COPYRIGHT ---------------------------->
-
-
-        <div class="footerCopy footerFlexbox">
-            <p>© Copyright © 2021</p>
-            <p>CGV</p>
-            <p>Mentions légales</p>
-            <p>Plan du site</p>
-            <p>Protection des données personnelles</p>
-        </div>
-
-    </footer>
-</body>
-</html>
+        <script src="./script.js" type="text/javascript" ></script>
+    </body>
+    </html>
