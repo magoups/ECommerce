@@ -304,6 +304,259 @@ header img{
 /* --------------- CLASS : .collectionxxxxx ------------- */
 /* -------------- ECRIRE SOUS CETTE LIGNE --------------- */
 
+                    /* body */
+
+                    /* h2 */
+.collectionh2{
+    text-align: center;
+    margin-top: 67px;
+    font-size: 50px;
+    
+}
+
+                /* header */
+.collectionheader{
+    display: flex;
+    justify-content: space-between;
+   margin-left: 22px;
+   margin-right: 22px;
+}
+
+                        /* header button */
+
+.collectionheader button{
+ background:#FAFAFA;
+border: none;
+}
+
+
+                /* span header */
+.collectionheader span{
+font-family: Spectral;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+}
+
+            /* image coeur favoris */
+.collection-favoris img{
+background: white;
+}
+
+.collection-favoris{
+    display: flex;
+    align-items: flex-end;
+    justify-content: right; 
+}
+
+
+
+                /* grid */
+
+#collection{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 50px;
+    padding-left: 20px;
+}
+
+                        /* image pull */
+.clpull1{
+    background: url('pull collection/pull1.png') no-repeat center / cover;
+    width: 378px;
+    height: 489.27px;
+}
+
+.clpull2{
+    
+    background: url('pull collection/pull2.png') no-repeat center / cover;
+    width: 378px;
+    height: 489.27px;
+}
+
+.clpull3{
+    background: url('pull collection/pull3.png') no-repeat center / cover;
+    width: 378px;
+    height: 489.27px;
+}
+
+.clpull4{
+    
+    background: url('pull collection/pull4.png') no-repeat center / cover;
+    width: 378px;
+    height: 489.27px;
+}
+
+.clpull5{
+    
+    background: url('pull collection/pull5.png') no-repeat center / cover;
+    width: 378px;
+    height: 489.27px;
+}
+
+.clpull6{
+    
+    background: url('pull collection/pull6.png') no-repeat center / cover;
+    width: 378px;
+    height: 489.27px;
+}
+
+.clpull7{
+    
+    background: url('pull collection/pull7.png') no-repeat center / cover;
+    width: 378px;
+    height: 489.27px;
+}
+
+.clpull8{
+    background: url('pull collection/pull8.png') no-repeat center / cover;
+    width: 378px;
+    height: 489.27px;
+}
+
+.clpull9{
+   
+    background: url('pull collection/pull9.png') no-repeat center / cover;
+    width: 378px;
+    height: 489.27px;
+}
+
+
+
+
+                        /* pargraphe pull */
+
+.collection-nom{
+    margin-top: 10px;
+    text-align: center;
+    font-family: Spectral;
+    font-style: normal;
+    font-size: 25px;
+
+}
+                            /* couleur */
+
+.collection-color{
+    display: flex;
+   justify-content: space-evenly;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 20px;
+    box-shadow: none;
+
+}
+
+
+                        /* taille */
+
+.collectiontaille{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    /* top: auto; */
+}
+
+                    /* prix */
+.collection-galerie span{
+display: block;
+font-family: Spectral;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+} 
+
+.collection-galerie a{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (max-width: 500px){
+ #collection{
+    grid-template-columns: repeat(2, 1fr);
+ }   
+ .clpull1{
+    width: 160px;
+    height: 266.8px
+}
+.clpull2{
+    width: 160px;
+    height: 266.8px
+}
+.clpull3{
+    width: 160px;
+    height: 266.8px
+}
+.clpull5{
+    width: 160px;
+    height: 266.8px
+}
+.clpull6{
+    width: 160px;
+    height: 266.8px
+}
+.clpull7{
+    width: 160px;
+    height: 266.8px
+}
+.clpull8{
+    width: 160px;
+    height: 266.8px
+}
+.clpull9 {
+    width: 160px;
+    height: 266.8px
+}
+
+
+
+            /* couleur */
+.collection-color{
+   display: none;   
+} 
+.collection-supprimer{
+    display: none;
+}
+
+            /* favoris */
+.collection-favoris{
+    justify-content: right;
+}
+
+
+.collectionh2{
+    font-size: 25px;
+}
+
+.collectionheader span{
+    font-size: 15px;
+}
+
+.collection-nom{
+    font-size: 15px;
+}
+
+.collectiontaille{
+    font-size: 15px;
+}
+
+.collection-galerie span{
+    font-size: 15px;  
+}
+
+}
+
+    
+
+
+
+
+
+
+
+
+
 
 
 
