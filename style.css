@@ -1278,11 +1278,6 @@ form#paiement {
     text-shadow: 0 1px 1px black;
   }
 
-  form#paiement > fieldset > legend:before {
-    content: "Étape" counter(fieldsets) " : ";
-    counter-increment: fieldsets;
-  }
-
   form#paiement fieldset fieldset legend {
     color: #111111;
     font-size: 13px;
@@ -1322,17 +1317,12 @@ form#paiement {
     padding: 0 0 0 30px;
     width: auto;
   }
-  form#paiement label[for=paypal] {
-    background-image: url(icones/paypal.png);
+
+
+  .paiementicone img{
+      height: 30px; width: 30px;
   }
-  form#paiement label[for=visa] {
-    background-image: url(icones/visa.png);
-    
-  }
-  
-  form#paiement label[for=mastercard] {
-    background-image: url(icones/icons8-logo-mastercard-480.png); 
-  }
+ 
   form#paiement fieldset fieldset label:hover {
     cursor: crosshair;
   }
@@ -1352,7 +1342,7 @@ form#paiement textarea {
 }
 form#paiement input:not([type=submit]):focus,
 form#paiement textarea:focus {
-  background: #eaeaea;
+  background: #C49CA8;
 }
 form#paiement input[type=radio] {
   float: left;
@@ -1375,7 +1365,7 @@ form#paiement button {
     text-transform: uppercase;
   }
   form#paiement button:hover {
-    background: #1e2506;
+    background: black;
     cursor: pointer;
    }
   
@@ -1407,7 +1397,19 @@ form#paiement button {
 .h1paiement{
     font-size: xx-large;
 }
+.protectionclient{
+    display: flex;
+}
 
+@media(max-width:600px){
+    .boxpaiement{
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+}
 
 /* -------------- NE PAS ECRIRE SOUS CETTE LIGNE ---------------- */
 /* ----------------------- FOOTER ------------------------------- */
