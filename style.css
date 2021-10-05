@@ -262,7 +262,7 @@ header img {
 
 .headerdropdownChild li a:hover {
     font-weight: 500;
-    color: rgba(132, 41, 37, .9);
+    color: rgba(131, 42, 37, 0.902);
 }
 
 #headerResponsiveBarre{
@@ -438,7 +438,7 @@ header img {
 }
 
 .accueilPhotoTexte p{
-    font-size: clamp(20px, 4em, 50px);
+    font-size: clamp(20px, 4em, 40px);
     font-weight: 700;
     text-align: center;
     color: #FAFAFA;
@@ -647,12 +647,18 @@ header img {
 
 
      .pullphoto{
-    background: url(Images/Rosa/pullgalo.png) no-repeat;   
+    background: url(Images/Rosa/gilet-ajoure-decollete-v-face.png) no-repeat;   
     height: 890px;
     width:633px;  
      margin-bottom: 40px;
      justify-content: flex-end;  
 } 
+
+ .pullphoto:hover{
+    background: url(Images/Rosa/gilet-ajoure-decollete-v-dos.png) no-repeat;
+    height: 890px;
+    width:633px;  
+}  
 
  
 
@@ -722,7 +728,8 @@ header img {
     font-size: 20px;
     padding-bottom: 40px;
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 20px; 
+  
 }
 
 /* BOUTONS */
@@ -737,7 +744,6 @@ header img {
     height: 50px;
     background: black;
     border-radius: 12px;
-    /* font-weight: bold; */
     font-size: 15px;
     justify-content: center;
     gap: 13px;
@@ -845,15 +851,37 @@ header img {
 
 
 
+@media(max-width:600px){
+    
+   
+.pullsection1{
+    flex-direction: column;
+}
+.pulltitre{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pullphoto{
+   
+    width:600px;
+}
+
+.pullliste{
+    display: none;
+}
+
+.pullpicture3, .pullpicture4{
+    display: none;
+}
+
+
+} 
 
 
 
 
-
-
-
-
-
+ 
 
 
 
@@ -1034,6 +1062,9 @@ header img {
 
 
 @media (max-width:1269px) {
+    #headerResponsiveBarre{
+        display: none;
+    }
     .paniertitre{
         font-size: 25px;
     }
@@ -1067,6 +1098,12 @@ header img {
 }
 @media (max-width:740px){
 /* --------------------HEADER---------------- */
+#headerResponsiveBarre{
+    display: none;
+}
+    #headerResponsiveBarre{
+        display: none;
+    }
     .headerCategorieListe{
         display: none;
     }
@@ -1074,7 +1111,6 @@ header img {
         display: block;
     }
      #headerResponsiveBarre{
-        display: block;
         position: absolute;
         width: 230px;
         height: 100%;
@@ -1689,7 +1725,7 @@ footer img {
 
 @media (max-width:900px) {
 
-    .headerRecherche, .headerIcone, .headerCategorie, .p1, .p2, .p4, .p9, .p10, .p11, .p12, .p13, .p17, .p18{
+    .headerRecherche, .headerIcone, .headerCategorie, .p1, .p2, .p4, .p9, .p10, .p11, .p12, .p13, .p17, .p18, #headerResponsiveBarre{
         display: none;
     }
 
@@ -1726,7 +1762,7 @@ footer img {
 /* ------------------------------------------------------------------*/
 
 @media (max-width:500px) {     
-    .headerGrid, .headerRecherche, .headerIcone, .headerCategorieListe, .headerChemin, .accueilslider, .accueilpRespons, .footerBlocP, .footerValeurResp, .footerPaiementIcones{
+    .headerGrid, .headerRecherche, .headerIcone, .headerCategorieListe, .headerChemin, .accueilslider, .accueilpRespons, .footerBlocP, .footerValeurResp, .footerPaiementIcones, .p7, .p16{
         display: none;  
     }
 
@@ -1734,7 +1770,8 @@ footer img {
 .headerLogoSize{
     display: block;
 }
- #headerResponsiveBarre{
+
+#headerResponsiveBarre{
     display: block;
     position: absolute;
     width: 230px;
